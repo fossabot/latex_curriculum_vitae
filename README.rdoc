@@ -8,19 +8,18 @@ openhub statistics :: https://www.openhub.net/p/latex_curriculum_vitae
 last public version  :: {<img src="https://badge.fury.io/rb/latex_curriculum_vitae.png" alt="Build Status" />}[http://rubygems.org/gems/latex_curriculum_vitae]
 downloads latest :: {<img src="https://img.shields.io/gem/dtv/latex_curriculum_vitae.svg" alt="Build Status" />}[http://rubygems.org/gems/latex_curriculum_vitae]
 downloads all :: {<img src="https://img.shields.io/gem/dt/latex_curriculum_vitae.svg" alt="Build Status" />}[http://rubygems.org/gems/latex_curriculum_vitae]
-downloads latest :: {<img src="https://img.shields.io/gem/dtv/latex_curriculum_vitae.svg" alt="Build Status" />}[http://rubygems.org/gems/latex_curriculum_vitae]
-downloads all :: {<img src="https://img.shields.io/gem/dt/latex_curriculum_vitae.svg" alt="Build Status" />}[http://rubygems.org/gems/latex_curriculum_vitae]
 continuous integration :: {<img src="https://secure.travis-ci.org/saigkill/latex_curriculum_vitae.png?branch=master" alt="Build Status" />}[https://secure.travis-ci.org/saigkill/latex_curriculum_vitae]
-continuous integration :: {<img src="https://scrutinizer-ci.com/gp/latex_curriculum_vitae/badges/build.png?b=master" />}[https://scrutinizer-ci.com/gp/latex_curriculum_vitae]
-code quality :: {<img src="https://scrutinizer-ci.com/gp/latex_curriculum_vitae/badges/quality-score.png?b=master" />}[https://scrutinizer-ci.com/gp/latex_curriculum_vitae/]
+continuous integration :: {<img src="https://scrutinizer-ci.com/gp/latex_curriculum_vitae/badges/build.png?b=master&s=43d5bcac4d7766f59a24fdb6a1cf97f28ccf65d8" />}[https://scrutinizer-ci.com/gp/latex_curriculum_vitae]
+code quality :: {<img src="https://scrutinizer-ci.com/gp/latex_curriculum_vitae/badges/quality-score.png?b=master&s=e191f29b86230ed647f7c6a8401ae7dfa0e2f422" />}[https://scrutinizer-ci.com/gp/latex_curriculum_vitae/]
 code quality :: {<img src="https://codeclimate.com/github/saigkill/latex_curriculum_vitae/badges/gpa.svg" alt="Code Quality" />}[https://codeclimate.com/github/saigkill/latex_curriculum_vitae]
-test coverage :: {<img src="https://coveralls.io/repos/saigkill/latex_curriculum_vitae/badge.svg?branch=master&service=github" alt="Test Coverage" />}[https://coveralls.io/repos/saigkill/latex_curriculum_vitae]
+test coverage :: {<img src="https://coveralls.io/repos/saigkill/latex_curriculum_vitae/badge.svg?branch=master&service=github" alt="Test Coverage" />}[https://coveralls.io/github/saigkill/latex_curriculum_vitae]
 still maintained :: {<img src="http://stillmaintained.com/saigkill/latex_curriculum_vitae.png" alt="Maintained?" />}[http://stillmaintained.com/saigkill/latex_curriculum_vitae]
 dependency check :: {<img src="https://gemnasium.com/5bd57732d697829a74317f4598bfbbb3.svg" alt="Build Status" />}[https://gemnasium.com/3e9122cbac2ccd5399d9944938963199]
 documentation quality :: {<img src="http://inch-ci.org/github/saigkill/latex_curriculum_vitae.svg?branch=master" alt="Documentation Quality" />}[http://inch-ci.org/github/saigkill/latex_curriculum_vitae]
-donations :: {<img src="https://pledgie.com/campaigns/29554.png?skin_name=chrome" alt="Build Status" />}[https://pledgie.com/campaigns/29554]
+donations :: {<img src="https://pledgie.com/campaigns/30094.png?skin_name=chrome" alt="Build Status" />}[https://pledgie.com/campaigns/30094]
 donations :: {<img src="http://img.shields.io/gratipay/saigkill.svg" alt="Build Status" />}[https://gratipay.com/~saigkill/]
 donations :: {<img src="http://tsv-neuss.de/cms/upload/News-Bilder/amazon1.png" alt="Build Status" />}[http://www.amazon.de/registry/wishlist/D75HOEQ00BDD]
+
 == DESCRIPTION:
 
 latex_curriculum_vitae is a Rubygem which help you to write your job applications. The program aks you for all relevant data for compiling
