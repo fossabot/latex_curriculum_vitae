@@ -3,8 +3,8 @@
 
 # Dependencies
 require 'rubygems'
-require 'latex_curriculum_vitae.rb'
-require 'bundler/setup'
+require 'latex_curriculum_vitae'
+#require File.expand_path(File.join(File.dirname(__FILE__), '../lib/latex_curriculum_vitae'))
 require 'setup/command'
 
 IRB.start

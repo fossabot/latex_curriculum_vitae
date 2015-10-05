@@ -1,0 +1,98 @@
+= latex_curriculum_vitae
+
+home  :: http://saigkill.github.io
+code  :: https://gitlab.com/saigkill/latex_curriculum_vitae
+docs  :: https://gitlab.com/saigkill/latex_curriculum_vitae/wikis/home
+bugs  :: https://gitlab.com/saigkill/latex_curriculum_vitae/issues
+openhub statistics :: https://www.openhub.net/p/latex_curriculum_vitae
+last public version  :: {<img src="https://badge.fury.io/rb/latex_curriculum_vitae.png" alt="Build Status" />}[http://rubygems.org/gems/latex_curriculum_vitae]
+downloads latest :: {<img src="https://img.shields.io/gem/dtv/latex_curriculum_vitae.svg" alt="Build Status" />}[http://rubygems.org/gems/latex_curriculum_vitae]
+downloads all :: {<img src="https://img.shields.io/gem/dt/latex_curriculum_vitae.svg" alt="Build Status" />}[http://rubygems.org/gems/latex_curriculum_vitae]
+dependency check :: {<img src="https://gemnasium.com/saigkill/latex_curriculum_vitae.png" alt="Build Status" />}[https://gemnasium.com/saigkill/latex_curriculum_vitae]
+still maintained? :: {<img src="http://stillmaintained.com/saigkill/latex_curriculum_vitae.png" alt="Build Status" />}[http://stillmaintained.com/saigkill/latex_curriculum_vitae]
+donations :: {<img src="https://pledgie.com/campaigns/30094.png?skin_name=chrome" alt="Build Status" />}[https://pledgie.com/campaigns/30094]
+donations :: {<img src="http://img.shields.io/gratipay/saigkill.svg" alt="Build Status" />}[https://gratipay.com/~saigkill/]
+donations :: {<img src="http://tsv-neuss.de/cms/upload/News-Bilder/amazon1.png" alt="Build Status" />}[http://www.amazon.de/registry/wishlist/D75HOEQ00BDD]
+
+== DESCRIPTION:
+
+latex_curriculum_vitae is a Rubygem which help you to write your job applications. The program aks you for all relevant data for compiling
+the curriculum vitae. It builds the motivational letter (if choosen in the gui), the cover and the cv. The resulting pdf will be found
+in your home directory. Also it generates an email with a standard content, which allows you to send the mail with your cv directly.
+
+== FEATURES/PROBLEMS:
+
+* Ruby based LaTEX publisher for job applications
+* Currently it just uses thunderbird for creating mails. If no other wishes another solution it will be hardcoded.
+
+== SYNOPSIS:
+
+  $ latexcv.rb
+
+  Or just use the Launcher.
+
+The resulting PDF and the CSV file are placed in /home/You/.latex_curriculum_vitae.
+
+If you like this little program so don't forget to give this GitHub repository a star :-)
+
+== REQUIREMENTS:
+
+* setup
+* notifier
+
+== REQUIREMENTS (hard dependencies):
+
+* pdflatex & xelatex
+* yad
+* poppler (pdfunite)
+* thunderbird
+
+== INSTALL:
+
+The installation is very easy.
+
+    gem install latex_curriculum_vitae
+    cd /path/to/gem (In case of using RVM ~/.rvm/gems/ruby-2.2.1/gems/latex_curriculum_vitae)
+    rake
+
+Read the documentation at: https://gitlab.com/saigkill/latex_curriculum_vitae/wikis/home
+
+You have to run the setup after each gem update.
+
+If you like this gem, don't forget to give the GitLab repo a start :-)
+
+== DEVELOPERS:
+
+After checking out the source, run:
+
+  $ rake newb
+
+This task will install any missing dependencies, run the tests/specs,
+and generate the RDoc.
+
+Read https://gitlab.com/saigkill/latex_curriculum_vitae/blob/master/CONTRIBUTING.md
+
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2015 Sascha Manns <samannsml@directbox.com>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

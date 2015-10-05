@@ -1,5 +1,13 @@
 # Created by .ignore support plugin (hsz.mobi)
-Bewerbungsunterlagen_Manns.pdf
+*.pdf
 pkg
 SetupReceipt
 SetupConfig
+.idea
+*.bak
+*.aux
+*.log
+*.synctex.gz
+History.txt
+README.txt
+Index.yml

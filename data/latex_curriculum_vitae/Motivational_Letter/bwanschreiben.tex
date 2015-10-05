@@ -47,7 +47,7 @@
 %---------------------------------------------------------------------------
 % Schriften werden hier definiert
 \renewcommand*\familydefault{\sfdefault} % Latin Modern Sans
-\setkomafont{fromname}{\sffamily\color{mygruen}\LARGE}
+\setkomafont{fromname}{\sffamily\color{myblue}\LARGE}
 %\setkomafont{pagenumber}{\sffamily}
 \setkomafont{subject}{\mdseries}
 \setkomafont{backaddress}{\mdseries}
@@ -59,7 +59,12 @@
 %\def\Strasse{Sigmund-Riefler-Bogen 13}
 %\def\PLZ{81829 München - Trudering-Riem}
 %\def\Stelle{Buchstabenzähler}
-\input{entity.tex}
+\input{$HOME/.latex_curriculum_vitae/personal_data.tex}
+%
+% -------------------------------------------------
+% Firmendaten 
+% -------------------------------------------------
+\input{$HOME/.latex_curriculum_vitae/entity.tex}
 %---------------------------------------------------------------------------
 \begin{document}
 %---------------------------------------------------------------------------
@@ -84,23 +89,23 @@
 % define gray for header
 \definecolor{mygray}{gray}{.55}
 % define blue for address
-\definecolor{myblue}{rgb}{0.25,0.45,0.75}
+\definecolor{myblue}{rgb}{0.25,0.50,0.75}
 \definecolor{mygruen}{rgb}{0.35,0.70,0.30}
 %\setkomavar{fromlogo}{\includegraphics[scale=0.2]{pabook.jpg}}
 %---------------------------------------------------------------------------
-% Absender Daten
-\setkomavar{fromname}{Sascha Manns}
-\setkomavar{fromaddress}{Maifeldstraße 10\\D-56 727 Mayen}
-\setkomavar{fromphone}[\Mobilefone~]{+49\,(0)\,2651\,40\,14\,045}
+% Absender Daten +49\,(0)\,2651\,40\,14\,045
+\setkomavar{fromname}{\firstname\ \familyname}
+\setkomavar{fromaddress}{\mystreet\\\mycity}
+\setkomavar{fromphone}[\Mobilefone~]{\myphone}
 \setkomavar{fromfax}[\FAX~]{+49\,(0)\,123\,456\,789\,1}
-\setkomavar{fromemail}[\Letter~]{Sascha.Manns@bdvb.de}
-\setkomavar{fromurl}[]{http://saigkill.github.io}
-\setkomafont{fromaddress}{\small\rmfamily\mdseries\slshape\color{mygruen}}
+\setkomavar{fromemail}[\Letter~]{\myemail}
+\setkomavar{fromurl}[]{\myblog}
+\setkomafont{fromaddress}{\small\rmfamily\mdseries\slshape\color{myblue}}
 
 \setkomavar{backaddressseparator}{ - }
 \setkomavar{signature}{\\[-3\baselineskip]%
 %\rule{10em}{2\baselineskip}\\
-\includegraphics[scale=0.7]{spool/signatur.png}\\
+\includegraphics[scale=0.5]{../Pictures/signatur.png}\\
 SASCHA MANNS}
 %\setkomavar{backaddress}{Tim Metzner, Felderhof 112, 40880 Ratingen} % wenn erwünscht kann hier eine andere Backaddress eingetragen werden
 %\setkomavar{signature}{SASCHA MANNS} 
@@ -140,9 +145,10 @@ SASCHA MANNS}
 }% 
 %---------------------------------------------------------------------------
 % Bankverbindung
-\setkomavar{frombank}{Kto. 198\ 242\ 620\\
-BLZ 576\,500\,10\\
-Kreissparkasse Mayen}
+%\setkomavar{frombank}{Kto. 198\ 242\ 620\\
+%BLZ 576\,500\,10\\
+%Kreissparkasse Mayen}
+\setkomavar{frombank}{\mybank}
 %---------------------------------------------------------------------------
 %\setkomavar{yourref}{}
 %\setkomavar{yourmail}{}
@@ -159,32 +165,20 @@ Kreissparkasse Mayen}
 %---------------------------------------------------------------------------
 % Hier beginnt der Brief, mit der Anschrift des Empfängers
 
-\begin{letter}{\Firma \\
-c/o \Ansprechpartner  \\ 
-%\Strasse \\ 
-%\PLZ
-}
+\begin{letter}{\addressstring}
 
 %---------------------------------------------------------------------------
 % Der Betreff des Briefes
-\setkomavar{subject}{\bf{Bewerbung um einen Arbeitsplatz als \Stelle}
+\setkomavar{subject}{\bf{\subject}
 }
 %---------------------------------------------------------------------------
 %\opening{Sehr geehrter \Ansprechpartner,}
-\opening{Sehr geehrte Damen und Herren,}
-
-gerne antworte ich auf Ihre Anzeige. \\
-%gerne möchte ich eine Initiativbewerbung einreichen.\\
-Mit meinen vielfältigen Erfahrungen als Kaufmann, Community Manager, Buchautor und Customer Supporter (Level 1\&2) könnte ich Ihr neuer Mitarbeiter sein. \\
-%Nach meiner Kaufmännischen Ausbildung und anschließenden Arbeit wurde ich während meines Ersatzdienstes als Maler \& Bodenleger angelernt. In letzterem durfte ich auch nach einer Weile eigene Teams und Projekte leiten.\\ 
-%Im Rahmen des Supports betreute ich im den letzten Jahren Kunden unseres Linux-Boxproduktes via Email und Telefon und erreichte stets eine gute Kundenzufriedenheit. 
-Durch meine Tätigkeit als Projektgründer der openSUSE Medical Distribution ist mir das Testing und Packaging medizinischer SW bestens bekannt. In den letzten Monaten arbeitete ich bei ITSCare (dem IT-Dienstleister der AOKen) als Dispatcher und Supporter. Alle erarbeitete Lösungen pflegte ich in unsere Support-Datenbank ein. Auch die Einrichtung und Durchführung von Projekten sind mir vertraut.\\
-%Als Kaufmann sammelte ich bereits umfangreiche Erfahrungen im Bereich der Materialwirtschaft im T\&Z Bereich der Automobilteile. Sämtliche Prozesse von der Bestellung bis hin zu Warenannahme bis zur Mängelrüge sind mir bekannt.\\
-%Innerhalb meiner Laufbahn habe ich bereits Erfahrungen im Projektmanagement sammeln können, als Leiter des Weekly News Projektes, als auch als Gründer des Projektes für freie medizinische Software. 
-%Innerhalb der open-slx GmbH durfte ich ein Wiki-Migrationsprojekt leiten.\\
-%In meiner Freizeit arbeite ich am Plasma Active Projekt mit, einem Open-Source GUI Projekt für neuartige Geräteklassen. Darüber habe ich auch kürzlich ein Buch veröffentlicht. \\
-%Meine Erfahrungen mit Tools zur Handbucherstellung sind nützlich für Sie. Neben der Beschreibungssprache DocBook samt XSL-FO lerne ich aktuell die Satzsprache \LaTeX. \\
-Aktuell studiere ich berufsbegleitend den staatlich geprüften Betriebswirt im Schwerpunktfach Wirtschaftsinformatik. Ein aktuelles Zwischenzeugnis liegt im Anhang.\\
+\opening{\intro}
+Mit meinen vielfältigen Erfahrungen als Kaufmann, Community Manager, Buchautor und Customer Supporter (Level 1\&2), sowie Autor Geschäftsprozess- \& Anwendungsdokumentation könnte ich Ihr neuer Mitarbeiter sein. \\
+Seit dieser Zeit habe ich an teamgesteuerten Projekten für Kunden mitgearbeitet, wobei mein Schwerpunkt im Bereich Kundenpflege via Telefon und Email, Dispatching und Teamcontrolling lag. \\
+In für mich fremde Arbeitsgebiete werde ich mich rasch einarbeiten.\\
+Meine Kenntnisse in IT und Organisationsfähigkeiten kann ich für Ihr Unternehmen im Bereich des Managements gewinnbringend umsetzen.\\
+Persönlich runde ich das Profil mit den Eigenschaften: Teamfähigkeit, Kommunikationsstärke und Leistungsbereitschaft ab.\\
 Ich bin mir sicher, die von Ihnen gewünschten Kenntnisse und Fähigkeiten mitzubringen, und würde mich sehr über ein Vorstellungsgespräch freuen.
 \closing{Mit freundlichen Grüßen}
 

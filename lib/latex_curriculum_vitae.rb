@@ -4,41 +4,63 @@
 # @abstract Main Class for latex_curriculum_vitae
 #
 # Copyright (C) 2015  Sascha Manns <samannsml@directbox.com>
-# License: GPL-3
-#$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), 'lib'))
+# License: MIT
+
+# rubocop:disable Metrics/LineLength
+# rubocop:disable Style/LeadingCommentSpace
 
 # Dependencies
 require 'fileutils'
+
 require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/entityfile'))
 require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/cv'))
 require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/cover'))
 require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/email'))
 require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/outfile'))
 require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/notifier'))
-require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/version'))
+require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/letter'))
+require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/get-config'))
 
 # Main Class LatexCurriculumVitae
-class LatexCurriculumVitae
+module LatexCurriculumVitae
+  # The version information
+  VERSION = '1.1.0'
+
   # Variables
   home = Dir.home
   prefix = "#{home}/.rvm/rubies/default"
   datadir = "#{prefix}/share"
-  version = LatexCurriculumVitae::Version::STRING
   entitytex = "#{home}/.latex_curriculum_vitae/entity.tex"
-  personaldata = "#{home}/.latex_curriculum_vitae/personal_data.tex"
   csvout = "#{home}/.latex_curriculum_vitae/job-applications.csv"
+  sharedir ="#{datadir}/latex_curriculum_vitae/Motivational_Letter"
+  tmpdir = "#{datadir}/latex_curriculum_vitae/tmp"
+  name_of_pdf, name_of_cover, name_of_resume, name_of_letter = Getconfig.get
 
   # Get the needed Information for creating the application
-  contact, emailaddress, jobtitle, contact_sex, company, proactive = Entityfile.get_information(entitytex)
+  contact, emailaddress, jobtitle, contact_sex, company, letter, proactive = Entityfile.get_information(entitytex)
+
+  # Create Motivational Letter
+  if letter == 'yes'
+    FileUtils.cd("#{datadir}/latex_curriculum_vitae/Motivational_Letter") do
+      Letter.create_letter(tmpdir, name_of_letter)
+    end
+  end
 
   # Create the cover
   FileUtils.cd("#{datadir}/latex_curriculum_vitae/Cover") do
-    Cover.create_cover
+    Cover.create_cover(name_of_cover)
   end
 
   # Create the Curriculum Vitae
   FileUtils.cd("#{datadir}/latex_curriculum_vitae/Resume") do
-    CV.create_cv
+    CV.create_cv(name_of_pdf, name_of_resume, tmpdir)
+  end
+
+  # Final create and shrinking
+  FileUtils.cd(tmpdir) do
+    CV.create_final_cv(letter, name_of_letter, name_of_resume)
+    CV.shrink_cv(name_of_pdf)
+    CV.copy_home(name_of_pdf)
   end
 
   # Create the email
@@ -48,9 +70,16 @@ class LatexCurriculumVitae
   CVOutfile.add_to_outfile(jobtitle, company, contact, emailaddress, csvout)
 
   # Start evince to check the output file
-  system("evince #{datadir}/latex_curriculum_vitae/Bewerbungsunterlagen_Manns.pdf")
-  system("cp #{datadir}/latex_curriculum_vitae/Bewerbungsunterlagen_Manns.pdf #{home}/.latex_curriculum_vitae")
+  system("evince #{home}/.latex_curriculum_vitae/#{name_of_pdf}.pdf")
+
+  # Cleanup tmpdir
+  FileUtils.cd(tmpdir) do
+    allfiles = Dir.glob("*")
+    allfiles.each do |data|
+      File.delete(data)
+    end
+  end
 
   # Inform about creation is done
-  Notifier.run
+  CVNotifier.run
 end
