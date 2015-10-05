@@ -1,6 +1,6 @@
 --- 
 name:    latex_curriculum_vitae
-version: 0.1.4
+version: 1.0.0
 title:   Latex_curriculum_vitae
 summary: A program for creating an application
 
@@ -27,9 +27,8 @@ repositories:
 
 resources:
   home: http://saigkill.github.io
-  code: https://github.com/saigkill/latex_curriculum_vitae
-  bugs: http://saigkill-bugs.myjetbrains.com/youtrack
-  issues: http://saigkill-bugs.myjetbrains.com/youtrack
+  code: https://gitlab.com/saigkill/latex_curriculum_vitae
+  bugs: https://gitlab.com/saigkill/latex_curriculum_vitae/issues
 
 categories:
   - latex
@@ -38,5 +37,5 @@ categories:
   - curriculum vitae
 
 copyrights:
-  - 2015 Sascha Manns (GPL-3)
+  - 2015 Sascha Manns (MIT)
 
