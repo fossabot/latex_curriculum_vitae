@@ -37,7 +37,8 @@ module LatexCurriculumVitae
   name_of_pdf, name_of_cover, name_of_resume, name_of_letter = LatexCurriculumVitae::GetConfig.get
 
   # Get the needed Information for creating the application
-  contact, emailaddress, jobtitle, contact_sex, company, letter, proactive = LatexCurriculumVitae::Entityfile.get_information(entitytex)
+  contact, emailaddress, jobtitle, contact_sex, company, letter, proactive =
+      LatexCurriculumVitae::Entityfile.get_information(entitytex)
 
   # Create Motivational Letter
   if letter == 'yes'

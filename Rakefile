@@ -33,7 +33,7 @@ Hoe.plugin :packaging
 Hoe.plugin :reek
 Hoe.plugin :rdoc
 Hoe.plugin :rubocop
-#Hoe.plugin :rubygems
+Hoe.plugin :rubygems
 # Hoe.plugin :seattlerb
 Hoe.plugin :travis
 Hoe.plugin :version
@@ -81,7 +81,6 @@ Hoe.spec 'latex_curriculum_vitae' do
   extra_dev_deps << ['gem-release', '~> 0.7']
   extra_dev_deps << ['indexer', '~> 0.3']
   extra_dev_deps << ['reek', '~> 3.3']
-  extra_dev_deps << ['MannsShared', '~> 0.2']
   extra_dev_deps << ['rainbow', '~> 2.0']
   extra_dev_deps << ['bundler', '~> 1.10']
   extra_dev_deps << ['parseconfig', '~> 1.0']

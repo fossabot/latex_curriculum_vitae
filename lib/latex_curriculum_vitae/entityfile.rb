@@ -76,7 +76,7 @@ module LatexCurriculumVitae
         intro = 'Gerne möchte ich mich bei Ihnen um die obige oder eine vergleichbare Stelle bewerben.'
       else
         subject = "Bewerbung um einen Arbeitsplatz als #{jobtitle}"
-        intro = "Wie ich Ihrer Anzeige entnommen habe, suchen Sie jemanden für die obige Position, um die ich mich bewerbe."
+        intro = 'Wie ich Ihrer Anzeige entnommen habe, suchen Sie jemanden für die obige Position, um die ich mich bewerbe.'
       end
 
       addressstring = "#{company} \\\\"

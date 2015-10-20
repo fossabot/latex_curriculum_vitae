@@ -42,7 +42,7 @@ module LatexCurriculumVitae
         system("pdfunite #{name_of_letter}.pdf #{name_of_resume}.pdf result.pdf")
         puts 'Merging done'.colour(:green)
       else
-        puts "Copying #{name_of_resume}.tex result.pdf".colour(:green)
+        puts "Copying #{name_of_resume}.pdf result.pdf".colour(:green)
         system("cp #{name_of_resume}.pdf result.pdf")
         puts 'Done'.colour(:green)
       end
