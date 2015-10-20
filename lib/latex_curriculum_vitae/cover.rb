@@ -9,12 +9,16 @@
 # Dependencies
 require 'rainbow/ext/string'
 
-# Cover module
-module Cover
-  # Create cover method
-  def self.create_cover(name_of_cover)
-    puts 'Creating cover'.colour(:yellow)
-    system("pdflatex #{name_of_cover}.tex")
-    puts 'Creating cover done'.colour(:green)
+# main module
+module LatexCurriculumVitae
+  # Cover module
+  module Cover
+    # Create cover method
+    # @param [String] name_of_cover Name of the cover file
+    def self.create_cover(name_of_cover)
+      puts 'Creating cover'.colour(:yellow)
+      system("pdflatex #{name_of_cover}.tex")
+      puts 'Creating cover done'.colour(:green)
+    end
   end
 end

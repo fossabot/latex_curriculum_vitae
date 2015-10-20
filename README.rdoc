@@ -23,7 +23,7 @@ donations :: {<img src="http://tsv-neuss.de/cms/upload/News-Bilder/amazon1.png" 
 == DESCRIPTION:
 
 latex_curriculum_vitae is a Rubygem which help you to write your job applications. The program aks you for all relevant data for compiling
-the curriculum vitae. It builds the motivational letter (if choosen in the gui), the cover and the cv. The resulting pdf will be found
+the curriculum vitae. It builds the motivational letter (if chosen in the gui), the cover and the cv. The resulting pdf will be found
 in your home directory. Also it generates an email with a standard content, which allows you to send the mail with your cv directly.
 
 == FEATURES/PROBLEMS:
@@ -39,19 +39,19 @@ in your home directory. Also it generates an email with a standard content, whic
 
 The resulting PDF and the CSV file are placed in /home/You/.latex_curriculum_vitae.
 
-If you like this little program so don't forget to give this GitHub repository a star :-)
+Read the documentation at: https://gitlab.com/saigkill/latex_curriculum_vitae/wikis/home
 
 == REQUIREMENTS:
 
 * setup
 * notifier
+* pony
 
 == REQUIREMENTS (hard dependencies):
 
 * pdflatex & xelatex
 * yad
 * poppler (pdfunite)
-* thunderbird
 
 == INSTALL:
 
@@ -59,13 +59,13 @@ The installation is very easy.
 
     gem install latex_curriculum_vitae
     cd /path/to/gem (In case of using RVM ~/.rvm/gems/ruby-2.2.1/gems/latex_curriculum_vitae)
-    rake
+    rake setup
 
 Read the documentation at: https://gitlab.com/saigkill/latex_curriculum_vitae/wikis/home
 
 You have to run the setup after each gem update.
 
-If you like this gem, don't forget to give the GitLab repo a start :-)
+If you like this gem, don't forget to give the GitLab repo a star :-)
 
 == DEVELOPERS:
 

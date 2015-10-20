@@ -1,8 +1,10 @@
 === 1.1.0 / UNRELEASED
 
-* 1 bug fix
+* 3 minor enhancements
 
+  * LCV-7: Add mailer
   * LCV-9: latexcv.rb: Use not File.expand
+  * LCV-10: Build a upgrade option
 
 === 1.0.0 / 2015-10-03
 
@@ -13,7 +15,7 @@
 * 3 feature requests
 
   * fix LCV-6: Added LatexCurriculumVitae::Letter (Class for compile the motivational letter)
-  * fix LCV-7: Allow to name the pdf output file (instead of hardcoded "Bewerbungsunterlagen_Manns"
+  * fix LCV-7: Allow to name the pdf output file (instead of hardcoded "Bewerbungsunterlagen_Manns")
   * fix LCV-8: Make LCV more dynamic (added variable "letter". If this is set, the program merges the motivational
     letter with the cv.
   * Extended gui for asking about street and city (company)

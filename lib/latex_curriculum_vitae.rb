@@ -34,43 +34,42 @@ module LatexCurriculumVitae
   csvout = "#{home}/.latex_curriculum_vitae/job-applications.csv"
   sharedir ="#{datadir}/latex_curriculum_vitae/Motivational_Letter"
   tmpdir = "#{datadir}/latex_curriculum_vitae/tmp"
-  name_of_pdf, name_of_cover, name_of_resume, name_of_letter = Getconfig.get
+  name_of_pdf, name_of_cover, name_of_resume, name_of_letter = LatexCurriculumVitae::GetConfig.get
 
   # Get the needed Information for creating the application
-  contact, emailaddress, jobtitle, contact_sex, company, letter, proactive = Entityfile.get_information(entitytex)
+  contact, emailaddress, jobtitle, contact_sex, company, letter, proactive = LatexCurriculumVitae::Entityfile.get_information(entitytex)
 
   # Create Motivational Letter
   if letter == 'yes'
     FileUtils.cd("#{datadir}/latex_curriculum_vitae/Motivational_Letter") do
-      Letter.create_letter(tmpdir, name_of_letter)
+      LatexCurriculumVitae::Letter.create_letter(tmpdir, name_of_letter)
     end
   end
 
   # Create the cover
   FileUtils.cd("#{datadir}/latex_curriculum_vitae/Cover") do
-    Cover.create_cover(name_of_cover)
+    LatexCurriculumVitae::Cover.create_cover(name_of_cover)
   end
 
   # Create the Curriculum Vitae
   FileUtils.cd("#{datadir}/latex_curriculum_vitae/Resume") do
-    CV.create_cv(name_of_pdf, name_of_resume, tmpdir)
+    LatexCurriculumVitae::CV.create_cv(name_of_pdf, name_of_resume, tmpdir)
   end
 
   # Final create and shrinking
   FileUtils.cd(tmpdir) do
-    CV.create_final_cv(letter, name_of_letter, name_of_resume)
-    CV.shrink_cv(name_of_pdf)
-    CV.copy_home(name_of_pdf)
+    LatexCurriculumVitae::CV.create_final_cv(letter, name_of_letter, name_of_resume)
+    LatexCurriculumVitae::CV.shrink_cv(name_of_pdf)
+    LatexCurriculumVitae::CV.copy_home(name_of_pdf)
   end
-
-  # Create the email
-  CVEmail.create_email(contact, emailaddress, jobtitle, contact_sex, proactive)
-
-  # Add entry to Outfile
-  CVOutfile.add_to_outfile(jobtitle, company, contact, emailaddress, csvout)
 
   # Start evince to check the output file
   system("evince #{home}/.latex_curriculum_vitae/#{name_of_pdf}.pdf")
+
+  LatexCurriculumVitae::Email.resultok(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf)
+
+  # # Add entry to Outfile
+  CVOutfile.add_to_outfile(jobtitle, company, contact, emailaddress, csvout)
 
   # Cleanup tmpdir
   FileUtils.cd(tmpdir) do
@@ -81,5 +80,5 @@ module LatexCurriculumVitae
   end
 
   # Inform about creation is done
-  CVNotifier.run
+  LatexCurriculumVitae::Notify.run(jobtitle)
 end
