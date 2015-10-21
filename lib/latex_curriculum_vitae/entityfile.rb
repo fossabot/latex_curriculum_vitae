@@ -10,8 +10,9 @@
 require 'fileutils'
 require 'rainbow/ext/string'
 
-# Module for creating the entityfile
+# main module
 module LatexCurriculumVitae
+  # Module for creating the entityfile
   module Entityfile
     # rubocop:disable Metrics/LineLength
     # Method for getting information

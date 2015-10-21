@@ -10,8 +10,9 @@
 require 'fileutils'
 require 'rainbow/ext/string'
 
-# Module for creating the motivational letter
+# main module
 module LatexCurriculumVitae
+  # Module for creating the motivational letter
   module Letter
     # Method for creating a pdf from tex
     def self.create_letter(tmpdir, name_of_letter)

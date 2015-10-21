@@ -17,20 +17,17 @@ module LatexCurriculumVitae
   module Email
     # Method for creating the email
     # rubocop:disable Metrics/MethodLength
-    # rubocop:disable Metrics/AbcSize
     # @param [String] contact Name of the contact
     # @param [String] emailaddress Email address of the contact
     # @param [String] jobtitle Title of the target job
     # @param [String] contact_sex Can be male, female or unknown
     # @param [String] proactive Can be yes or no
     def self.create_email(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf)
-      own_name, own_email_address, own_smtp, own_username, own_password = LatexCurriculumVitae::GetConfig.get_smtp
+      own_email_address, own_smtp, own_username, own_password = LatexCurriculumVitae::GetConfig.get_smtp
       introduction = LatexCurriculumVitae::Email.introduction(contact, contact_sex)
       subject = LatexCurriculumVitae::Email.subject(proactive, jobtitle)
       body = LatexCurriculumVitae::Email.get_body(introduction, letter)
       home = Dir.home
-      prefix = "#{home}/.rvm/rubies/default"
-      datadir = "#{prefix}/share"
       filename = "#{home}/.latex_curriculum_vitae/#{name_of_pdf}.pdf"
 
       Pony.mail({
@@ -65,6 +62,7 @@ module LatexCurriculumVitae
           introduction = "Sehr geehrte Frau #{contact},"
         end
       end
+      return introduction
     end
 
     # Method for building the subject
@@ -76,6 +74,7 @@ module LatexCurriculumVitae
       else
         subject = "Bewerbung um einen Arbeitsplatz als #{jobtitle}"
       end
+      return subject
     end
 
     # Method for building the email body
@@ -108,6 +107,7 @@ gerne möchte ich mich bei Ihnen für die obige Stelle bewerben.
 Meine Bewerbungsunterlagen samt des offiziellen Anschreibens sind der Mail als Anhang beigefügt.
 EOF
       end
+      return body
     end
 
     # Method for checking the result

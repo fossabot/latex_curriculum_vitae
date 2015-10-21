@@ -17,7 +17,7 @@ module LatexCurriculumVitae
     # @param [String] name_of_pdf Name of the resulting PDF file
     # @param [String] name_of_resume Name of the resume file
     # @param [String] tmpdir contains the path to the
-    def self.create_cv(name_of_pdf, name_of_resume, tmpdir)
+    def self.create_cv(name_of_resume, tmpdir)
       puts 'First run of xelatex'.colour(:yellow)
       system("xelatex #{name_of_resume}.tex")
       puts 'First run of xelatex passed'.colour(:yellow)
@@ -48,7 +48,7 @@ module LatexCurriculumVitae
       end
     end
 
-    # Schrink and get final compiled pdf
+    # Shrink and get final compiled pdf
     # @param [String] name_of_pdf Name of the resulting PDF file
     def self.shrink_cv(name_of_pdf)
       puts 'Shrinking PDF'.colour(:yellow)

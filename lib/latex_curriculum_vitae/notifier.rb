@@ -11,7 +11,9 @@
 # Module for notify the user
 require 'notifier'
 
+# main module
 module LatexCurriculumVitae
+  # Method for notifying the user
   module Notify
     def self.run(jobtitle)
       home = Dir.home

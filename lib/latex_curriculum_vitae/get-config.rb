@@ -9,8 +9,9 @@
 # Dependencies
 require 'parseconfig'
 
-# Module for creating the GetConfig
+# main module
 module LatexCurriculumVitae
+  # Module for creating the GetConfig
   module GetConfig
     # This method gets the configs from the config file
     # @return [Array] name_of_pdf, name_of_cover, name_of_resume, name_of_letter
@@ -29,13 +30,13 @@ module LatexCurriculumVitae
     def self.get_smtp
       home = Dir.home
       config = ParseConfig.new("#{home}/.latex_curriculum_vitae/latex_curriculum_vitae.cfg")
-      own_name = config['own_name']
+      #own_name = config['own_name']
       own_email_address = config['own_email_address']
       own_smtp = config['own_smtp']
       own_username = config['own_username']
       own_password = config['own_password']
 
-      [own_name, own_email_address, own_smtp, own_username, own_password]
+      [own_email_address, own_smtp, own_username, own_password]
     end
 
   end

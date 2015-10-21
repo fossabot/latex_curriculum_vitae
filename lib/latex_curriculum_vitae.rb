@@ -7,7 +7,6 @@
 # License: MIT
 
 # rubocop:disable Metrics/LineLength
-# rubocop:disable Style/LeadingCommentSpace
 
 # Dependencies
 require 'fileutils'
@@ -32,7 +31,6 @@ module LatexCurriculumVitae
   datadir = "#{prefix}/share"
   entitytex = "#{home}/.latex_curriculum_vitae/entity.tex"
   csvout = "#{home}/.latex_curriculum_vitae/job-applications.csv"
-  sharedir ="#{datadir}/latex_curriculum_vitae/Motivational_Letter"
   tmpdir = "#{datadir}/latex_curriculum_vitae/tmp"
   name_of_pdf, name_of_cover, name_of_resume, name_of_letter = LatexCurriculumVitae::GetConfig.get
 
@@ -54,7 +52,7 @@ module LatexCurriculumVitae
 
   # Create the Curriculum Vitae
   FileUtils.cd("#{datadir}/latex_curriculum_vitae/Resume") do
-    LatexCurriculumVitae::CV.create_cv(name_of_pdf, name_of_resume, tmpdir)
+    LatexCurriculumVitae::CV.create_cv(name_of_resume, tmpdir)
   end
 
   # Final create and shrinking
@@ -67,9 +65,10 @@ module LatexCurriculumVitae
   # Start evince to check the output file
   system("evince #{home}/.latex_curriculum_vitae/#{name_of_pdf}.pdf")
 
+  # Ask if result is ok
   LatexCurriculumVitae::Email.resultok(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf)
 
-  # # Add entry to Outfile
+  # Add entry to Outfile
   CVOutfile.add_to_outfile(jobtitle, company, contact, emailaddress, csvout)
 
   # Cleanup tmpdir

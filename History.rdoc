@@ -1,4 +1,10 @@
-=== 1.1.0 / UNRELEASED
+=== 1.1.1 / 2015-10-21
+
+* 1 minor enhancement
+
+  * cleanup code
+
+=== 1.1.0 / 2015-10-20
 
 * 3 minor enhancements
 

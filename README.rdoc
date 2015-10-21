@@ -5,11 +5,16 @@ code  :: https://gitlab.com/saigkill/latex_curriculum_vitae
 docs  :: https://gitlab.com/saigkill/latex_curriculum_vitae/wikis/home
 bugs  :: https://gitlab.com/saigkill/latex_curriculum_vitae/issues
 openhub statistics :: https://www.openhub.net/p/latex_curriculum_vitae
+license :: {<img src="http://img.shields.io/:license-mit-blue.svg" />}[https://gitlab.com/saigkill/latex_curriculum_vitae/blob/master/LICENSE.rdoc]
 last public version  :: {<img src="https://badge.fury.io/rb/latex_curriculum_vitae.png" alt="Build Status" />}[http://rubygems.org/gems/latex_curriculum_vitae]
+last rpm :: {<img src="https://img.shields.io/bintray/v/saigkill/rpm/latex_curriculum_vitae.svg" />}[https://bintray.com/saigkill/rpm/latex_curriculum_vitae]
+last deb :: {<img src="https://img.shields.io/bintray/v/saigkill/deb/latex_curriculum_vitae.svg" />}[https://bintray.com/saigkill/deb/latex_curriculum_vitae]
+continuous integration :: {<img src="https://scrutinizer-ci.com/g/saigkill/latex_curriculum_vitae/badges/build.png?b=master" />}[https://scrutinizer-ci.com/g/saigkill/latex_curriculum_vitae]
 downloads latest :: {<img src="https://img.shields.io/gem/dtv/latex_curriculum_vitae.svg" alt="Build Status" />}[http://rubygems.org/gems/latex_curriculum_vitae]
 downloads all :: {<img src="https://img.shields.io/gem/dt/latex_curriculum_vitae.svg" alt="Build Status" />}[http://rubygems.org/gems/latex_curriculum_vitae]
 code quality :: {<img src="https://scrutinizer-ci.com/g/saigkill/latex_curriculum_vitae/badges/quality-score.png?b=master" />}[https://scrutinizer-ci.com/g/saigkill/latex_curriculum_vitae/]
 code quality :: {<img src="https://codeclimate.com/github/saigkill/latex_curriculum_vitae/badges/gpa.svg" alt="Code Quality" />}[https://codeclimate.com/github/saigkill/latex_curriculum_vitae]
+code quailty :: {<img src="https://api.codacy.com/project/badge/49dcadaa0e154641a30f57e9b302a407" alt="Code Quality" />}[https://www.codacy.com/app/saigkill/latex_curriculum_vitae]
 still maintained :: {<img src="http://stillmaintained.com/saigkill/latex_curriculum_vitae.png" alt="Maintained?" />}[http://stillmaintained.com/saigkill/latex_curriculum_vitae]
 dependency check :: {<img src="https://gemnasium.com/5bd57732d697829a74317f4598bfbbb3.svg" alt="Build Status" />}[https://gemnasium.com/3e9122cbac2ccd5399d9944938963199]
 documentation quality :: {<img src="http://inch-ci.org/github/saigkill/latex_curriculum_vitae.svg?branch=master" alt="Documentation Quality" />}[http://inch-ci.org/github/saigkill/latex_curriculum_vitae]
@@ -26,7 +31,7 @@ in your home directory. Also it generates an email with a standard content, whic
 == FEATURES/PROBLEMS:
 
 * Ruby based LaTEX publisher for job applications
-* Currently it just uses thunderbird for creating mails. If no other wishes another solution it will be hardcoded.
+* It use pony for sending the email directly
 
 == SYNOPSIS:
 
@@ -37,6 +42,9 @@ in your home directory. Also it generates an email with a standard content, whic
 The resulting PDF and the CSV file are placed in /home/You/.latex_curriculum_vitae.
 
 Read the documentation at: https://gitlab.com/saigkill/latex_curriculum_vitae/wikis/home
+
+This Gem was programmed and tested for Linux systems. If anyone would like to make the methods also fit for other OS,
+i'm happy about Pull requests.
 
 == REQUIREMENTS:
 

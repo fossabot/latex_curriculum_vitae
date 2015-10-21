@@ -19,8 +19,8 @@ Hoe.plugin :doofus
 Hoe.plugin :email
 Hoe.plugin :gemspec
 # Hoe.plugin :gem_prelude_sucks
-#Hoe.plugins.delete :git
-Hoe.plugin :git
+Hoe.plugins.delete :git
+#Hoe.plugin :git
 Hoe.plugin :history
 Hoe.plugin :highline
 #Hoe.plugin :inline
@@ -116,11 +116,14 @@ task :setup do
   FileUtils.touch(desktopfile)
   File.write "#{desktopfile}", <<EOF
 [Desktop Entry]
-Version=1.0
+Version=2.3
 Type=Application
-Name=Job-Application Creator
+Name=latex_curriculum_vitae
+GenericName=latex_curriculum_vitae
+Comment=Job-Application Creator
 Exec=latexcv.rb
 Icon="#{datadir}/latex_curriculum_vitae/Pictures/arbeitsagentur.png"
+Categories=Utility;Application;
 EOF
   puts 'Setup is now finished. See the documentation to find out more about this gem.'
 

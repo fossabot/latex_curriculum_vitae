@@ -9,12 +9,12 @@
 # Dependencies
 require 'csv'
 
-# Module for creating and appending the outfile
+# main module
 module LatexCurriculumVitae
+  # Module for creating and appending the outfile
   module CVOutfile
     # Method to adding the data into the csv file
     def self.add_to_outfile(jobtitle, company, contact, emailaddress, csvout)
-      home = Dir.home
       time = Time.new
       date = time.strftime('%Y-%m-%d')
       contact.gsub!('%20', ' ')
