@@ -66,3 +66,4 @@ lib/latex_curriculum_vitae/glade/latexcv.glade
 lib/latex_curriculum_vitae/letter.rb
 lib/latex_curriculum_vitae/notifier.rb
 lib/latex_curriculum_vitae/outfile.rb
+recipes/recipe.rb

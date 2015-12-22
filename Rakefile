@@ -19,8 +19,8 @@ Hoe.plugin :doofus
 Hoe.plugin :email
 Hoe.plugin :gemspec
 # Hoe.plugin :gem_prelude_sucks
-Hoe.plugins.delete :git
-#Hoe.plugin :git
+#Hoe.plugins.delete :git
+Hoe.plugin :git
 Hoe.plugin :history
 Hoe.plugin :highline
 #Hoe.plugin :inline
@@ -66,13 +66,13 @@ Hoe.spec 'latex_curriculum_vitae' do
   extra_dev_deps << ['hoe-rubygems', '~> 1.0']
   extra_dev_deps << ['hoe-manns', '~> 1.4.2']
   extra_dev_deps << ['hoe-reek', '~> 1.0']
-  extra_dev_deps << ['hoe-rubocop', '~> 0.1']
+  extra_dev_deps << ['hoe-rubocop', '~> 1.0']
   extra_dev_deps << ['hoe-travis', '~> 1.2']
   extra_dev_deps << ['hoe-version', '~> 1.2']
   extra_dev_deps << ['hoe-yard', '~> 0.1']
   extra_dev_deps << ['hoe-seattlerb', '~> 1.3']
   extra_dev_deps << ['hoe-version', '~> 1.2']
-  extra_dev_deps << ['hoe-packaging', '~> 1.1.0']
+  extra_dev_deps << ['hoe-packaging', '~> 1.1']
   extra_dev_deps << ['hoe', '~> 3.14']
   extra_dev_deps << ['ZenTest', '~> 4.11']
   extra_dev_deps << ['rake', '~> 10.0']
@@ -84,7 +84,7 @@ Hoe.spec 'latex_curriculum_vitae' do
   extra_dev_deps << ['rainbow', '~> 2.0']
   extra_dev_deps << ['bundler', '~> 1.10']
   extra_dev_deps << ['parseconfig', '~> 1.0']
-  extra_dev_deps << ['minitest', '~> 5.8.1']
+  extra_dev_deps << ['minitest', '~> 5.8']
   extra_dev_deps << ['rspec', '~> 3.3']
   extra_dev_deps << ['rubocop', '~> 0.34']
   extra_dev_deps << ['simplecov', '~> 0.10']

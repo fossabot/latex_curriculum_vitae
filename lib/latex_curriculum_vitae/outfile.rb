@@ -29,7 +29,7 @@ date,company,job,contact,email,status
 EOF
       end
       CSV.open("#{csvout}", 'a+') do |csv|
-        #datum,firma,stelle,kontakt,email,status
+        # datum,firma,stelle,kontakt,email,status
         csv << ["#{date}", "#{company}", "#{jobtitle}", "#{contact}", "#{emailaddress}", 'Open']
       end
     end

@@ -17,7 +17,7 @@ module LatexCurriculumVitae
     # rubocop:disable Metrics/LineLength
     # Method for getting information
     # @param [String] entitytex Path to the entity.tex
-    # @return [Array] contact, emailaddress, jobtitle, contact_sex, company, proactive:q:q
+    # @return [Array] contact, emailaddress, jobtitle, contact_sex, company, proactive
     def self.get_information(entitytex)
       resume = `yad --title="Create application" --center --on-top --form \
 --item-separator=, --separator="|" \
@@ -61,33 +61,12 @@ module LatexCurriculumVitae
     # @param [String] street Companies street
     # @param [String] city City of the company
     # @param [String] contact Name of the contact
+    # @param [String] contact_sex Sex of the contact
     # @param [String] entitytex Path to the entity.tex
     def self.create_file(jobtitle, company, street, city, contact, entitytex, contact_sex, proactive)
-      if contact == ''
-        introduction = 'Sehr geehrte Damen und Herren,'
-      else
-        if contact_sex == 'male'
-          introduction = "Sehr geehrter Herr #{contact},"
-        else
-          introduction = "Sehr geehrte Frau #{contact},"
-        end
-      end
-      if proactive == 'yes'
-        subject = "Initiativbewerbung um einen Arbeitsplatz als #{jobtitle}"
-        intro = 'Gerne möchte ich mich bei Ihnen um die obige oder eine vergleichbare Stelle bewerben.'
-      else
-        subject = "Bewerbung um einen Arbeitsplatz als #{jobtitle}"
-        intro = 'Wie ich Ihrer Anzeige entnommen habe, suchen Sie jemanden für die obige Position, um die ich mich bewerbe.'
-      end
-
-      addressstring = "#{company} \\\\"
-      if contact == ''
-        addressstring << 'z.Hd. Personalabteilung \\\\'
-      else
-        addressstring << "z.Hd. #{contact} \\\\"
-      end
-      addressstring << "#{street} \\\\" if street != ''
-      addressstring << "#{city}" if city != ''
+      introduction = LatexCurriculumVitae::Entityfile.get_introduction(contact, contact_sex)
+      subject, intro = LatexCurriculumVitae::Entityfile.get_subject_intro(proactive, jobtitle)
+      addressstring = LatexCurriculumVitae::Entityfile.get_addressstring(company, contact, street, city)
 
       FileUtils.rm(entitytex) if File.exist?(entitytex)
       FileUtils.touch(entitytex)
@@ -102,6 +81,56 @@ module LatexCurriculumVitae
 \\def\\addressstring{#{addressstring}}
 \\def\\intro{#{intro}}
 EOF
+    end
+
+    # Method for preparing the introduction variable
+    # @param [String] contact Name of the contact
+    # @param [String] contact_sex Sex of the contact
+    # @return [String] introduction
+    def self.get_introduction(contact, contact_sex)
+      if contact == ''
+        introduction = 'Sehr geehrte Damen und Herren,'
+      else
+        if contact_sex == 'male'
+          introduction = "Sehr geehrter Herr #{contact},"
+        else
+          introduction = "Sehr geehrte Frau #{contact},"
+        end
+      end
+      return introduction
+    end
+
+    # Method for preparing the subject and intro variables
+    # @param [String] proactive Can be yes or no
+    # @param [String] jobtitle Title of the target job
+    # @return [Array] subject intro
+    def self.get_subject_intro(proactive, jobtitle)
+      if proactive == 'yes'
+        subject = "Initiativbewerbung um einen Arbeitsplatz als #{jobtitle}"
+        intro = 'Gerne möchte ich mich bei Ihnen um die obige oder eine vergleichbare Stelle bewerben.'
+      else
+        subject = "Bewerbung um einen Arbeitsplatz als #{jobtitle}"
+        intro = 'Wie ich Ihrer Anzeige entnommen habe, suchen Sie jemanden für die obige Position, um die ich mich bewerbe.'
+      end
+      [subject, intro]
+    end
+
+    # Method for preparing the addressstring
+    # @param [String] company Comanys name
+    # @param [String] street Companies street
+    # @param [String] city City of the company
+    # @param [String] contact Name of the contact
+    # @return [String] addressstring
+    def self.get_addressstring(company, contact, street, city)
+      addressstring = "#{company} \\\\"
+      if contact == ''
+        addressstring << 'z.Hd. Personalabteilung \\\\'
+      else
+        addressstring << "z.Hd. #{contact} \\\\"
+      end
+      addressstring << "#{street} \\\\" if street != ''
+      addressstring << "#{city}" if city != ''
+      return addressstring
     end
   end
 end
