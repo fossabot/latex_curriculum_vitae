@@ -19,25 +19,25 @@ module LatexCurriculumVitae
     # @param [String] entitytex Path to the entity.tex
     # @return [Array] contact, emailaddress, jobtitle, contact_sex, company, proactive
     def self.get_information(entitytex)
-      resume = `yad --title="Create application" --center --on-top --form \
---item-separator=, --separator="|" \
+      resume = `yad --title="Create application" --center --on-top --form --item-separator=, --separator="|" \
 --field="What is the jobtitle of your application? Escape amp with backslash:TEXT" \
 --field="Is it a proactive application?:CBE" \
---field="What is the companies name? Escape amp with backslash:TEXT" \
 --field="Create a motivational letter?:CBE" \
+--field="What is the companies name? Escape amp with backslash:TEXT" \
 --field="Give me the street of the company:TEXT" \
 --field="What is the zip-code (german PLZ) and city from the company:TEXT" \
 --field="Is your contact male or female? Leave blank if unknown contact:CBE" \
 --field="If you have a contact so give me the name of him/her. Leave blank if unknown contact:TEXT" \
 --field="Tell me the email address for sending the application:TEXT" \
---button="Go!" "" "yes,no" "" "yes,no" "" "" "male,female,unknown" "" ""`
-      jobtitle, proactive, company, letter, street, city, contact_sex, contact, emailaddress = resume.chomp.split('|')
-      [jobtitle, proactive, company, letter, street, city, contact_sex, contact, emailaddress].each do |s|
+--field="What kind of target:CBE" \
+--button="Go!" "" "no,yes" "yes,no" "" "" "" "male,female,unknown" "" "" "doku,support,kaufm"`
+      jobtitle, proactive, letter, company, street, city, contact_sex, contact, emailaddress, target = resume.chomp.split('|')
+      [jobtitle, proactive, letter, company, street, city, contact_sex, contact, emailaddress, target].each do |s|
         puts s
       end
 
-      create_file(jobtitle, company, street, city, contact, entitytex, contact_sex, proactive)
-      [contact, emailaddress, jobtitle, contact_sex, company, letter, proactive]
+      create_file(jobtitle, company, street, city, contact, entitytex, contact_sex, proactive, target)
+      [contact, emailaddress, jobtitle, contact_sex, company, letter, proactive, target]
     end
 
     # # Method for getting information through a real gui
@@ -63,10 +63,11 @@ module LatexCurriculumVitae
     # @param [String] contact Name of the contact
     # @param [String] contact_sex Sex of the contact
     # @param [String] entitytex Path to the entity.tex
-    def self.create_file(jobtitle, company, street, city, contact, entitytex, contact_sex, proactive)
+    def self.create_file(jobtitle, company, street, city, contact, entitytex, contact_sex, proactive, target)
       introduction = LatexCurriculumVitae::Entityfile.get_introduction(contact, contact_sex)
       subject, intro = LatexCurriculumVitae::Entityfile.get_subject_intro(proactive, jobtitle)
       addressstring = LatexCurriculumVitae::Entityfile.get_addressstring(company, contact, street, city)
+      targetblock = LatexCurriculumVitae::Entityfile.get_target_block(target)
 
       FileUtils.rm(entitytex) if File.exist?(entitytex)
       FileUtils.touch(entitytex)
@@ -80,6 +81,7 @@ module LatexCurriculumVitae
 \\def\\subject{#{subject}}
 \\def\\addressstring{#{addressstring}}
 \\def\\intro{#{intro}}
+\\def\\targetblock{#{targetblock}}
 EOF
     end
 
@@ -131,6 +133,17 @@ EOF
       addressstring << "#{street} \\\\" if street != ''
       addressstring << "#{city}" if city != ''
       return addressstring
+    end
+
+    # Method for getting the target code block
+    def self.get_target_block(target)
+      if target == 'doku'
+        targetblock = 'Neben der Beschreibungssprache DocBook samt XSL-FO lernte ich die Satzsprache \\LaTeX. \\\\ Selbstständig erarbeitete ich mir Kenntnisse in der Programmiersprache Ruby, sowie der Web-App-Entwicklung (Technische Hochschule Mittelrhein).\\\\'
+      elsif target == 'support'
+        targetblock = 'Im IT-Support hatte ich bereits erste Führungserfahrung als Dispatcher \\&Controller. Ticketbearbeitung, -zuteilung und Nachkontrolle gehörten jeweils dazu. Selbstständig erarbeitete ich mir Kenntnisse in der Programmiersprache Ruby, sowie der Web-App-Entwicklung (Technische Hochschule Mittelrhein).\\\\'
+      else
+        targetblock = 'Im kaufmännischen Bereich habe ich bereits vielfältige Erfahrungen im Einkauf, Verkauf, Öffentlichkeitsarbeit und Vertrieb gemacht und bin stets bereit neues zu lernen.\\\\'
+      end
     end
   end
 end

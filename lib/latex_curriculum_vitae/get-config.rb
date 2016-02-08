@@ -22,7 +22,8 @@ module LatexCurriculumVitae
       name_of_cover = config['name_of_cover']
       name_of_resume = config['name_of_resume']
       name_of_letter = config['name_of_letter']
-      [name_of_pdf, name_of_cover, name_of_resume, name_of_letter]
+      pdf_reader = config['pdf_reader']
+      [name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader]
     end
 
     # Method for getting smtp configuration

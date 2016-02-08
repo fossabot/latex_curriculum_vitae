@@ -1,3 +1,17 @@
+=== 1.1.3 / 2016-02-08
+
+* 1 minor enhancement
+
+  * * updated dependencies from gemnasium
+
+=== 1.1.2 / 2016-02-03
+
+* 3 minor enhancement
+
+  * added three targetblocks (support,doku,kaufm) for three kind of jobs.
+  * now pdf reader can configured in the config
+  * added signature to the outgoing mail
+
 === 1.1.1 / 2015-10-21
 
 * 1 minor enhancement

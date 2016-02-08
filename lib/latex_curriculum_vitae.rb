@@ -23,7 +23,7 @@ require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vit
 # Main Class LatexCurriculumVitae
 module LatexCurriculumVitae
   # The version information
-  VERSION = '1.1.1'
+  VERSION = '1.1.3'
 
   # Variables
   home = Dir.home
@@ -32,7 +32,7 @@ module LatexCurriculumVitae
   entitytex = "#{home}/.latex_curriculum_vitae/entity.tex"
   csvout = "#{home}/.latex_curriculum_vitae/job-applications.csv"
   tmpdir = "#{datadir}/latex_curriculum_vitae/tmp"
-  name_of_pdf, name_of_cover, name_of_resume, name_of_letter = LatexCurriculumVitae::GetConfig.get
+  name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader = LatexCurriculumVitae::GetConfig.get
 
   # Get the needed Information for creating the application
   contact, emailaddress, jobtitle, contact_sex, company, letter, proactive =
@@ -63,7 +63,7 @@ module LatexCurriculumVitae
   end
 
   # Start evince to check the output file
-  system("evince #{home}/.latex_curriculum_vitae/#{name_of_pdf}.pdf")
+  system("#{pdf_reader} #{home}/.latex_curriculum_vitae/#{name_of_pdf}.pdf")
 
   # Ask if result is ok
   LatexCurriculumVitae::Email.resultok(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf)

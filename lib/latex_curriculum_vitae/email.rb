@@ -99,12 +99,43 @@ Persönlich runde ich das Profil mit den Eigenschaften: Teamfähigkeit, Kommunik
 stärke und Leistungsbereitschaft ab.
 Ich bin mir sicher, die von Ihnen gewünschten Kenntnisse und Fähigkeiten mitzubringen,
 und würde mich sehr über ein Vorstellungsgespräch freuen.
+
+--
+Yours sincerly
+Sascha Manns
+- Autor Geschäftsprozess & Anwendungsdokumentation -
+
+Maifeldstraße 10
+56727 Mayen
+Phone: +49-2651-7469663 (home)
+Phone: +49-1573-9242730 (mobile)
+Email: Sascha.Manns@directbox.com
+Web: http://saigkill.github.io
+Jabber: saigkill@jabber.org
+GPG: C088DDD6 @ hkp://keys.gnupg.net
+X504: 3CC04604 @ http://www.cacert.de
 EOF
       else
         body =<<EOF
 #{introduction}
 gerne möchte ich mich bei Ihnen für die obige Stelle bewerben.
 Meine Bewerbungsunterlagen samt des offiziellen Anschreibens sind der Mail als Anhang beigefügt.
+
+--
+Yours sincerly
+Sascha Manns
+- Autor Geschäftsprozess & Anwendungsdokumentation -
+
+Maifeldstraße 10
+56727 Mayen
+Phone: +49-2651-7469663 (home)
+Phone: +49-1573-9242730 (mobile)
+Email: Sascha.Manns@directbox.com
+Web: http://saigkill.github.io
+Jabber: saigkill@jabber.org
+GPG: C088DDD6 @ hkp://keys.gnupg.net
+X504: 3CC04604 @ http://www.cacert.de
+
 EOF
       end
       return body
