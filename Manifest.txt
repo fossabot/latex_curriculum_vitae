@@ -42,7 +42,11 @@ data/latex_curriculum_vitae/Appendix/Study/zwzils.jpg
 data/latex_curriculum_vitae/Appendix/Study/zwzils.pdf
 data/latex_curriculum_vitae/Cover/Cover.tex
 data/latex_curriculum_vitae/Motivational_Letter/bwanschreiben.tex
+data/latex_curriculum_vitae/Pictures/.directory
 data/latex_curriculum_vitae/Pictures/Interessen.png
+data/latex_curriculum_vitae/Pictures/QRickit.gif
+data/latex_curriculum_vitae/Pictures/QRickit.png
+data/latex_curriculum_vitae/Pictures/Sascha.jpg
 data/latex_curriculum_vitae/Pictures/Sascha1p.jpg
 data/latex_curriculum_vitae/Pictures/Skills1.png
 data/latex_curriculum_vitae/Pictures/Skills2.png
@@ -50,6 +54,7 @@ data/latex_curriculum_vitae/Pictures/aboutme.png
 data/latex_curriculum_vitae/Pictures/arbeitsagentur.png
 data/latex_curriculum_vitae/Pictures/background.jpg
 data/latex_curriculum_vitae/Pictures/background.png
+data/latex_curriculum_vitae/Pictures/binarybackground.png
 data/latex_curriculum_vitae/Pictures/coderbits.png
 data/latex_curriculum_vitae/Pictures/email.png
 data/latex_curriculum_vitae/Pictures/facebook.png

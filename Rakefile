@@ -57,7 +57,7 @@ Hoe.spec 'latex_curriculum_vitae' do
   extra_dev_deps << ['hoe-doofus', '~> 1.0']
   extra_dev_deps << ['hoe-git', '~> 1.6']
   extra_dev_deps << ['hoe-rubygems', '~> 1.0']
-  extra_dev_deps << ['hoe-manns', '~> 1.4.2']
+  extra_dev_deps << ['hoe-manns', '~> 1.5']
   extra_dev_deps << ['hoe-reek', '~> 1.1']
   extra_dev_deps << ['hoe-rubocop', '~> 1.0']
   extra_dev_deps << ['hoe-version', '~> 1.2']
