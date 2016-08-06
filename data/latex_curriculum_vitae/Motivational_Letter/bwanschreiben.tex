@@ -1,12 +1,12 @@
 %---------------------------------------------------------------------------
 \documentclass%%
 %---------------------------------------------------------------------------
-  [fontsize=11pt,%%          Schriftgroesse
+  [fontsize=10pt,%%          Schriftgroesse
 %---------------------------------------------------------------------------
 % Satzspiegel
    paper=a4,%%               Papierformat
-   %enlargefirstpage=on,%%    Erste Seite anders
-   %pagenumber=headright,%%   Seitenzahl oben mittig  
+   enlargefirstpage=on,%%    Erste Seite anders
+   %pagenumber=headright,%%   Seitenzahl oben mittig
 %---------------------------------------------------------------------------
 % Layout
    headsepline=off,%%         Linie unter der Seitenzahl
@@ -33,13 +33,13 @@
    draft=off%%                Entwurfsmodus
 ]{scrlttr2}
 %---------------------------------------------------------------------------
-\usepackage[english, ngerman]{babel}  
+\usepackage[english, ngerman]{babel}
 \usepackage{url}
 \usepackage{lmodern}
 \usepackage{graphicx}
-\usepackage[utf8]{inputenc} 
+\usepackage[utf8]{inputenc}
 % symbols: (cell)phone, email
-\RequirePackage{marvosym} 
+\RequirePackage{marvosym}
 % for gray color in header
 \RequirePackage{color}
 \usepackage[T1]{fontenc}
@@ -47,6 +47,7 @@
 %---------------------------------------------------------------------------
 % Schriften werden hier definiert
 \renewcommand*\familydefault{\sfdefault} % Latin Modern Sans
+%\setmainfont[Mapping=tex-text]{KoblenzPro}
 \setkomafont{fromname}{\sffamily\color{myblue}\LARGE}
 %\setkomafont{pagenumber}{\sffamily}
 \setkomafont{subject}{\mdseries}
@@ -62,7 +63,7 @@
 \input{$HOME/.latex_curriculum_vitae/personal_data.tex}
 %
 % -------------------------------------------------
-% Firmendaten 
+% Firmendaten
 % -------------------------------------------------
 \input{$HOME/.latex_curriculum_vitae/entity.tex}
 %---------------------------------------------------------------------------
@@ -96,19 +97,19 @@
 % Absender Daten +49\,(0)\,2651\,40\,14\,045
 \setkomavar{fromname}{\firstname\ \familyname}
 \setkomavar{fromaddress}{\mystreet\\\mycity}
-\setkomavar{fromphone}[\Mobilefone~]{\myphone}
+\setkomavar{fromphone}[\Telefon~]{\myphone}
 \setkomavar{fromfax}[\FAX~]{+49\,(0)\,123\,456\,789\,1}
 \setkomavar{fromemail}[\Letter~]{\myemail}
 \setkomavar{fromurl}[]{\myblog}
 \setkomafont{fromaddress}{\small\rmfamily\mdseries\slshape\color{myblue}}
 
 \setkomavar{backaddressseparator}{ - }
-\setkomavar{signature}{\\[-3\baselineskip]%
+\setkomavar{signature}{\\[-5\baselineskip]%
 %\rule{10em}{2\baselineskip}\\
 \includegraphics[scale=0.5]{../Pictures/signatur.png}\\
 SASCHA MANNS}
 %\setkomavar{backaddress}{Tim Metzner, Felderhof 112, 40880 Ratingen} % wenn erwünscht kann hier eine andere Backaddress eingetragen werden
-%\setkomavar{signature}{SASCHA MANNS} 
+%\setkomavar{signature}{SASCHA MANNS}
 % signature same indention level as rest
 %\renewcommand*{\raggedsignature}{\raggedright}
 %\setkomavar{location}{\raggedleft
@@ -127,7 +128,7 @@ SASCHA MANNS}
 %---------------------------------------------------------------------------
 \firstfoot{\footnotesize%
 \rule[3pt]{\textwidth}{.4pt} \\
-\begin{tabular}[t]{l@{}}% 
+\begin{tabular}[t]{l@{}}%
 \usekomavar{fromname}\\
 \usekomavar{fromaddress}\\
 \end{tabular}%
@@ -142,7 +143,7 @@ SASCHA MANNS}
 \usekomavar{frombank}
 \end{tabular}%
 }%
-}% 
+}%
 %---------------------------------------------------------------------------
 % Bankverbindung
 %\setkomavar{frombank}{Kto. 198\ 242\ 620\\
@@ -169,17 +170,18 @@ SASCHA MANNS}
 
 %---------------------------------------------------------------------------
 % Der Betreff des Briefes
-\setkomavar{subject}{\bf{\subject}
-}
+\setkomavar{subject}{\bf{\subject}}
 %---------------------------------------------------------------------------
 %\opening{Sehr geehrter \Ansprechpartner,}
-\opening{\intro}
-Mit meinen vielfältigen Erfahrungen als Kaufmann, Community Manager, Buchautor und Customer Supporter (Level 1\&2), sowie Autor Geschäftsprozess- \& Anwendungsdokumentation könnte ich Ihr neuer Mitarbeiter sein. \\
-Seit dieser Zeit habe ich an teamgesteuerten Projekten für Kunden mitgearbeitet, wobei mein Schwerpunkt im Bereich Kundenpflege via Telefon und Email, Dispatching und Teamcontrolling lag. \\
-In für mich fremde Arbeitsgebiete werde ich mich rasch einarbeiten.\\
-Meine Kenntnisse in IT und Organisationsfähigkeiten kann ich für Ihr Unternehmen im Bereich des Managements gewinnbringend umsetzen.\\
-Persönlich runde ich das Profil mit den Eigenschaften: Teamfähigkeit, Kommunikationsstärke und Leistungsbereitschaft ab.\\
-Ich bin mir sicher, die von Ihnen gewünschten Kenntnisse und Fähigkeiten mitzubringen, und würde mich sehr über ein Vorstellungsgespräch freuen.
+\opening{\introduction}
+\intro{}
+Mit meinen vielfältigen Erfahrungen als Kaufmann, Community Manager, Buchautor und Customer Supporter (Level 1\&2), sowie als Autor Geschäftsprozess- \& Anwendungsdokumentation könnte ich Ihr neuer Mitarbeiter sein.\\
+Im Rahmen des Supports und Qualitätsmanagements betreute ich im den letzten Jahren Kunden via Email und Telefon und schrieb Dokumentationen im Bereich des IT-Supports und des Bankwesens.\\
+Meine fundierten Kenntnisse in den Bereichen IT und Organisation kann ich für Ihr Unternehmen in verschiedenen Bereichen gewinnbringend umsetzen.\\
+\targetblock{}
+Persönlich runde ich das Profil mit den Eigenschaften: Teamfähigkeit, Kommunikationsstärke, Empathie und Leistungsbereitschaft ab.\\
+Ich bin mir sicher, die von Ihnen gewünschten Kenntnisse und Fähigkeiten mitzubringen und würde mich sehr über ein Vorstellungsgespräch freuen.
+
 \closing{Mit freundlichen Grüßen}
 
 %---------------------------------------------------------------------------

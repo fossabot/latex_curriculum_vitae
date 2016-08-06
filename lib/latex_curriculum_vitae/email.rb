@@ -3,7 +3,7 @@
 # @author Sascha Manns
 # @abstract CVEmail Module for latex_curriculum_vitae
 #
-# Copyright (C) 2015  Sascha Manns <samannsml@directbox.com>
+# Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
 # License: MIT
 
 # Dependencies
@@ -104,10 +104,11 @@ und würde mich sehr über ein Vorstellungsgespräch freuen.
 Yours sincerly
 Sascha Manns
 - Autor Geschäftsprozess & Anwendungsdokumentation -
+- Schriftsteller -
 
 Maifeldstraße 10
 56727 Mayen
-Phone: +49-2651-7469663 (home)
+Phone: +49-2651-4014045 (home)
 Phone: +49-1573-9242730 (mobile)
 Email: Sascha.Manns@directbox.com
 Web: http://saigkill.github.io
@@ -125,10 +126,11 @@ Meine Bewerbungsunterlagen samt des offiziellen Anschreibens sind der Mail als A
 Yours sincerly
 Sascha Manns
 - Autor Geschäftsprozess & Anwendungsdokumentation -
+- Schriftsteller -
 
 Maifeldstraße 10
 56727 Mayen
-Phone: +49-2651-7469663 (home)
+Phone: +49-2651-4014045 (home)
 Phone: +49-1573-9242730 (mobile)
 Email: Sascha.Manns@directbox.com
 Web: http://saigkill.github.io

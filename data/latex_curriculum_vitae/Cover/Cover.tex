@@ -36,7 +36,7 @@
 \input{$HOME/.latex_curriculum_vitae/personal_data.tex}
 %
 % -------------------------------------------------
-% Firmendaten 
+% Firmendaten
 % -------------------------------------------------
 \input{$HOME/.latex_curriculum_vitae/entity.tex}
 %
@@ -60,7 +60,7 @@
 \definecolor{hellgrau}{rgb}{0.45,0.45,0.45}
 \definecolor{schwarz}{rgb}{0,0,0}
 \definecolor{gray}{rgb}{0.77,0.77,0.77}
-\definecolor{white}{rgb}{0.255,0.255,0.255}
+%\definecolor{white}{rgb}{255,255,255} %255,255,255
 \newcommand*{\firstnamefont}{\fontsize{25}{27}\sffamily\mdseries\upshape}
 \newcommand*{\familynamefont}{\firstnamefont}
 \newcommand*{\titel}{\fontsize{25}{27}\mdseries\upshape}
@@ -74,7 +74,7 @@
 % -------------------------------------------------
 \begin{textblock}{10}(3,5)
 \color{schwarz}{
- \bfseries \begin{Large}\titel{Bewerbungsunterlagen} \\ 
+ \bfseries \begin{Large}\titel{Bewerbungsmappe} \\
  %2nd Level IT-Support
   \end{Large}}
 \end{textblock}
@@ -98,7 +98,6 @@
 \color{schwarz}{\inhalt{Anlagen:
 	\begin{itemize}\setlength{\itemsep}{-2pt}
 		\item Lebenslauf
-		\item Zwischenzeugnis des Studiums
 		\item Arbeitszeugnisse \& Zertifikate
 		\item Abschlusszeugnisse
 	\end{itemize}
@@ -109,7 +108,8 @@
 % Vertikaler Strich
 % -------------------------------------------------
 \begin{textblock}{1}(13.5,0)
-	\color{hellblau}{\vrule width 45.5ex depth 1\textheight}
+	%\color{hellblau}{\vrule width 45.5ex depth 1\textheight}
+    \includegraphics[width=13.5cm, height=\textheight]{../Pictures/binarybackground.png}
 \end{textblock}
 
 % -------------------------------------------------
@@ -124,16 +124,16 @@
 % Passfoto
 % -------------------------------------------------
 \begin{textblock}{3}(3.0,18.5)
-	\fbox{\includegraphics[width=4cm]{../Pictures/Sascha1p.jpg}}
+	\fbox{\includegraphics[width=5cm]{../Pictures/Sascha.jpg}}
 \end{textblock}
 %
 % -------------------------------------------------
 % Anschrift
 % -------------------------------------------------
-\begin{textblock}{4.8}(14,25)
+\begin{textblock}{4.8}(14,26.5)
 	\begin{flushleft}
 		\vspace{-3.5cm}
-		\color{schwarz}{\bfseries \begin{Large}\firstnamefont{{\firstname}}~\familynamefont{{\familyname}}\end{Large}}\\[.35ex]
+		\color{white}{\bfseries \begin{Large}\firstnamefont{{\firstname}}~\familynamefont{{\familyname}}\end{Large}}\\[.35ex]
 		\small\itshape%
 		{\mystreet\\
 		\mycity\\[.35ex]

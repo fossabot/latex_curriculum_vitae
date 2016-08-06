@@ -6,7 +6,14 @@ SetupConfig
 .idea
 *.bak
 *.aux
+*.aux.blg
+*.bbl
+*.bcf
+*.blg
+*.out
+*.run.xml
 *.log
+tagcrowd-source.txt
 *.synctex.gz
 History.txt
 README.txt

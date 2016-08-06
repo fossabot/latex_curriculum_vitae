@@ -1,31 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BuildServerSettings">
-    <option name="LOGIN" value="" />
-    <option name="SERVER_URL" value="http://buildserver" />
-    <option name="PASSWORD" />
-    <option name="REMEMBER_ME" value="true" />
-    <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
-    <option name="INSPECTIONS_BUILD_TYPE_IDS" />
-    <option name="DUPLICATES_BUILD_TYPE_IDS" />
-    <option name="COVERAGE_SETTINGS" />
-    <option name="TEST_STATUS_ENABLED" value="true" />
-    <option name="TEST_STATUS_SHOW_SUCCESSFUL" value="false" />
-    <option name="ARTIFACTS_BUILD_TYPE_IDS" />
-    <option name="PERFORM_COMMIT_IF_SUCCESSFUL" value="true" />
-    <option name="PERFORM_COMMIT_IF_NO_NEW_FAILED_TESTS" value="false" />
-    <option name="REQUEST_CONFIRMATON" value="false" />
-    <option name="PRE_TESTED_COMMIT" value="true" />
-    <option name="PROJECT_STATUS_DIALOG_SPLITTER_DIVIDER_LOCATION" value="500" />
-    <option name="CHANGES_STATUS_DIALOG_SPLITTER_DIVIDER_LOCATION" value="500" />
-    <option name="FILTER_BY_STATUS" value="false" />
-    <option name="FILTER_MARKED_AS_FIXED" value="false" />
-    <option name="SHOW_CLOSE_PROMPT" value="true" />
-    <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
-    <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="33210dc2-fb52-464e-b807-7d12e3a32df3" name="Default" comment="" />
+    <list default="true" id="955e64f6-eef4-4dc0-9cf6-54045a466116" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/Interessen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/Skills1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/Skills2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/aboutme.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/coderbits.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/email.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/google-plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/linkedin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/twitter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/xing.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/latex_curriculum_vitae.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.setup/installer.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.setup/metaconfig.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Index.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MANIFEST" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VERSION" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/latexcv.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Certificates/Zertifikat_Sascha_Manns1.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Certificates/kompetenzpass12013.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Certificates/thm-webeng1.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/Arbeitszeugnisse.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/build.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/hays.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/haysnew.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/openslx.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/openslx1.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/test.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/wtg.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/First_References/bsaz.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/First_References/hsaz.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/First_References/ihk.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Study/foo.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Study/zwzils.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Motivational_Letter/Anschreiben.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Motivational_Letter/Anschreiben_MC.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.aux" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.bbl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.bcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.blg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.run.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/missfont.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/latex_curriculum_vitae.gemspec" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/version.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gemnasium.yml" afterPath="$PROJECT_DIR$/.gemnasium.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.rubocop.yml" afterPath="$PROJECT_DIR$/.rubocop.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.scrutinizer.yml" afterPath="$PROJECT_DIR$/.scrutinizer.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/History.rdoc" afterPath="$PROJECT_DIR$/History.rdoc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE.rdoc" afterPath="$PROJECT_DIR$/LICENSE.rdoc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Bibliography/bibliography1.bib" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Bibliography/bibliography1.bib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Cover/Cover.tex" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Cover/Cover.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Motivational_Letter/bwanschreiben.tex" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Motivational_Letter/bwanschreiben.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.tex" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/friggeri-cv.cls" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/friggeri-cv.cls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/cover.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/cover.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/cv.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/cv.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/email.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/email.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/entityfile.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/entityfile.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/get-config.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/get-config.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/letter.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/letter.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/notifier.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/notifier.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/outfile.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/outfile.rb" />
+    </list>
     <ignored path="latex_curriculum_vitae.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -36,84 +91,66 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="DatabaseView">
-    <option name="FLATTEN" value="false" />
-    <option name="GROUP_BY_TYPE" value="true" />
-    <option name="SORT_CHILDREN" value="false" />
-    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="latex_curriculum_vitae" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Rakefile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Rakefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="882">
+              <caret line="49" column="250" selection-start-line="49" selection-start-column="250" selection-end-line="49" selection-end-column="250" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Sascha Manns &lt;samannsml@directbox.com&gt;" />
-        <option value="Sascha Manns &lt;sa&gt;" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CONTRIBUTING.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/lib/latex_curriculum_vitae/cover.rb" />
+        <option value="$PROJECT_DIR$/lib/latex_curriculum_vitae/cv.rb" />
+        <option value="$PROJECT_DIR$/lib/latex_curriculum_vitae/email.rb" />
+        <option value="$PROJECT_DIR$/lib/latex_curriculum_vitae/entityfile.rb" />
+        <option value="$PROJECT_DIR$/lib/latex_curriculum_vitae/get-config.rb" />
+        <option value="$PROJECT_DIR$/lib/latex_curriculum_vitae/letter.rb" />
+        <option value="$PROJECT_DIR$/lib/latex_curriculum_vitae/notifier.rb" />
+        <option value="$PROJECT_DIR$/lib/latex_curriculum_vitae/outfile.rb" />
+        <option value="$PROJECT_DIR$/.coveralls.yml" />
         <option value="$PROJECT_DIR$/.gemnasium.yml" />
-        <option value="$PROJECT_DIR$/.setup/installer.rb" />
+        <option value="$PROJECT_DIR$/.rubocop.yml" />
+        <option value="$PROJECT_DIR$/.scrutinizer.yml" />
+        <option value="$PROJECT_DIR$/CONTRIBUTING.md" />
         <option value="$PROJECT_DIR$/lib/latex_curriculum_vitae.rb" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1" />
-        <option value="$PROJECT_DIR$/latex_curriculum_vitae.gemspec" />
-        <option value="$PROJECT_DIR$/VERSION" />
-        <option value="$PROJECT_DIR$/Index.yml" />
-        <option value="$PROJECT_DIR$/.index" />
-        <option value="$PROJECT_DIR$/lib/latex_curriculum_vitae/version.rb" />
+        <option value="$PROJECT_DIR$/History.rdoc" />
+        <option value="$PROJECT_DIR$/LICENSE.rdoc" />
+        <option value="$PROJECT_DIR$/README.rdoc" />
         <option value="$PROJECT_DIR$/Rakefile" />
-        <option value="$PROJECT_DIR$/CHANGELOG.md" />
-        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-  </component>
-  <component name="NamedScopeManager">
-    <order />
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
+    <option name="x" value="49" />
     <option name="y" value="24" />
-    <option name="width" value="1877" />
+    <option name="width" value="1871" />
     <option name="height" value="1056" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Ruby</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -136,6 +173,8 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
@@ -171,36 +210,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="latex_curriculum_vitae" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="latex_curriculum_vitae" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="latex_curriculum_vitae" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
-    <property name="settings.editor.selected.configurable" value="tasks.servers" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="com.intellij.ide.scratch.NewScratchFileAction" value="TEXT" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
@@ -230,7 +249,6 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
@@ -268,7 +286,6 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
@@ -299,7 +316,6 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method />
@@ -320,7 +336,6 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
@@ -333,217 +348,64 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration">
-    <configuration />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="33210dc2-fb52-464e-b807-7d12e3a32df3" name="Default" comment="" />
-      <created>1441359874637</created>
+      <changelist id="955e64f6-eef4-4dc0-9cf6-54045a466116" name="Default" comment="" />
+      <created>1470504166391</created>
       <option name="number" value="Default" />
-      <updated>1441359874637</updated>
+      <option name="presentableId" value="Default" />
+      <updated>1470504166391</updated>
+      <workItem from="1470504169229" duration="2441000" />
     </task>
-    <task id="LOCAL-00002" summary="added  changelog and manifest">
-      <created>1441434604901</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1441434604901</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added email publishing, automatic MANIFEST rebuild">
-      <created>1441461389784</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1441461389784</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added email publishing, automatic MANIFEST rebuild">
-      <created>1441461635992</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1441461635992</updated>
-    </task>
-    <task id="LOCAL-00005" summary="added email publishing, automatic MANIFEST rebuild">
-      <created>1441461958221</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1441461958221</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added email publishing, automatic MANIFEST rebuild">
-      <created>1441462056874</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1441462056874</updated>
-    </task>
-    <task id="LOCAL-00007" summary="added email publishing, automatic MANIFEST rebuild">
-      <created>1441464735838</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1441464735838</updated>
-    </task>
-    <task id="LOCAL-00008" summary="added email publishing, automatic MANIFEST rebuild">
-      <created>1441464852671</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1441464852671</updated>
-    </task>
-    <task id="LOCAL-00009" summary="added email publishing, automatic MANIFEST rebuild">
-      <created>1441465035456</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1441465035456</updated>
-    </task>
-    <task id="LOCAL-00010" summary="added email publishing, automatic MANIFEST rebuild">
-      <created>1441465754208</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1441465754208</updated>
-    </task>
-    <task id="LOCAL-00011" summary="added email publishing, automatic MANIFEST rebuild">
-      <created>1441466311589</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1441466311589</updated>
-    </task>
-    <task id="LOCAL-00012" summary="added email publishing, automatic MANIFEST rebuild">
-      <created>1441466589433</created>
-      <option name="number" value="00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1441466589433</updated>
-    </task>
-    <task id="LOCAL-00013" summary="added email publishing, automatic MANIFEST rebuild">
-      <created>1441466657052</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1441466657052</updated>
-    </task>
-    <task id="LOCAL-00014" summary="use global setup.rb instead of shipped one">
-      <created>1441661345371</created>
-      <option name="number" value="00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1441661345371</updated>
-    </task>
-    <task id="LOCAL-00015" summary="use global setup.rb instead of shipped one">
-      <created>1441661537292</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1441661537292</updated>
-    </task>
-    <task id="LOCAL-00016" summary="use global setup.rb instead of shipped one">
-      <created>1441694159270</created>
-      <option name="number" value="00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1441694159271</updated>
-    </task>
-    <task id="LOCAL-00017" summary="use global setup.rb instead of shipped one">
-      <created>1441889624684</created>
-      <option name="number" value="00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1441889624684</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
-    <servers>
-      <YouTrack shared="false" url="http://saigkill-bugs.myjetbrains.com/youtrack">
-        <commitMessageFormat>{id} {summary}</commitMessageFormat>
-        <option name="defaultSearch" value="Assignee: me sort by: updated #Unresolved project: latex_curriculum_vitae " />
-        <password>dfdadfc3dfc5dfc4dfcfdfcfdfd8dfd9</password>
-        <option name="loginAnonymously" value="false" />
-        <option name="preferredCloseTaskState" />
-        <option name="preferredOpenTaskState" />
-        <option name="shouldFormatCommitMessage" value="false" />
-        <option name="useHttpAuthentication" value="false" />
-        <option name="useProxy" value="false" />
-        <username>root</username>
-      </YouTrack>
-      <Trello shared="false">
-        <commitMessageFormat>{id} {summary}</commitMessageFormat>
-        <option name="currentBoard" />
-        <option name="currentList" />
-        <option name="currentUser">
-          <TrelloUser id="55a6a404e353efe75a6fe949" name="saschamanns1" />
-        </option>
-        <password>dfcbdf9fdf9cdfc9df9bdfccdf9bdf9edf93df99df9bdf9cdf93df98df9ddf9ddf9edf93df92df9edf9fdfc8dfcedf9fdf9fdfccdfccdf98df9cdfcfdfc8df99dfcedfc8df9cdf9edf93dfc9df9fdf92df9fdfccdf93dfc9df92df9ddfcfdf9adfcedf93dfcedf9adf9bdfc9df9bdfcedf93dfccdf92dfcbdf99dfccdf93df9f</password>
-        <option name="includeAllCards" value="false" />
-        <option name="loginAnonymously" value="false" />
-        <option name="preferredCloseTaskState" />
-        <option name="preferredOpenTaskState" />
-        <option name="shouldFormatCommitMessage" value="false" />
-        <option name="url" value="https://api.trello.com" />
-        <option name="useHttpAuthentication" value="false" />
-        <option name="useProxy" value="false" />
-        <username />
-      </Trello>
-    </servers>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2441000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="24" width="1877" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="eSnippet Pro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Geek &amp; Poke" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="TagMyCode" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26979792" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298744" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Copy/Paste" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298744" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959038" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33716077" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="eSnippet Pro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Geek &amp; Poke" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="TagMyCode" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="GitLabIntegration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2495886" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TaskBrowser" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Copy/Paste" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="eSnippet Pro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TagMyCode" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Geek &amp; Poke" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25505188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Copy/Paste" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -556,226 +418,240 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="added  changelog and manifest" />
-    <MESSAGE value="added email publishing, automatic MANIFEST rebuild" />
-    <MESSAGE value="use global setup.rb instead of shipped one" />
-    <option name="LAST_COMMIT_MESSAGE" value="use global setup.rb instead of shipped one" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Rakefile">
+    <entry file="file://$PROJECT_DIR$/bin/latexcv.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/latex_curriculum_vitae/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CONTRIBUTING.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/test.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/etc/latex_curriculum_vitae.cfg">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gemnasium.yml">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0882353">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        <state relative-caret-position="288">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CODE_OF_CONDUCT.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/lib/latex_curriculum_vitae/cover.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CONTRIBUTING.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/lib/latex_curriculum_vitae/cv.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44147158">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../MannsShared/MannsShared.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="64" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../MannsShared/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="226" column="3" selection-start-line="202" selection-start-column="0" selection-end-line="226" selection-end-column="3" />
+        <state relative-caret-position="90">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/latex_curriculum_vitae/email.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27155173">
-          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15517241">
-          <caret line="8" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.setup/metaconfig.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.setup/installer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20826447">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state relative-caret-position="-505">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/latex_curriculum_vitae/entityfile.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="70" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="70" />
+        <state relative-caret-position="-1797">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/latex_curriculum_vitae/get-config.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/latex_curriculum_vitae/letter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/latex_curriculum_vitae/notifier.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/latex_curriculum_vitae/outfile.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.autotest">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.codeclimate.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.coveralls.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="45" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gemnasium.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.rspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.rubocop.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.scrutinizer.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CODE_OF_CONDUCT.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CONTRIBUTING.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="432">
+            <caret line="24" column="86" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/latex_curriculum_vitae.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0595042">
-          <caret line="51" column="109" selection-start-line="51" selection-start-column="109" selection-end-line="51" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VERSION">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.058189657">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.index">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8060345">
-          <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/latex_curriculum_vitae.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09698276">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06020067">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        <state relative-caret-position="450">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/latex_curriculum_vitae/version.rb">
+    <entry file="file://$PROJECT_DIR$/History.rdoc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3297414">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="180">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE.rdoc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manifest.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.rdoc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="93" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="93" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29094827">
-          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+        <state relative-caret-position="882">
+          <caret line="49" column="250" selection-start-line="49" selection-start-column="250" selection-end-line="49" selection-end-column="250" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34225196">
-          <caret line="50" column="89" selection-start-line="50" selection-start-column="89" selection-end-line="50" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

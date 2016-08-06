@@ -12,7 +12,7 @@ The develop branch is the current edge of development.
 
 ## Pull requests
 
-* https://gitlab.com/saigkill/latex_curriculum_vitae/merge_requests 
+* https://github.com/saigkill/latex_curriculum_vitae/pulls 
 
 Please base all pull requests off the `develop` branch. Merges to
 `master` only occur through the `develop` branch. Pull requests
@@ -22,4 +22,4 @@ based on `master` will likely be cherry picked.
 
 Need to report an issue? Use that issue tracker:
 
-* https://gitlab.com/saigkill/latex_curriculum_vitae/issues
+* https://saigkill.myjetbrains.com/youtrack/issues?q=project%3A+latex_curriculum_vitae

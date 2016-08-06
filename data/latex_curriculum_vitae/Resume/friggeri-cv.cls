@@ -49,14 +49,12 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{Helvetica Neue}
-\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
-%\newfontfamily\thinfont[]{HelveticaNeueLTPro-UltLt}
-\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+\newfontfamily\bodyfont[]{Koblenz Serial}
+\newfontfamily\thinfont[]{Koblenz Serial Light}
+\newfontfamily\headingfont[]{Koblenz Serial Bold}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
-%\setmainfont[Mapping=tex-text, Color=textcolor]{HelveticaNeueLTPro-Lt}
+\setmainfont[Mapping=tex-text, Color=textcolor]{Newcastle Pro Light}
 
 %\setmathfont{XITS Math}
 
@@ -297,11 +295,20 @@
   \par\vspace{0.3\baselineskip}
 }
 
+%\DeclareNameFormat{author}{%
+%  \small\addfontfeature{Color=lightgray}%
+%  \ifblank{#3}{}{#3\space}#1%
+%  \ifthenelse{\value{listcount}<\value{liststop}}
+%    {\addcomma\space}
+%    {}%
+%}
+
 \DeclareNameFormat{author}{%
+  \nameparts{#1}%
   \small\addfontfeature{Color=lightgray}%
-  \ifblank{#3}{}{#3\space}#1%
-  \ifthenelse{\value{listcount}<\value{liststop}}
-    {\addcomma\space}
+  \ifblank{\namepartgiven}{}{\namepartgiven\space}\namepartfamily
+  \ifthenelse{\value{listcount}<\value{liststop}}%
+    {\addcomma\space}%
     {}%
 }
 

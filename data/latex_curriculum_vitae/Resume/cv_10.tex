@@ -22,25 +22,23 @@
 \documentclass[a4paper,latin]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 \hypersetup{
 pdftitle={Bewerbungsunterlagen von Sascha Manns}, %%
-pdfauthor={Sascha Manns}, %%
+pdfauthor={Sascha K. Manns}, %%
 pdfsubject={Bewerbungsunterlagen}, %%
 pdfcreator={XeLaTEX and Biber with hyperref-package.},
-pdfproducer={Sascha Manns, Mayen}, %%
-pdfkeywords={Manns, Mayen, Bewerbung, IT, Community, Linux, Programmierer, Dispatcher, Buchautor} %%
+pdfproducer={Sascha K. Manns, Mayen}, %%
+pdfkeywords={Manns, Mayen, Bewerbung, IT, Community, Linux, Programmierer, Dispatcher, Buchautor, Schriftsteller, Geschäftsprozess} %%
 }
 \usepackage{pdfpages}
 \usepackage{graphicx}
 \usepackage{xltxtra}
-%\usepackage{rotating}
+\usepackage{progressbar}
 
 \addbibresource{../Appendix/Bibliography/bibliography1.bib} % Specify the bibliography file to include publications
-%\input{/etc/latex_curriculum_vitae/personal_data.tex}
 
 \begin{document}
-%\includepdf{../Anschreiben/bwanschreiben} %bei Bedarf uncommenten
 \includepdf{../Cover/Cover}
 
-\header{Sascha}{Manns}{Autor Geschäftsprozessdokumentation} % Your name and current job title/field
+\header{Sascha K. }{Manns}{Supporter/Autor/Schriftsteller} % Your name and current job title/field
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
@@ -52,21 +50,27 @@ Maifeldstraße 10
 56727 Mayen
 Germany
 ~
-+49 (2651) 40 14 045
 +49 (1573) 924 2730
 ~
-\href{mailto:Sascha.Manns@directbox.com}{Sascha.Manns@directbox.com}
-\href{http://saigkill.github.io}{http://saigkill.github.io}
-\href{https://www.xing.com/profile/Sascha_Manns2}{xi://Sascha.Manns2}
-\href{http://de.linkedin.com/in/saigkill}{li://saigkill} 
+\href{mailto:Sascha.Manns@directbox.com}{Sascha.Manns@directbox.com}\includegraphics[width=0.3cm]{../Pictures/email.png}
+\href{http://saigkill.github.io}{saigkill.github.io}\includegraphics[width=0.3cm]{../Pictures/aboutme.png}
+Geburtsdatum: 01.10.1979
+\section{Social Media}
+\href{https://www.xing.com/profile/Sascha\_Manns2}{Sascha\_Manns2}\includegraphics[width=0.3cm]{../Pictures/xing.png}
+\href{https://www.linkedin.com/in/saigkill}{saigkill}\includegraphics[width=0.3cm]{../Pictures/linkedin.png}
+\href{https://www.facebook.com/sascha.manns}{sascha.manns}\includegraphics[width=0.3cm]{../Pictures/facebook.png}
+\href{https://plus.google.com/+SaschaManns}{+SaschaManns}\includegraphics[width=0.3cm]{../Pictures/google-plus.png}
+\href{https://twitter.com/saigkill}{saigkill}\includegraphics[width=0.3cm]{../Pictures/twitter.png}
+\href{https://coderbits.com/saigkill}{saigkill}\includegraphics[width=0.3cm]{../Pictures/coderbits.png}
 \section{Fremdsprachen}
-Deutsch Muttersprache
-Englisch
+Deutsch \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=blue]{1.0}
+Englisch \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=blue]{0.6}
+Russisch \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=blue]{0.3}
 \section{Programming}
-{Shell (Bash)}
-{JavaScript}
-{CSS \& HTML5}
-{Ruby}
+{Shell (Bash)}\progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=green]{0.6}
+{JavaScript}\progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=green]{0.3}
+{CSS \& HTML5}\progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=green]{0.6}
+{Ruby}\progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=green]{0.7}
 \end{aside}
 
 %----------------------------------------------------------------------------------------
@@ -77,24 +81,32 @@ Englisch
 
 \begin{entrylist}
 %------------------------------------------------
-\entry{09/2014--08/2015}
+\entry{09/2015--jetzt}
+{Myself}
+{Homeoffice}
+{\emph{Schriftsteller: Der Prüfstein} \\
+    Buchprojekt zur Flüchtlingssituation in Europa.
+}
+%------------------------------------------------
+\entry{09/2014--09/2015}
 {XCOM AG}
 {Andernach}
 {\emph{Autor Geschäftsprozessdokumentation} \\
 	Detailierte Aufgaben:
 	\begin{itemize}
-		\item Autor Geschäftsprozessdokumentation (Software  \& Bankwesen)
+		\item Autor Geschäftsprozessdokumentation (Software \& Bankwesen)
 		\item Artikelerstellung und Pflege internes Wiki
 		\item Produktion Präsentationen für Mandanten und interne Schulungen
 		\item Modellierung von Geschäftsprozessen nach BPMN
 	\end{itemize}
+	Vertragsauslauf aufgrund der Verschiebung der Stelle in eine andere Zweigstelle.
 }
 %------------------------------------------------
 \entry
 {02/2014--05/2014}
-{Hays Temp GmbH}
+{Hays Temp GmbH / More Holding}
 {Mannheim}
-{\emph{IT-Supporter} \\
+{\emph{IT-Supporter/Dispatcher/Controller} \\
 Detailierte Aufgaben bei ITSCare Neuwied (ZBV):
 \begin{itemize}
 \item Kundenpflege via Telefon und Email
@@ -125,7 +137,7 @@ Detailierte Aufgaben:
 }
 %------------------------------------------------
 \entry
-{08/2012--06/2013}
+{08/2010--06/2013}
 {open-slx GmbH}
 {Homeoffice}
 {\emph{Community \& Support Agent} \\
@@ -135,65 +147,29 @@ Detailierte Aufgaben:
 \item Testen von Software
 \item Webseitenbetreuung \& Social Media
 \item Dokumentation
-\item Pflege der Supportdatenbank
-\item Öffentlichkeitsarbeit
 \item Community Management
-\item Informationsaustausch mit Produktmanagement
+\item Projektleitung deutsches openSUSE Wiki. Migration des Wikis zu neuer Struktur
+\item openSUSE Weekly News
+\item Paketverwaltung einiger RPM-Pakete
+\item openSUSE Membership Application Team
 \end{itemize}
-}
-%------------------------------------------------
-\entry
-{08/2011--07/2012}
-{open-slx GmbH}
-{Homeoffice}
-{\emph{Langzeitpraktikum} \\
-Detailierte Aufgaben:
-\begin{itemize}
-\item Produktvorbereitung
-\item Produkttesting
-\item Verfassung des Handbuches
-\item Öffentlichkeitsarbeit \& Social Media
-\end{itemize}
+Auflösung der Stelle durch mangelnde Absatzzahlen des Boxproduktes.
 }
 \end{entrylist}
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{08/2010--08/2011}
-{open-slx GmbH}
-{Homeoffice}
-{\emph{Freiwillige Mitarbeit}\\
-Detailierte Aufgaben:
-\begin{itemize}
-\item Projektleitung deutsches openSUSE Wiki. Migration des Wikis zu neuer Struktur
-\item openSUSE Weekly News
-\item Paketverwaltung einiger RPM-Pakete
-\item openSUSE Membership Application Team
-\item Import der Wiki-Unterlagen in open-slx Wikis 
-\end{itemize}
-}
-%------------------------------------------------
-\entry
-{08/2011--jetzt}
+{07/2007--12/2014}
 {openSUSE Linux Projekt}
 {Homeoffice}
-{\emph{Paketbetreuer}\\
+{\emph{Paketbetreuer/Teamleiter}\\
 Detailierte Aufgaben:
 \begin{itemize}
 \item Beschaffung, Aktualisierung des Sourcecodes im Buildservice
 \item Compiling und Packaging neuer Binärpakete
 \item Verteilung via Buildservice
-\end{itemize}
-}
-%------------------------------------------------
-\entry
-{07/2007--08/2011}
-{openSUSE Linux Projekt}
-{Homeoffice}
-{\emph{Teamleiter}\\
-Tätigkeiten:
-\begin{itemize}
 \item Leiter des openSUSE Newsletters und Publikationen in bis zu 12 Sprachen
+\item Erfinder eines neuen Podcastformates (Vertonte Weekly News)
 \item openSUSE Medical Project (Subprojektgründer)
 \item Mitglied des openSUSE Marketing Teams
 \item Mitglied des openSUSE Feature Screening Teams
@@ -202,24 +178,16 @@ Tätigkeiten:
 %-----------------------------------------------
 \entry
 {07/2000--06/2007}
-{WTG}
+{Geistlicher eines religiösen Ordens}
 {Selters/Ts.}
-{\emph{Ersatzdienst zum Zivildienst}\\
-Detailierte Aufgaben:
-\begin{itemize}
-\item Anlernen zum Maler \& Bodenleger
-\item Projektleitung in der Bodenverlegung
-\item Inventurleitung
-\item Key-User
-\end{itemize}
-}
+{\emph{Ersatzdienst zum Zivildienst}}
 \end{entrylist}
 \begin{entrylist}
 %------------------------------------------------
 \entry
 {08/1998--07/2000}
 {Auto Deschner GmbH}
- {Mendig}
+{Mendig}
 {\emph{Kaufmann im Einzelhandel}\\
 Detailierte Aufgaben:
 \begin{itemize}
@@ -240,7 +208,7 @@ Detailierte Aufgaben:
 {Auto Deschner GmbH}
 {Mendig}
 {\emph{Ausbildung zum Kaufmann im Einzelhandel}\\
-allgemeine kaufm. Tätigkeiten.
+Allgemeine kaufm. Tätigkeiten.
 }
 %------------------------------------------------
 \end{entrylist}
@@ -254,10 +222,10 @@ allgemeine kaufm. Tätigkeiten.
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{02/2013--jetzt}
-{Studium (berufsbegl.): Staatlich geprüfter Betriebswirt}
-{ILS, Hamburg}
-{Schwerpunkt Wirtschaftsinformatik}
+{06/2015}
+{SCRUM Master Kurs}
+{XCOM AG, Inhouse Schulung}
+{Andernach}
 %------------------------------------------------
 \entry
 {12/2013}
@@ -265,11 +233,11 @@ allgemeine kaufm. Tätigkeiten.
 {Technische Hochschule Mittelhessen}
 {\emph{MOOC}}
 %------------------------------------------------
-\entry
-{06/2013}
-{Kompetenzpass für Ökonomen}
-{BV Deutscher Volks- und Betriebswirte}
-{Düsseldorf}
+%\entry
+%{06/2013}
+%{Kompetenzpass für Ökonomen}
+%{BV Deutscher Volks- und Betriebswirte}
+%{Düsseldorf}
 %------------------------------------------------
 \entry
 {04/2013}
@@ -279,42 +247,24 @@ allgemeine kaufm. Tätigkeiten.
 %-----------------------------------------------
 \end{entrylist}
 
-\section{Weiterbildung online: Microsoft Virtual Academy}
-\begin{itemize}
-\item Moderne Softwareentwicklung
-\end{itemize}
-
 %----------------------------------------------------------------------------------------
 %	EHRENAMTLICHE TÄTIGKEITEN
 %----------------------------------------------------------------------------------------
-\newpage 
 \section{Ehrenamtliche Tätigkeiten}
 \begin{entrylist}
 %--------------------------------------------
 \entry
 {2013-jetzt}
-{mUXCamp 2014}
+{mUXCamp}
 {mUXCamp, Worms}
 {Planungsteam für nächstes Camp. (Mitveranstalter: \\FG Wirtschaftsinformatik des BDVB)}
 %--------------------------------------------
-\entry
-{2013--jetzt}
-{BV Deutscher Volks- und Betriebswirte}
-{FG Wirtschaftsinformatik}
-{Mitarbeit in verschiedenen Projekten}
-%----------------------------------------------
-\entry
-{2013--jetzt}
-{Gesellschaft für Informatik}
-{FG Wirtschaftsinformatik}
-{Mitarbeit in verschiedenen Projekten}
+%\entry
+%{2013--jetzt}
+%{BV Deutscher Volks- und Betriebswirte}
+%{FG Wirtschaftsinformatik}
+%{Mitarbeit in verschiedenen Projekten}
 %---------------------------------------------
-\entry
-{2013--jetzt}
-{Forum Informatiker für Frieden und gesellschaftliche Verantwortung}
-{}
-{}
-%--------------------------------------------
 \entry
 {2010--2011}
 {Piratenpartei Deutschland}
@@ -322,33 +272,86 @@ allgemeine kaufm. Tätigkeiten.
 {}
 %--------------------------------------------
 \entry
-{2008--jetzt}
+{2008--2015}
 {openSUSE Linux Project}
 {Membership Application Team/RPM Packaging}
 {Mitgliederverwaltung \& Paketverwaltung}
 %--------------------------------------------
 \end{entrylist}
 
+\newpage
 %----------------------------------------------------------------------------------------
 % COMPUTER SKILLS
 % ---------------------------------------------------------------------------------------
 
 \section{IT-Kenntnisse}
 
+\includegraphics[width=13cm]{../Pictures/Skills1.png} \linebreak
+\includegraphics[width=13cm]{../Pictures/Skills2.png}
+
 \begin{itemize}
-\item OS: Linux/Unix, Windows 3.11--8.1
-\item ERP/CRM: ADP Opel Verkäuferarbeitsplatz, oscare (SAP Lösung für Gesundheitsbranche)
-\item Packaging: RPM, Compiling/Testing/Publishing, git, svn
-\item Textsatz: \LaTeX, XML/DocBook 4.5 \& XSL-FO
-\item Translations: FreeMedForms, KVirusTotal (Übersetzung EN $\triangleright$ DE)
-\item Administration: Linux/Unix
-\item Webservices: Apache2, Joomla, Owncloud, Wordpress, Hosting, Mediawiki, SVN-Server, MySQL, Cloudcontrol Appliances
-\item Multimedia: Pod- \& Screencastproduktionen, Videoschnitt
-\item Office: MS/Libre-Office, Projektmanagement-Software, Lexware
-\item Produktgestaltung: Handbucherstellung, Supportdatenbank, Webpräsentation
-\item Wissensmanagement: MS Sharepoint, Business Wiki, Business Social Networks
-\item Erweiterte Kenntnisse: Warenwirtschaftssysteme, Auftragsmanagementsysteme, OTRS, Mantis, Amsys, IDM, Oxygen XML-Editor
-\item IDEs: Visual Studio, RubyMine, Webstorm, IntelliJ
+\item Operating Systems:
+    \begin{itemize}
+      \item Linux/Unix \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.8} \hfill
+      \item Windows 3.11--8.1 \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.7} \hfill
+    \end{itemize}
+\item ERM/CRM:
+    \begin{itemize}
+      \item ADP Opel Verkäuferarbeitsplatz \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.2} \hfill
+      \item Warenwirtschaftssysteme \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.4} \hfill
+      \item oscare (SAP Lösung für Gesundheitsbranche) \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.7} \hfill
+    \end{itemize}
+\item Linux-Software-Packaging:
+    \begin{itemize}
+      \item RPM-Pakete \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.6} \hfill
+      \item DEB-Pakete \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.8} \hfill
+      \item Compiling/Testing/Publishing \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.8} \hfill
+      \item Git/SVN \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.8} \hfill
+      \item OTRS \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.8} \hfill
+    \end{itemize}
+\item Textsatz:
+    \begin{itemize}
+      \item \LaTeX \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.7} \hfill
+      \item Docbook 4.5/5 \& XSL-FO \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.8} \hfill
+    \end{itemize}
+\item Administration: Linux/Unix \hfill\progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.7}\hfill
+\item Webservices:
+    \begin{itemize}
+      \item Apache2 \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.6}\hfill
+      \item Joomla \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.6} \hfill
+      \item Owncloud \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.7} \hfill
+      \item Wordpress \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.7} \hfill
+    \end{itemize}
+\item Multimedia:
+    \begin{itemize}
+      \item Pod- \& Screencastproduktion \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.8} \hfill
+      \item Videoschnitt \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.6} \hfill
+    \end{itemize}
+\item Office:
+    \begin{itemize}
+      \item MS-Office \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.6} \hfill
+      \item LibreOffice \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.7} \hfill
+      \item SoftMaker-Office \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.7} \hfill
+      \item Projektmanagement-Software \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.7} \hfill
+    \end{itemize}
+\item Produktgestaltung:
+    \begin{itemize}
+      \item Handbucherstellung \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.9} \hfill
+      \item Supportdatenbank \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.8} \hfill
+      \item Webpräsentation \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.7} \hfill
+    \end{itemize}
+\item Wissensmanagement:
+    \begin{itemize}
+      \item MS Sharepoint \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.5} \hfill
+      \item Business Wiki \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.7} \hfill
+      \item Business Social Networks \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.7} \hfill
+    \end{itemize}
+\item IDE's:
+    \begin{itemize}
+      \item Visual Studio \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.5} \hfill
+      \item RubyMine/IntelliJ \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.8} \hfill
+      \item Oxygen-XML-Editor \hfill \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledcolor=red ]{0.8} \hfill
+    \end{itemize}
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -384,14 +387,12 @@ allgemeine kaufm. Tätigkeiten.
 %----------------------------------------------------------------------------------------
 
 \section{Interessen}
-
-\textbf{professional:} Büroorganisation, Software, Webdesign, Web-App-Erstellung, Marketing \\ 
-\textbf{personal:} Literatur (IT/Wirtschaft/Philosophie), Wandern, Bücher schreiben, Netzwerken (Real Life)
+\includegraphics[width=13cm]{../Pictures/Interessen.png}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
-\newpage 
+\newpage
 \section{Publikationen}
 
 \printbibsection{article}{Artikel} % Print all articles from the bibliography
@@ -424,17 +425,14 @@ allgemeine kaufm. Tätigkeiten.
 %\section{Anhang}
 %---------------------------------------------------------------------------
 % Include PDF
-\begin{figure}  
-  \includegraphics[page=1,scale=0.7,angle=180]{../Appendix/Employers_Reference/hays.pdf}
-\end{figure}
-\includepdf{../Appendix/Study/foo}
-%\includepdf{../Anlagen/Arbeitszeugnisse/hays}
-\includepdf{../Appendix/Certificates/thm-webeng1}
+\includepdf{../Appendix/Employers_Reference/xcom}
+\includepdf[angle=180]{../Appendix/Employers_Reference/hays}
+%\includepdf{../Appendix/Certificates/thm-webeng1}
 \includepdf{../Appendix/Employers_Reference/openslx}
 \includepdf{../Appendix/Employers_Reference/openslx1}
-\includepdf{../Appendix/Certificates/kompetenzpass12013}
-\includepdf{../Appendix/Certificates/Zertifikat_Sascha_Manns1}
-\includepdf{../Appendix/Employers_Reference/wtg}
+%\includepdf{../Appendix/Certificates/kompetenzpass12013}
+%\includepdf{../Appendix/Certificates/Zertifikat_Sascha_Manns1}
+%\includepdf{../Appendix/Employers_Reference/wtg}
 \includepdf{../Appendix/First_References/ihk}
 
 \end{document}

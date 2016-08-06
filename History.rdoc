@@ -1,8 +1,14 @@
+=== 1.1.4 / 2016-08-06
+
+* 1 minor enhancement
+
+  * updated dependencies from gemnasium
+
 === 1.1.3 / 2016-02-08
 
 * 1 minor enhancement
 
-  * * updated dependencies from gemnasium
+  * updated dependencies from gemnasium
 
 === 1.1.2 / 2016-02-03
 

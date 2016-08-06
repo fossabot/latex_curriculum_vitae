@@ -1,14 +1,12 @@
 = latex_curriculum_vitae
 
 home  :: http://saigkill.github.io
-code  :: https://gitlab.com/saigkill/latex_curriculum_vitae
-docs  :: https://gitlab.com/saigkill/latex_curriculum_vitae/wikis/home
-bugs  :: https://gitlab.com/saigkill/latex_curriculum_vitae/issues
+code  :: https://github.com/saigkill/latex_curriculum_vitae
+docs  :: https://saigkill.github.io/docs/latex_curriculum_vitae/index
+bugs  :: https://saigkill.myjetbrains.com/youtrack/issues?q=project%3A+latex_curriculum_vitae
 openhub statistics :: https://www.openhub.net/p/latex_curriculum_vitae
 license :: {<img src="http://img.shields.io/:license-mit-blue.svg" />}[https://gitlab.com/saigkill/latex_curriculum_vitae/blob/master/LICENSE.rdoc]
 last public version  :: {<img src="https://badge.fury.io/rb/latex_curriculum_vitae.png" alt="Build Status" />}[http://rubygems.org/gems/latex_curriculum_vitae]
-last rpm :: {<img src="https://img.shields.io/bintray/v/saigkill/rpm/latex_curriculum_vitae.svg" />}[https://bintray.com/saigkill/rpm/latex_curriculum_vitae]
-last deb :: {<img src="https://img.shields.io/bintray/v/saigkill/deb/latex_curriculum_vitae.svg" />}[https://bintray.com/saigkill/deb/latex_curriculum_vitae]
 downloads latest :: {<img src="https://img.shields.io/gem/dtv/latex_curriculum_vitae.svg" alt="Build Status" />}[http://rubygems.org/gems/latex_curriculum_vitae]
 downloads all :: {<img src="https://img.shields.io/gem/dt/latex_curriculum_vitae.svg" alt="Build Status" />}[http://rubygems.org/gems/latex_curriculum_vitae]
 code quality :: {<img src="https://scrutinizer-ci.com/g/saigkill/latex_curriculum_vitae/badges/quality-score.png?b=master" />}[https://scrutinizer-ci.com/g/saigkill/latex_curriculum_vitae/]
@@ -38,7 +36,7 @@ in your home directory. Also it generates an email with a standard content, whic
 
 The resulting PDF and the CSV file are placed in /home/You/.latex_curriculum_vitae.
 
-Read the documentation at: https://gitlab.com/saigkill/latex_curriculum_vitae/wikis/home
+Read the documentation at: https://saigkill.github.io/docs/latex_curriculum_vitae/index
 
 This Gem was programmed and tested for Linux systems. If anyone would like to make the methods also fit for other OS,
 i'm happy about Pull requests.
@@ -63,7 +61,7 @@ The installation is very easy.
     cd /path/to/gem (In case of using RVM ~/.rvm/gems/ruby-2.2.1/gems/latex_curriculum_vitae)
     rake setup
 
-Read the documentation at: https://gitlab.com/saigkill/latex_curriculum_vitae/wikis/home
+Read the documentation at: https://saigkill.github.io/docs/latex_curriculum_vitae/index
 
 You have to run the setup after each gem update.
 
@@ -78,13 +76,13 @@ After checking out the source, run:
 This task will install any missing dependencies, run the tests/specs,
 and generate the RDoc.
 
-Read https://gitlab.com/saigkill/latex_curriculum_vitae/blob/master/CONTRIBUTING.md
+Read https://github.com/saigkill/latex_curriculum_vitae/blob/master/CONTRIBUTING.md
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2015 Sascha Manns <samannsml@directbox.com>
+Copyright (c) 2015-2016 Sascha Manns <samannsml@directbox.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
