@@ -2,12 +2,6 @@
 .codeclimate.yml
 .coveralls.yml
 .gemnasium.yml
-.idea/.rakeTasks
-.idea/latex_curriculum_vitae.iml
-.idea/misc.xml
-.idea/modules.xml
-.idea/vcs.xml
-.idea/workspace.xml
 .rspec
 .rubocop.yml
 .scrutinizer.yml
