@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="955e64f6-eef4-4dc0-9cf6-54045a466116" name="Default" comment="update dependencies">
+    <list default="true" id="955e64f6-eef4-4dc0-9cf6-54045a466116" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/latex_curriculum_vitae.iml" afterPath="$PROJECT_DIR$/.idea/latex_curriculum_vitae.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manifest.txt" afterPath="$PROJECT_DIR$/Manifest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
     </list>
     <ignored path="latex_curriculum_vitae.iws" />
@@ -30,8 +30,8 @@
       <file leaf-file-name="Rakefile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Rakefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="702">
+              <caret line="63" column="45" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -69,6 +69,7 @@
         <option value="$PROJECT_DIR$/LICENSE.rdoc" />
         <option value="$PROJECT_DIR$/README.rdoc" />
         <option value="$PROJECT_DIR$/Rakefile" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -300,7 +301,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1470504166391</updated>
-      <workItem from="1470504169229" duration="3035000" />
+      <workItem from="1470504169229" duration="3439000" />
     </task>
     <task id="LOCAL-00001" summary="update dependencies">
       <created>1470506650961</created>
@@ -309,11 +310,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470506650961</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update dependencies">
+      <created>1470507213074</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1470507213074</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3035000" />
+    <option name="totallyTimeSpent" value="3439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
@@ -589,10 +597,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="702">
+          <caret line="63" column="45" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
           <folding />
         </state>
       </provider>

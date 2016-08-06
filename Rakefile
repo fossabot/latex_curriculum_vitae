@@ -28,7 +28,7 @@ Hoe.plugin :manns
 # Hoe.plugin :perforce
 # Hoe.plugin :racc
 # Hoe.plugin :rcov
-Hoe.plugin :reek
+#Hoe.plugin :reek
 Hoe.plugin :rdoc
 Hoe.plugin :rubocop
 Hoe.plugin :rubygems
@@ -61,6 +61,7 @@ Hoe.spec 'latex_curriculum_vitae' do
   extra_dev_deps << ['hoe-reek', '~> 1.1']
   extra_dev_deps << ['hoe-rubocop', '~> 1.0']
   extra_dev_deps << ['hoe-version', '~> 1.2']
+  extra_dev_deps << ['hoe-seattlerb', '~> 1.3']
   extra_dev_deps << ['hoe', '~> 3.15']
   extra_dev_deps << ['rake', '~> 11.2']
   extra_dev_deps << ['simplecov', '~> 0.12']

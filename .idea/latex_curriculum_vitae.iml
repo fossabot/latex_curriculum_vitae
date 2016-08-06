@@ -4,56 +4,47 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="ZenTest (v4.11.0, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ast (v2.3.0, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.12.5, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler-audit (v0.4.0, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="coveralls (v0.8.10, RVM: ruby-2.2.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler-audit (v0.5.0, RVM: ruby-2.2.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coveralls (v0.8.15, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.2.5, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="docile (v1.1.5, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="gem-release (v0.7.4, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="highline (v1.7.8, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="hoe (v3.14.2, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="hoe-bundler (v1.2.0, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="hoe-deveiate (v0.7.0, RVM: ruby-2.2.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hoe (v3.15.1, RVM: ruby-2.2.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hoe-bundler (v1.3.0, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hoe-doofus (v1.0.0, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="hoe-gemspec (v1.0.0, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hoe-git (v1.6.0, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hoe-highline (v0.2.1, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="hoe-manns (v1.4.7, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="hoe-packaging (v1.1.2, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="hoe-reek (v1.1.3, RVM: ruby-2.2.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hoe-manns (v1.4.9, RVM: ruby-2.2.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hoe-reek (v1.1.5, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hoe-rubocop (v1.0.6, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hoe-rubygems (v1.0.0, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="hoe-seattlerb (v1.3.4, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="hoe-travis (v1.2, RVM: ruby-2.2.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hoe-seattlerb (v1.3.5, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hoe-version (v1.2.0, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="hoe-yard (v0.1.2, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="indexer (v0.3.1, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v1.8.3, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.6.4, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v3.1, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types-data (v3.2016.0521, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="minitest (v5.8.4, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="notifier (v0.5.1, RVM: ruby-2.2.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="notifier (v0.5.2, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pandoc-ruby (v1.0.0, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parseconfig (v1.0.8, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parser (v2.3.1.2, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pony (v1.11, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="powerpack (v0.1.1, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rainbow (v2.1.0, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rake (v10.5.0, RVM: ruby-2.2.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v11.2.2, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v4.2.2, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="reek (v3.10.1, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rspec (v3.4.0, RVM: ruby-2.2.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec (v3.5.0, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.5.2, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.5.0, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.5.0, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.5.0, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubocop (v0.37.0, RVM: ruby-2.2.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop (v0.42.0, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.8.1, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="setup (v5.2.0, RVM: ruby-2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="simplecov (v0.11.2, RVM: ruby-2.2.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simplecov (v0.12.0, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="simplecov-html (v0.10.0, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="term-ansicolor (v1.3.2, RVM: ruby-2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.19.1, RVM: ruby-2.2.3) [gem]" level="application" />
