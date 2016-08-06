@@ -18,8 +18,8 @@ Hoe.plugin :bundler
 Hoe.plugin :doofus
 Hoe.plugin :email
 # Hoe.plugin :gem_prelude_sucks
-Hoe.plugins.delete :git
-#Hoe.plugin :git
+#Hoe.plugins.delete :git
+Hoe.plugin :git
 Hoe.plugin :history
 Hoe.plugin :highline
 #Hoe.plugin :inline
@@ -53,22 +53,22 @@ Hoe.spec 'latex_curriculum_vitae' do
   dependency 'notifier', '~> 0.5'
   dependency 'pony', '~> 1.11'
 
-  extra_dev_deps << ['hoe-bundler', '~> 1.2']
+  extra_dev_deps << ['hoe-bundler', '~> 1.3']
   extra_dev_deps << ['hoe-doofus', '~> 1.0']
   extra_dev_deps << ['hoe-git', '~> 1.6']
   extra_dev_deps << ['hoe-rubygems', '~> 1.0']
   extra_dev_deps << ['hoe-manns', '~> 1.4.2']
-  extra_dev_deps << ['hoe-reek', '~> 1.0']
+  extra_dev_deps << ['hoe-reek', '~> 1.1']
   extra_dev_deps << ['hoe-rubocop', '~> 1.0']
   extra_dev_deps << ['hoe-version', '~> 1.2']
   extra_dev_deps << ['hoe', '~> 3.15']
-  extra_dev_deps << ['rake', '~> 10.5']
-  extra_dev_deps << ['simplecov', '~> 0.7']
+  extra_dev_deps << ['rake', '~> 11.2']
+  extra_dev_deps << ['simplecov', '~> 0.12']
   extra_dev_deps << ['coveralls', '~> 0.8']
   extra_dev_deps << ['rainbow', '~> 2.0']
   extra_dev_deps << ['bundler', '~> 1.11']
   extra_dev_deps << ['parseconfig', '~> 1.0']
-  extra_dev_deps << ['rspec', '~> 3.3']
+  extra_dev_deps << ['rspec', '~> 3.5']
   extra_dev_deps << ['simplecov', '~> 0.10']
 end
 

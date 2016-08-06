@@ -1,85 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="955e64f6-eef4-4dc0-9cf6-54045a466116" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/Interessen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/Skills1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/Skills2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/aboutme.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/coderbits.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/email.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/google-plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/linkedin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Pictures/xing.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/latex_curriculum_vitae.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.setup/installer.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.setup/metaconfig.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Index.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MANIFEST" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/VERSION" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/latexcv.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Certificates/Zertifikat_Sascha_Manns1.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Certificates/kompetenzpass12013.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Certificates/thm-webeng1.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/Arbeitszeugnisse.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/build.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/hays.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/haysnew.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/openslx.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/openslx1.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/test.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Employers_Reference/wtg.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/First_References/bsaz.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/First_References/hsaz.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/First_References/ihk.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Study/foo.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Study/zwzils.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Motivational_Letter/Anschreiben.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Motivational_Letter/Anschreiben_MC.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.aux" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.bbl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.bcf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.blg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.run.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/missfont.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/latex_curriculum_vitae.gemspec" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/version.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gemnasium.yml" afterPath="$PROJECT_DIR$/.gemnasium.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.rubocop.yml" afterPath="$PROJECT_DIR$/.rubocop.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.scrutinizer.yml" afterPath="$PROJECT_DIR$/.scrutinizer.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/History.rdoc" afterPath="$PROJECT_DIR$/History.rdoc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE.rdoc" afterPath="$PROJECT_DIR$/LICENSE.rdoc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
+    <list default="true" id="955e64f6-eef4-4dc0-9cf6-54045a466116" name="Default" comment="update dependencies">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manifest.txt" afterPath="$PROJECT_DIR$/Manifest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Bibliography/bibliography1.bib" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Appendix/Bibliography/bibliography1.bib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Cover/Cover.tex" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Cover/Cover.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Motivational_Letter/bwanschreiben.tex" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Motivational_Letter/bwanschreiben.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.tex" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/cv_10.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/friggeri-cv.cls" afterPath="$PROJECT_DIR$/data/latex_curriculum_vitae/Resume/friggeri-cv.cls" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/cover.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/cover.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/cv.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/cv.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/email.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/email.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/entityfile.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/entityfile.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/get-config.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/get-config.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/letter.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/letter.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/notifier.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/notifier.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/latex_curriculum_vitae/outfile.rb" afterPath="$PROJECT_DIR$/lib/latex_curriculum_vitae/outfile.rb" />
     </list>
     <ignored path="latex_curriculum_vitae.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,8 +30,8 @@
       <file leaf-file-name="Rakefile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Rakefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="49" column="250" selection-start-line="49" selection-start-column="250" selection-end-line="49" selection-end-column="250" />
+            <state relative-caret-position="378">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -113,6 +40,11 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Sascha Manns &lt;samannsml@directbox.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -368,12 +300,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1470504166391</updated>
-      <workItem from="1470504169229" duration="2441000" />
+      <workItem from="1470504169229" duration="3035000" />
     </task>
+    <task id="LOCAL-00001" summary="update dependencies">
+      <created>1470506650961</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1470506650961</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2441000" />
+    <option name="totallyTimeSpent" value="3035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
@@ -417,6 +357,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="update dependencies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -647,8 +591,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="49" column="250" selection-start-line="49" selection-start-column="250" selection-end-line="49" selection-end-column="250" />
+        <state relative-caret-position="378">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
