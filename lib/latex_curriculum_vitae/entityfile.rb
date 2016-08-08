@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 # @author Sascha Manns
-# @abstract Entityfile Module for latex_curriculum_vitae
+# @abstract module for creating the entity file for latex
 #
 # Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
 # License: MIT
@@ -109,10 +109,10 @@ EOF
     def self.get_subject_intro(proactive, jobtitle)
       if proactive == 'yes'
         subject = "Initiativbewerbung um einen Arbeitsplatz als #{jobtitle}"
-        intro = 'Gerne möchte ich mich bei Ihnen um die obige oder eine vergleichbare Stelle bewerben.'
+        intro = "gerne möchte ich mich bei Ihnen um die Stelle als #{jobtitle} oder einer ähnlichen Position bewerben."
       else
         subject = "Bewerbung um einen Arbeitsplatz als #{jobtitle}"
-        intro = 'Wie ich Ihrer Anzeige entnommen habe, suchen Sie jemanden für die obige Position, um die ich mich bewerbe.'
+        intro = "mit großem Interesse bin ich auf die ausgeschriebene Position aufmerksam geworden. Aus diesem Grund bewerbe ich mich bei Ihnen als #{jobtitle}."
       end
       [subject, intro]
     end

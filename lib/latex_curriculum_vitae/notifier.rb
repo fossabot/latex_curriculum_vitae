@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 # @author Sascha Manns
-# @abstract Notifier Module for latex_curriculum_vitae
+# @abstract module for notify the user about finishing the email send
+# process
 #
 # Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
 # License: MIT

@@ -1,7 +1,7 @@
-#!/usr/bin/env ruby
+# encoding: UTF-8
 # encoding: utf-8
 # @author Sascha Manns
-# @abstract CoverModule for latex_curriculum_vitae
+# @abstract A module for creating the latex cover
 #
 # Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
 # License: MIT

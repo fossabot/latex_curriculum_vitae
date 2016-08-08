@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 # @author Sascha Manns
-# @abstract CVEmail Module for latex_curriculum_vitae
+# @abstract module for preparing a email and send it out
 #
 # Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
 # License: MIT

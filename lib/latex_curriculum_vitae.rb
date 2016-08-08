@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 # @author Sascha Manns
-# @abstract Main Class for latex_curriculum_vitae
+# @abstract Main Module for latex_curriculum_vitae
 #
 # Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
 # License: MIT
@@ -23,7 +23,7 @@ require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vit
 # Main Class LatexCurriculumVitae
 module LatexCurriculumVitae
   # The version information
-  VERSION = '1.1.4'
+  VERSION = '1.2.0'
 
   # Variables
   home = Dir.home

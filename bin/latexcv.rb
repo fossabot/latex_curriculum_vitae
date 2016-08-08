@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# encoding: UTF-8
 # Binary for latex_curriculum_vitae
 
 # Dependencies

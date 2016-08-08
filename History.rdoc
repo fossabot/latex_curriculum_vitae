@@ -1,3 +1,9 @@
+=== 1.2.0 / 2016-08-08
+
+* 1 major enhancement
+
+  * reworked bwanschreiben.tex (entityfile.rb and letter.rb)
+
 === 1.1.4 / 2016-08-06
 
 * 1 minor enhancement

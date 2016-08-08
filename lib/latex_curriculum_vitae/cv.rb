@@ -1,7 +1,6 @@
-#!/usr/bin/env ruby
 # encoding: utf-8
 # @author Sascha Manns
-# @abstract CV Module for latex_curriculum_vitae
+# @abstract CV Module for creating the curriculum vitae
 #
 # Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
 # License: MIT
