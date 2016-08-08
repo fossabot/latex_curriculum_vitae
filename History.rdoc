@@ -1,8 +1,13 @@
 === 1.2.0 / 2016-08-08
 
-* 1 major enhancement
+* 2 major enhancement
 
   * reworked bwanschreiben.tex (entityfile.rb and letter.rb)
+  * fixed LCV-1 - use pdf_combine instead of LaTeX solution
+
+* 1 minor enhancement
+
+  * fixed setup (Now the backup and restore of the control files in .latex_curriculum_vitae works
 
 === 1.1.4 / 2016-08-06
 

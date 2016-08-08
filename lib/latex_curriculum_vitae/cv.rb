@@ -35,24 +35,31 @@ module LatexCurriculumVitae
     # @param [String] letter With motivational letter? Can be yes or no
     # @param [String] name_of_letter Name of the motivational letter file
     # @param [String] name_of_resume Name of the resume file
+    # @param [String] name_of_pdf Name of the finished pdf
+    # @param [String] name_of_cover Name of the Cover file
     def self.create_final_cv(letter, name_of_letter, name_of_resume, name_of_pdf, name_of_cover)
-      # pdfunite in-1.pdf in-2.pdf in-n.pdf out.pdf
       if letter == 'yes'
         puts 'Merging the motivational letter with the cv'.colour(:yellow)
-        #system("pdfunite #{name_of_letter}.pdf #{name_of_resume}.pdf result.pdf")
         pdf = CombinePDF.new
         pdf << CombinePDF.load("#{name_of_letter}.pdf") # one way to combine, very fast.
+        pdf << CombinePDF.load("#{name_of_cover}.pdf")
         pdf << CombinePDF.load("#{name_of_resume}.pdf")
-        pdf.save "result.pdf"
+        pdf.save 'result.pdf'
         puts 'Merging done'.colour(:green)
       else
         puts "Copying #{name_of_resume}.pdf result.pdf".colour(:green)
-        system("cp #{name_of_resume}.pdf result.pdf")
+        pdf = CombinePDF.new
+        pdf << CombinePDF.load("#{name_of_cover}.pdf")
+        pdf << CombinePDF.load("#{name_of_resume}.pdf")
+        pdf.save 'resumenew.pdf'
+        system('cp resumenew.pdf result.pdf')
         puts 'Done'.colour(:green)
       end
       appendix(name_of_pdf)
     end
 
+    # Add additional stuff
+    # @param [String] name_of_pdf Name of the finished pdf
     def self.appendix(name_of_pdf)
       puts 'Adding additional stuff'.colour(:yellow)
       pdf = CombinePDF.new
@@ -67,14 +74,6 @@ module LatexCurriculumVitae
       pdf << CombinePDF.load('../Appendix/First_References/ihk.pdf')
       pdf.save "#{name_of_pdf}.pdf"
       puts 'Additional stuff done'.colour(:green)
-    end
-
-    # Shrink and get final compiled pdf
-    # @param [String] name_of_pdf Name of the resulting PDF file
-    def self.shrink_cv(name_of_pdf)
-      puts 'Shrinking PDF'.colour(:yellow)
-      system("gs -o #{name_of_pdf}.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress result.pdf")
-      puts 'Shrinking done'.colour(:yellow)
     end
 
     # Copy result to .latex_curriculum_vitae
