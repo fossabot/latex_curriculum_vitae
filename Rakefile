@@ -19,7 +19,7 @@ Hoe.plugin :doofus
 Hoe.plugin :email
 # Hoe.plugin :gem_prelude_sucks
 #Hoe.plugins.delete :git
-#Hoe.plugin :git
+Hoe.plugin :git
 Hoe.plugin :history
 Hoe.plugin :highline
 #Hoe.plugin :inline
@@ -47,11 +47,12 @@ Hoe.spec 'latex_curriculum_vitae' do
   self.history_file = 'History.rdoc'
   self.readme_file = 'README.rdoc'
   self.extra_rdoc_files = FileList['*.rdoc'].to_a
-  self.post_install_message = '*** Run rake setup to finish the installation (Backup your Latex sources first!!!) *** Please file bugreports and feature requests on: https://saigkill.myjetbrains.com/youtrack/issues?q=project%3A+latex_curriculum_vitae'
+  self.post_install_message = '*** Run rake setup to finish the installation *** Please file bugreports and feature requests on: https://saigkill.myjetbrains.com/youtrack/issues'
 
   dependency 'setup', '~> 5.2'
   dependency 'notifier', '~> 0.5'
   dependency 'pony', '~> 1.11'
+  dependency 'combine_pdf', '~> 0.2'
 
   extra_dev_deps << ['hoe-bundler', '~> 1.3']
   extra_dev_deps << ['hoe-doofus', '~> 1.0']
@@ -79,20 +80,18 @@ require 'fileutils'
 desc 'Setup'
 task :setup do
   datadir = "#{Dir.home}/.rvm/rubies/default/share"
-  FileUtils.cp("#{Dir.home}/.latex_curriculum_vitae/.latex_curriculum_vitae.cfg",
-               "#{Dir.home}/.latex_curriculum_vitae/.latex_curriculum_vitae.cfg.my") if
-                File.exist?("#{Dir.home}/.latex_curriculum_vitae/.latex_curriculum_vitae.cfg")
+  FileUtils.cp("#{Dir.home}/.latex_curriculum_vitae/latex_curriculum_vitae.cfg",
+               "#{Dir.home}/.latex_curriculum_vitae/latex_curriculum_vitae.cfg.my")
+  FileUtils.cp("#{Dir.home}/.latex_curriculum_vitae/personal_data.tex", "#{Dir.home}/.latex_curriculum_vitae/personal_data.tex.my")
   FileUtils.mkdir("#{datadir}/latex_curriculum_vitae-backup") if !File.exist?("#{datadir}/latex_curriculum_vitae-backup")
   FileUtils.cp_r "#{datadir}/latex_curriculum_vitae/.", "#{datadir}/latex_curriculum_vitae-backup/." if
                 File.exist?("#{datadir}/latex_curriculum_vitae/")
   system('setup.rb uninstall --force')
   system('setup.rb config --sysconfdir=$HOME/.latex_curriculum_vitae')
   system('setup.rb install')
-  FileUtils.cp("#{Dir.home}/.latex_curriculum_vitae/.latex_curriculum_vitae.cfg.my",
-               "#{Dir.home}/.latex_curriculum_vitae/.latex_curriculum_vitae.cfg") if
-                File.exist?("#{Dir.home}/.latex_curriculum_vitae/.latex_curriculum_vitae.cfg.my")
-  FileUtils.cp_r "#{datadir}/latex_curriculum_vitae-backup/.", "#{datadir}/latex_curriculum_vitae/." if
-                File.exist?("#{datadir}/latex_curriculum_vitae-backup/.")
+  FileUtils.cp("#{Dir.home}/.latex_curriculum_vitae/latex_curriculum_vitae.cfg.my",
+               "#{Dir.home}/.latex_curriculum_vitae/latex_curriculum_vitae.cfg")
+  FileUtils.cp("#{Dir.home}/.latex_curriculum_vitae/personal_data.tex.my", "#{Dir.home}/.latex_curriculum_vitae/personal_data.tex")
   puts 'Creating Launcher...'.color(:yellow)
   desktopfile = "#{Dir.home}/.local/share/applications/latex_curriculum_vitae.desktop"
   FileUtils.touch(desktopfile)

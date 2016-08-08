@@ -7,6 +7,7 @@ source "https://rubygems.org/"
 gem "setup", "~>5.2"
 gem "notifier", "~>0.5"
 gem "pony", "~>1.11"
+gem "combine_pdf", "~>0.2"
 
 gem "hoe-highline", "~>0.2", :group => [:development, :test]
 gem "rdoc", "~>4.0", :group => [:development, :test]

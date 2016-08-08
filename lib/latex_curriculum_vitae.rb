@@ -47,7 +47,7 @@ module LatexCurriculumVitae
 
   # Create the cover
   FileUtils.cd("#{datadir}/latex_curriculum_vitae/Cover") do
-    LatexCurriculumVitae::Cover.create_cover(name_of_cover)
+    LatexCurriculumVitae::Cover.create_cover(name_of_cover, tmpdir)
   end
 
   # Create the Curriculum Vitae
@@ -57,8 +57,8 @@ module LatexCurriculumVitae
 
   # Final create and shrinking
   FileUtils.cd(tmpdir) do
-    LatexCurriculumVitae::CV.create_final_cv(letter, name_of_letter, name_of_resume)
-    LatexCurriculumVitae::CV.shrink_cv(name_of_pdf)
+    LatexCurriculumVitae::CV.create_final_cv(letter, name_of_letter, name_of_resume, name_of_pdf, name_of_cover)
+    #LatexCurriculumVitae::CV.shrink_cv(name_of_pdf)
     LatexCurriculumVitae::CV.copy_home(name_of_pdf)
   end
 
