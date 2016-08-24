@@ -1,3 +1,7 @@
+build:
+  environment:
+    ruby: '2.2.3'
+
 checks:
     ruby:
         code_rating: true
