@@ -1,3 +1,16 @@
+=== 1.2.2 / 2016-10-12
+
+* 2 minor enhancement
+
+  * removed cleanup dir (fix LCV-2 Implement a split funktion)
+  * write csv before preview in pdf viewer (LCV-3 Move up the csv method)
+
+=== 1.2.1 / 2016-10-05
+
+* 1 minor enhancement
+
+  * shortened support targetlock for entityfile
+
 === 1.2.0 / 2016-08-08
 
 * 2 major enhancement

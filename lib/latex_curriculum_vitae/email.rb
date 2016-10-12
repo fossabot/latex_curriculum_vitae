@@ -102,10 +102,8 @@ und würde mich sehr über ein Vorstellungsgespräch freuen.
 
 --
 Yours sincerly
-Sascha Manns
-- Autor Geschäftsprozess & Anwendungsdokumentation -
-- Schriftsteller -
 
+Sascha Manns
 Maifeldstraße 10
 56727 Mayen
 Phone: +49-2651-4014045 (home)
@@ -113,8 +111,8 @@ Phone: +49-1573-9242730 (mobile)
 Email: Sascha.Manns@directbox.com
 Web: http://saigkill.github.io
 Jabber: saigkill@jabber.org
-GPG: C088DDD6 @ hkp://keys.gnupg.net
-X504: 3CC04604 @ http://www.cacert.de
+GPG: FA19BD01 @ hkp://keyserver.ubuntu.com
+S/MIME: 084E5A5C @ cacert.org
 EOF
       else
         body =<<EOF
@@ -124,10 +122,8 @@ Meine Bewerbungsunterlagen samt des offiziellen Anschreibens sind der Mail als A
 
 --
 Yours sincerly
-Sascha Manns
-- Autor Geschäftsprozess & Anwendungsdokumentation -
-- Schriftsteller -
 
+Sascha Manns
 Maifeldstraße 10
 56727 Mayen
 Phone: +49-2651-4014045 (home)
@@ -135,8 +131,8 @@ Phone: +49-1573-9242730 (mobile)
 Email: Sascha.Manns@directbox.com
 Web: http://saigkill.github.io
 Jabber: saigkill@jabber.org
-GPG: C088DDD6 @ hkp://keys.gnupg.net
-X504: 3CC04604 @ http://www.cacert.de
+GPG: FA19BD01 @ hkp://keyserver.ubuntu.com
+S/MIME: 084E5A5C @ cacert.org
 
 EOF
       end

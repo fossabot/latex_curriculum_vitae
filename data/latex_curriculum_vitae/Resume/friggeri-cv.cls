@@ -51,10 +51,10 @@
 
 \newfontfamily\bodyfont[]{Koblenz Serial}
 \newfontfamily\thinfont[]{Koblenz Serial Light}
-\newfontfamily\headingfont[]{Koblenz Serial Bold}
+\newfontfamily\headingfont[]{Koblenz Serial Bold} % Koblenz Serial Bold
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Newcastle Pro Light}
+\setmainfont[Mapping=tex-text, Color=textcolor]{Isonorm Pro} % Newcastle Pro Light
 
 %\setmathfont{XITS Math}
 
