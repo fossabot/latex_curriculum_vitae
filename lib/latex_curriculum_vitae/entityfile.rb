@@ -140,7 +140,7 @@ EOF
       if target == 'doku'
         targetblock = 'Neben der Beschreibungssprache DocBook samt XSL-FO lernte ich die Satzsprache \\LaTeX. \\\\ Selbstständig erarbeitete ich mir Kenntnisse in der Programmiersprache Ruby, sowie der Web-App-Entwicklung (Technische Hochschule Mittelrhein).\\\\'
       elsif target == 'support'
-        targetblock = 'Im IT-Support hatte ich bereits erste Führungserfahrung als Dispatcher \\&Controller. Ticketbearbeitung, -zuteilung und Nachkontrolle gehörten jeweils dazu. Selbstständig erarbeitete ich mir Kenntnisse in der Programmiersprache Ruby, sowie der Web-App-Entwicklung (Technische Hochschule Mittelrhein).\\\\'
+        targetblock = 'Im IT-Support hatte ich bereits erste Führungserfahrung als Dispatcher \\&Controller. Selbstständig erarbeitete ich mir Kenntnisse in der Programmiersprache Ruby, sowie der Web-App-Entwicklung (Technische Hochschule Mittelrhein).\\\\'
       else
         targetblock = 'Im kaufmännischen Bereich habe ich bereits vielfältige Erfahrungen im Einkauf, Verkauf, Öffentlichkeitsarbeit und Vertrieb gemacht und bin stets bereit neues zu lernen.\\\\'
       end

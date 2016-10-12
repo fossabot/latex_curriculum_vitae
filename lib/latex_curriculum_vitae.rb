@@ -23,7 +23,7 @@ require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vit
 # Main Class LatexCurriculumVitae
 module LatexCurriculumVitae
   # The version information
-  VERSION = '1.2.0'
+  VERSION = '1.2.2'
 
   # Variables
   home = Dir.home
@@ -64,19 +64,11 @@ module LatexCurriculumVitae
   # Start evince to check the output file
   system("#{pdf_reader} #{home}/.latex_curriculum_vitae/#{name_of_pdf}.pdf")
 
-  # Ask if result is ok
-  LatexCurriculumVitae::Email.resultok(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf)
-
   # Add entry to Outfile
   CVOutfile.add_to_outfile(jobtitle, company, contact, emailaddress, csvout)
 
-  # Cleanup tmpdir
-  FileUtils.cd(tmpdir) do
-    allfiles = Dir.glob("*")
-    allfiles.each do |data|
-      File.delete(data)
-    end
-  end
+  # Ask if result is ok
+  LatexCurriculumVitae::Email.resultok(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf)
 
   # Inform about creation is done
   LatexCurriculumVitae::Notify.run(jobtitle)
