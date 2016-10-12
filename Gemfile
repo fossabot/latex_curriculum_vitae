@@ -10,7 +10,6 @@ gem "pony", "~>1.11"
 gem "combine_pdf", "~>0.2"
 
 gem "hoe-highline", "~>0.2", :group => [:development, :test]
-gem "rdoc", "~>4.0", :group => [:development, :test]
 gem "hoe-bundler", "~>1.3", :group => [:development, :test]
 gem "hoe-doofus", "~>1.0", :group => [:development, :test]
 gem "hoe-git", "~>1.6", :group => [:development, :test]
@@ -28,5 +27,6 @@ gem "rainbow", "~>2.0", :group => [:development, :test]
 gem "bundler", "~>1.11", :group => [:development, :test]
 gem "parseconfig", "~>1.0", :group => [:development, :test]
 gem "rspec", "~>3.5", :group => [:development, :test]
+gem "rdoc", "~>4.0", :group => [:development, :test]
 
 # vim: syntax=ruby
