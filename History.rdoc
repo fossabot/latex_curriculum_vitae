@@ -1,3 +1,10 @@
+=== 1.3.0 / 2016-10-13
+
+* 2 major enhancements
+
+  * added bitly_user and bitly_apikey to config (LCV-4 URL of job offer)
+  * added method for shorting urls (LCV-4 URL of job offer)
+
 === 1.2.2 / 2016-10-12
 
 * 2 minor enhancement

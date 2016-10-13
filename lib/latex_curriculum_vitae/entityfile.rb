@@ -3,12 +3,13 @@
 # @author Sascha Manns
 # @abstract module for creating the entity file for latex
 #
-# Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
+# Copyright (C) 2015-2016  Sascha Manns <Sascha.Manns@directbox.com>
 # License: MIT
 
 # Dependencies
 require 'fileutils'
 require 'rainbow/ext/string'
+require 'url_shortener'
 
 # main module
 module LatexCurriculumVitae
@@ -30,14 +31,32 @@ module LatexCurriculumVitae
 --field="If you have a contact so give me the name of him/her. Leave blank if unknown contact:TEXT" \
 --field="Tell me the email address for sending the application:TEXT" \
 --field="What kind of target:CBE" \
+--field="Tell me the URL of the job offer:TEXT" \
 --button="Go!" "" "no,yes" "yes,no" "" "" "" "male,female,unknown" "" "" "doku,support,kaufm"`
-      jobtitle, proactive, letter, company, street, city, contact_sex, contact, emailaddress, target = resume.chomp.split('|')
-      [jobtitle, proactive, letter, company, street, city, contact_sex, contact, emailaddress, target].each do |s|
+      jobtitle, proactive, letter, company, street, city, contact_sex, contact, emailaddress, target, job_url = resume.chomp.split('|')
+      [jobtitle, proactive, letter, company, street, city, contact_sex, contact, emailaddress, target, job_url].each do |s|
         puts s
       end
 
       create_file(jobtitle, company, street, city, contact, entitytex, contact_sex, proactive, target)
-      [contact, emailaddress, jobtitle, contact_sex, company, letter, proactive, target]
+      [contact, emailaddress, jobtitle, contact_sex, company, letter, proactive, job_url]
+    end
+
+    # Method for warning about disabling VPN because Pony returns errors by sending the email
+    def self.vpn_warning
+      `yad --title="Warning" --center --on-top --text="Please disable your VPN"`
+    end
+
+    def self.shorten_url(job_url, bitly_user, bitly_apikey)
+      authorize = UrlShortener::Authorize.new "#{bitly_user}", "#{bitly_apikey}"
+      client = UrlShortener::Client.new authorize
+
+      shorten = client.shorten("#{job_url}") # => UrlShortener::Response::Shorten object
+      shorten.result # => returns a hash of all data returned from bitly
+      shorten.urls # => Only returns the short urls look for more convenience methods in the UrlShortener::Response::Shorten class
+      puts shorten.urls
+      joburl = shorten.urls
+      return joburl
     end
 
     # # Method for getting information through a real gui

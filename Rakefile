@@ -19,7 +19,7 @@ Hoe.plugin :doofus
 Hoe.plugin :email
 # Hoe.plugin :gem_prelude_sucks
 #Hoe.plugins.delete :git
-Hoe.plugin :git
+#Hoe.plugin :git
 Hoe.plugin :history
 Hoe.plugin :highline
 #Hoe.plugin :inline
@@ -53,6 +53,7 @@ Hoe.spec 'latex_curriculum_vitae' do
   dependency 'notifier', '~> 0.5'
   dependency 'pony', '~> 1.11'
   dependency 'combine_pdf', '~> 0.2'
+  dependency 'url_shortener', '~> 0.0.9'
 
   extra_dev_deps << ['hoe-bundler', '~> 1.3']
   extra_dev_deps << ['hoe-doofus', '~> 1.0']

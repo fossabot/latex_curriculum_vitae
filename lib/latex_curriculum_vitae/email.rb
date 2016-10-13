@@ -3,7 +3,7 @@
 # @author Sascha Manns
 # @abstract module for preparing a email and send it out
 #
-# Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
+# Copyright (C) 2015-2016  Sascha Manns <Sascha.Manns@directbox.com>
 # License: MIT
 
 # Dependencies

@@ -3,7 +3,7 @@
 # @author Sascha Manns
 # @abstract module for getting information from a config file
 #
-# Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
+# Copyright (C) 2015-2016  Sascha Manns <Sascha.Manns@directbox.com>
 # License: MIT
 
 # Dependencies
@@ -23,7 +23,11 @@ module LatexCurriculumVitae
       name_of_resume = config['name_of_resume']
       name_of_letter = config['name_of_letter']
       pdf_reader = config['pdf_reader']
-      [name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader]
+      shorten_url = config['shorten_url']
+      bitly_user = config['bitly_user']
+      bitly_apikey = config['bitly_apikey']
+
+      [name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader, shorten_url, bitly_user, bitly_apikey]
     end
 
     # Method for getting smtp configuration

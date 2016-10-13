@@ -8,6 +8,7 @@ gem "setup", "~>5.2"
 gem "notifier", "~>0.5"
 gem "pony", "~>1.11"
 gem "combine_pdf", "~>0.2"
+gem "url_shortener", "~>0.0.9"
 
 gem "hoe-highline", "~>0.2", :group => [:development, :test]
 gem "hoe-bundler", "~>1.3", :group => [:development, :test]

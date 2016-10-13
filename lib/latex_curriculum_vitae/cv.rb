@@ -2,12 +2,13 @@
 # @author Sascha Manns
 # @abstract CV Module for creating the curriculum vitae
 #
-# Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
+# Copyright (C) 2015-2016  Sascha Manns <Sascha.Manns@directbox.com>
 # License: MIT
 
 # Dependencies
 require 'rainbow/ext/string'
 require 'combine_pdf'
+require 'fileutils'
 
 # main Module
 module LatexCurriculumVitae
