@@ -66,7 +66,6 @@ lib/latex_curriculum_vitae/cv.rb
 lib/latex_curriculum_vitae/email.rb
 lib/latex_curriculum_vitae/entityfile.rb
 lib/latex_curriculum_vitae/get-config.rb
-lib/latex_curriculum_vitae/glade/latexcv.glade
 lib/latex_curriculum_vitae/letter.rb
 lib/latex_curriculum_vitae/notifier.rb
 lib/latex_curriculum_vitae/outfile.rb
