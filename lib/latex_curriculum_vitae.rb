@@ -3,7 +3,7 @@
 # @author Sascha Manns
 # @abstract Main Module for latex_curriculum_vitae
 #
-# Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
+# Copyright (C) 2015-2017  Sascha Manns <Sascha.Manns@mailbox.org>
 # License: MIT
 
 # rubocop:disable Metrics/LineLength
@@ -23,7 +23,7 @@ require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vit
 # Main Class LatexCurriculumVitae
 module LatexCurriculumVitae
   # The version information
-  VERSION = '1.2.2'
+  VERSION = '1.3.1'
 
   # Variables
   home = Dir.home
@@ -32,11 +32,22 @@ module LatexCurriculumVitae
   entitytex = "#{home}/.latex_curriculum_vitae/entity.tex"
   csvout = "#{home}/.latex_curriculum_vitae/job-applications.csv"
   tmpdir = "#{datadir}/latex_curriculum_vitae/tmp"
-  name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader = LatexCurriculumVitae::GetConfig.get
+  name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader, shorten_url, bitly_user, bitly_apikey = LatexCurriculumVitae::GetConfig.get
 
   # Get the needed Information for creating the application
-  contact, emailaddress, jobtitle, contact_sex, company, letter, proactive =
+  contact, emailaddress, jobtitle, contact_sex, company, letter, proactive, job_url =
       LatexCurriculumVitae::Entityfile.get_information(entitytex)
+
+  # Shorten shorten_url
+  if proactive == 'yes'
+   joburl = 'No URL available (Proactive)'
+  else
+    if shorten_url == 'yes'
+      joburl = LatexCurriculumVitae::Entityfile.shorten_url(job_url, bitly_user, bitly_apikey)
+    else
+      joburl = job_url
+    end
+  end
 
   # Create Motivational Letter
   if letter == 'yes'
@@ -61,11 +72,11 @@ module LatexCurriculumVitae
     LatexCurriculumVitae::CV.copy_home(name_of_pdf)
   end
 
+  # Add entry to Outfile
+  CVOutfile.add_to_outfile(jobtitle, company, contact, emailaddress, csvout, joburl)
+
   # Start evince to check the output file
   system("#{pdf_reader} #{home}/.latex_curriculum_vitae/#{name_of_pdf}.pdf")
-
-  # Add entry to Outfile
-  CVOutfile.add_to_outfile(jobtitle, company, contact, emailaddress, csvout)
 
   # Ask if result is ok
   LatexCurriculumVitae::Email.resultok(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf)

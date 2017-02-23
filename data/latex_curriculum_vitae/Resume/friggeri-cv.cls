@@ -1,3 +1,25 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+% Modfied by: Sascha Manns (Sascha.Manns@mailbox.org)
+% https://github.com/saigkill/latex_curriculum_vitae
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ProvidesClass{friggeri-cv}[2012/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 
@@ -51,10 +73,10 @@
 
 \newfontfamily\bodyfont[]{Koblenz Serial}
 \newfontfamily\thinfont[]{Koblenz Serial Light}
-\newfontfamily\headingfont[]{Koblenz Serial Bold} % Koblenz Serial Bold
+\newfontfamily\headingfont[]{Koblenz Serial Bold}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Isonorm Pro} % Newcastle Pro Light
+\setmainfont[Mapping=tex-text, Color=textcolor]{Isonorm Pro}
 
 %\setmathfont{XITS Math}
 
@@ -295,14 +317,6 @@
   \par\vspace{0.3\baselineskip}
 }
 
-%\DeclareNameFormat{author}{%
-%  \small\addfontfeature{Color=lightgray}%
-%  \ifblank{#3}{}{#3\space}#1%
-%  \ifthenelse{\value{listcount}<\value{liststop}}
-%    {\addcomma\space}
-%    {}%
-%}
-
 \DeclareNameFormat{author}{%
   \nameparts{#1}%
   \small\addfontfeature{Color=lightgray}%
@@ -314,8 +328,9 @@
 
 \newcommand{\printbibsection}[2]{
   \begin{refsection}
+  	\newrefcontext[sorting=chronological]
     \nocite{*}
-    \printbibliography[sorting=chronological, type={#1}, title={#2}, heading=subbibliography]
+    \printbibliography[type={#1}, title={#2}, heading=subbibliography]
   \end{refsection}
 }
 

@@ -9,6 +9,8 @@
 % Original author:
 % Adrien Friggeri (adrien@friggeri.net)
 % https://github.com/afriggeri/CV
+% Modfied by: Sascha Manns (Sascha.Manns@mailbox.org)
+% https://github.com/saigkill/latex_curriculum_vitae
 %
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
@@ -19,16 +21,15 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[a4paper,latin]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\documentclass[a4paper]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 \hypersetup{
 pdftitle={Bewerbungsunterlagen von Sascha Manns}, %%
 pdfauthor={Sascha Manns}, %%
 pdfsubject={Bewerbungsunterlagen}, %%
 pdfcreator={XeLaTEX and Biber with hyperref-package.},
 pdfproducer={Sascha Manns, Mayen}, %%
-pdfkeywords={Manns, Mayen, Bewerbung, IT, Community, Linux, Programmierer, Dispatcher, Buchautor, Schriftsteller, Geschäftsprozess} %%
+pdfkeywords={Manns, Mayen, Bewerbung, IT-Support, Community, Linux, Programmierer, Dispatcher, Buchautor, Schriftsteller, Geschäftsprozess} %%
 }
-\usepackage{pdfpages}
 \usepackage{graphicx}
 \usepackage{xltxtra}
 \usepackage{progressbar}
@@ -36,7 +37,6 @@ pdfkeywords={Manns, Mayen, Bewerbung, IT, Community, Linux, Programmierer, Dispa
 \addbibresource{../Appendix/Bibliography/bibliography1.bib} % Specify the bibliography file to include publications
 
 \begin{document}
-%\includepdf{../Cover/Cover}
 
 \header{Sascha}{Manns}{Supporter/Documentation Specialist} % Your name and current job title/field
 
@@ -53,7 +53,7 @@ Germany
 +49 (1573) 924 2730
 +49 (2651) 40 14 045
 ~
-\href{mailto:Sascha.Manns@directbox.com}{Sascha.Manns@directbox.com}\includegraphics[width=0.3cm]{../Pictures/email.png}
+\href{mailto:Sascha.Manns@mailbox.org}{Sascha.Manns@mailbox.org}\includegraphics[width=0.3cm]{../Pictures/email.png}
 \href{http://saigkill.github.io}{saigkill.github.io}\includegraphics[width=0.3cm]{../Pictures/aboutme.png}
 Geburtsdatum: 01.10.1979
 \section{Social Media}
@@ -107,18 +107,18 @@ Russisch \progressbar[linecolor=blue,tickscolor=orange,emptycolor=white,filledco
 {Hays Temp GmbH / More Holding}
 {Mannheim}
 {\emph{IT-Supporter/Dispatcher/Controller} \\
-Detailierte Aufgaben bei ITSCare Neuwied (ZBV):
-\begin{itemize}
-\item Kundenpflege via Telefon und Email
-\item Dispatching und Teamcontroling
-\item AmSys/IDM (AOK Krankenkassen)
-\item Eröffnung, Entsperrung oder Löschung von Benutzerkonten
-\item Passwort- und Rechtevergaben
-\item SLA-konforme Bearbeitung von eingehenden Störungen (betreffend Benutzerverwaltung) im Rahmen des Incident-Managements
-\item Pflege von Logon-Prozeduren
-\item Annahme, Erfassung und Bearbeitung eingehender Benutzeranträge
-\item Benutzerkontenverwaltung im Active Directory
-\end{itemize}
+    Detailierte Aufgaben bei ITSCare Neuwied (ZBV):
+    \begin{itemize}
+        \item Kundenpflege via Telefon und Email
+        \item Dispatching und Teamcontroling
+        \item AmSys/IDM (AOK Krankenkassen)
+        \item Eröffnung, Entsperrung oder Löschung von Benutzerkonten
+        \item Passwort- und Rechtevergaben
+        \item SLA-konforme Bearbeitung von eingehenden Störungen (betreffend Benutzerverwaltung) im Rahmen des Incident-Managements
+        \item Pflege von Logon-Prozeduren
+        \item Annahme, Erfassung und Bearbeitung eingehender Benutzeranträge
+        \item Benutzerkontenverwaltung im Active Directory
+    \end{itemize}
 }
 %------------------------------------------------
 \entry
@@ -126,14 +126,14 @@ Detailierte Aufgaben bei ITSCare Neuwied (ZBV):
 {Lulu Press Inc.}
 {Homeoffice}
 {\emph{Buchautor \& Herausgeber}\\
-Detailierte Aufgaben:
-\begin{itemize}
-\item Recherche
-\item Schreiben des Handbuchs
-\item Einführung des Lektorenteams in das Projekt
-\item Einführung einer Google Code-In Studentin in den Textsatz (Teilnahme als Mentor)
-\item Satz \& Layout (\LaTeX{} und DocBook/XSL-FO)
-\end{itemize}
+    Detailierte Aufgaben:
+    \begin{itemize}
+        \item Recherche
+        \item Schreiben des Handbuchs
+        \item Einführung des Lektorenteams in das Projekt
+        \item Einführung einer Google Code-In Studentin in den Textsatz (Teilnahme als Mentor)
+        \item Satz \& Layout (\LaTeX{} und DocBook/XSL-FO)
+    \end{itemize}
 }
 %------------------------------------------------
 \entry
@@ -141,18 +141,18 @@ Detailierte Aufgaben:
 {open-slx GmbH}
 {Homeoffice}
 {\emph{Community \& Support Agent} \\
-Detailierte Aufgaben:
-\begin{itemize}
-\item Level 1 \& 2 Support via Telefon und Email
-\item Testen von Software
-\item Webseitenbetreuung \& Social Media
-\item Dokumentation
-\item Community Management
-\item Projektleitung deutsches openSUSE Wiki. Migration des Wikis zu neuer Struktur
-\item openSUSE Weekly News
-\item Paketverwaltung einiger RPM-Pakete
-\item openSUSE Membership Application Team
-\end{itemize}
+    Detailierte Aufgaben:
+    \begin{itemize}
+        \item Level 1 \& 2 Support via Telefon und Email
+        \item Testen von Software
+        \item Webseitenbetreuung \& Social Media
+        \item Dokumentation
+        \item Community Management
+        \item Projektleitung deutsches openSUSE Wiki. Migration des Wikis zu neuer Struktur
+        \item openSUSE Weekly News
+        \item Paketverwaltung einiger RPM-Pakete
+        \item openSUSE Membership Application Team
+    \end{itemize}
 Auflösung der Stelle durch mangelnde Absatzzahlen des Boxproduktes.
 }
 \end{entrylist}
@@ -163,17 +163,17 @@ Auflösung der Stelle durch mangelnde Absatzzahlen des Boxproduktes.
 {openSUSE Linux Projekt}
 {Homeoffice}
 {\emph{Paketbetreuer/Teamleiter}\\
-Detailierte Aufgaben:
-\begin{itemize}
-\item Beschaffung, Aktualisierung des Sourcecodes im Buildservice
-\item Compiling und Packaging neuer Binärpakete
-\item Verteilung via Buildservice
-\item Leiter des openSUSE Newsletters und Publikationen in bis zu 12 Sprachen
-\item Erfinder eines neuen Podcastformates (Vertonte Weekly News)
-\item openSUSE Medical Project (Subprojektgründer)
-\item Mitglied des openSUSE Marketing Teams
-\item Mitglied des openSUSE Feature Screening Teams
-\end{itemize}
+    Detailierte Aufgaben:
+    \begin{itemize}
+        \item Beschaffung, Aktualisierung des Sourcecodes im Buildservice
+        \item Compiling und Packaging neuer Binärpakete
+        \item Verteilung via Buildservice
+        \item Leiter des openSUSE Newsletters und publikation in bis zu 12 Sprachen
+        \item Erfinder eines neuen Podcastformates (Vertonte Weekly News)
+        \item openSUSE Medical Project (Subprojektgründer)
+        \item Mitglied des openSUSE Marketing Teams
+        \item Mitglied des openSUSE Feature Screening Teams
+    \end{itemize}
 }
 %-----------------------------------------------
 \entry
@@ -189,14 +189,14 @@ Detailierte Aufgaben:
 {Auto Deschner GmbH}
 {Mendig}
 {\emph{Kaufmann im Einzelhandel}\\
-Detailierte Aufgaben:
-\begin{itemize}
-\item Einkauf \& Warenannahme \& Kontrolle
-\item Bestandsbuchungen der Waren
-\item Kundenbetreuung
-\item Rechnungserstellung
-\item Projektplanung
-\end{itemize}
+    Detailierte Aufgaben:
+    \begin{itemize}
+        \item Einkauf \& Warenannahme \& Kontrolle
+        \item Bestandsbuchungen der Waren
+        \item Kundenbetreuung
+        \item Rechnungserstellung
+        \item Projektplanung
+    \end{itemize}
 }
 \end{entrylist}
 
@@ -233,12 +233,6 @@ Allgemeine kaufm. Tätigkeiten.
 {Technische Hochschule Mittelhessen}
 {\emph{MOOC}}
 %------------------------------------------------
-%\entry
-%{06/2013}
-%{Kompetenzpass für Ökonomen}
-%{BV Deutscher Volks- und Betriebswirte}
-%{Düsseldorf}
-%------------------------------------------------
 \entry
 {04/2013}
 {Onlinequalifizierung: Schlüsselkompetenzen kompakt}
@@ -258,18 +252,12 @@ Allgemeine kaufm. Tätigkeiten.
 {mUXCamp}
 {mUXCamp, Worms}
 {Planungsteam für nächstes Camp. (Mitveranstalter: \\FG Wirtschaftsinformatik des BDVB)}
-%--------------------------------------------
-%\entry
-%{2013--jetzt}
-%{BV Deutscher Volks- und Betriebswirte}
-%{FG Wirtschaftsinformatik}
-%{Mitarbeit in verschiedenen Projekten}
 %---------------------------------------------
 \entry
 {2010--2011}
 {Piratenpartei Deutschland}
 {Bundespressestelle}
-{}
+{Gründungsmitglied SG-Presse}
 %--------------------------------------------
 \entry
 {2008--2015}
@@ -370,6 +358,12 @@ Allgemeine kaufm. Tätigkeiten.
 %------------------------------------------------
 \entry
 {2010}
+{Radiotux Podcast}
+{Produzent}
+{Erfinder des Weekly-News Podcast-Formats}
+%------------------------------------------------ 
+\entry
+{2010}
 {openSUSE Conference}
 {Vortrag}
 {Vortrag über den aktuellen Stand der Weekly News und die Planungen der Zukunft}
@@ -399,15 +393,15 @@ Allgemeine kaufm. Tätigkeiten.
 
 \printbibsection{book}{Bücher} % Print all books from the bibliography
 
-\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
-\nocite{*}
-\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
-\end{refsection}
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+%\end{refsection}
 
-\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
-\nocite{*}
-\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
-\end{refsection}
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+%\end{refsection}
 
 \printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
 

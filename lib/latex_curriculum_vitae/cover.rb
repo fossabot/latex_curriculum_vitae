@@ -1,9 +1,8 @@
-# encoding: UTF-8
 # encoding: utf-8
 # @author Sascha Manns
 # @abstract A module for creating the latex cover
 #
-# Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
+# Copyright (C) 2015-2017  Sascha Manns <Sascha.Manns@mailbox.org>
 # License: MIT
 
 # Dependencies

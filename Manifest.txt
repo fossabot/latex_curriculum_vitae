@@ -55,13 +55,6 @@ data/latex_curriculum_vitae/Pictures/linkedin.png
 data/latex_curriculum_vitae/Pictures/signatur.png
 data/latex_curriculum_vitae/Pictures/twitter.png
 data/latex_curriculum_vitae/Pictures/xing.png
-data/latex_curriculum_vitae/Resume/cv_10.aux
-data/latex_curriculum_vitae/Resume/cv_10.bbl
-data/latex_curriculum_vitae/Resume/cv_10.bcf
-data/latex_curriculum_vitae/Resume/cv_10.blg
-data/latex_curriculum_vitae/Resume/cv_10.out
-data/latex_curriculum_vitae/Resume/cv_10.pdf
-data/latex_curriculum_vitae/Resume/cv_10.run.xml
 data/latex_curriculum_vitae/Resume/cv_10.tex
 data/latex_curriculum_vitae/Resume/friggeri-cv.cls
 data/latex_curriculum_vitae/Resume/missfont.log
@@ -73,7 +66,6 @@ lib/latex_curriculum_vitae/cv.rb
 lib/latex_curriculum_vitae/email.rb
 lib/latex_curriculum_vitae/entityfile.rb
 lib/latex_curriculum_vitae/get-config.rb
-lib/latex_curriculum_vitae/glade/latexcv.glade
 lib/latex_curriculum_vitae/letter.rb
 lib/latex_curriculum_vitae/notifier.rb
 lib/latex_curriculum_vitae/outfile.rb

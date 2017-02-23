@@ -1,3 +1,8 @@
+% @author Sascha Manns
+% @abstract Motivational Letter for latex_curriculum_vitae
+%
+% Copyright (C) 2015-2016  Sascha Manns <Sascha.Manns@mailbox.org>
+% License: MIT
 %---------------------------------------------------------------------------
 \documentclass%%
 %---------------------------------------------------------------------------
@@ -54,16 +59,13 @@
 \setkomafont{backaddress}{\mdseries}
 \setkomafont{fromaddress}{\small\sffamily\mdseries\color{mygray}}
 
-%---------------------------------------------------------------------------<<<<<<<<<<Firmendetails
-%\def\Firma{Art of Transfer GbR Monica Baumberger}
-%\def\Ansprechpartner{Frau Monica Baumberger}
-%\def\Strasse{Sigmund-Riefler-Bogen 13}
-%\def\PLZ{81829 München - Trudering-Riem}
-%\def\Stelle{Buchstabenzähler}
-\input{$HOME/.latex_curriculum_vitae/personal_data.tex}
-%
 % -------------------------------------------------
 % Firmendaten
+% -------------------------------------------------
+\input{$HOME/.latex_curriculum_vitae/personal_data.tex}
+
+% -------------------------------------------------
+% Anzeigendetails
 % -------------------------------------------------
 \input{$HOME/.latex_curriculum_vitae/entity.tex}
 %---------------------------------------------------------------------------
@@ -146,9 +148,6 @@ SASCHA MANNS}
 }%
 %---------------------------------------------------------------------------
 % Bankverbindung
-%\setkomavar{frombank}{Kto. 198\ 242\ 620\\
-%BLZ 576\,500\,10\\
-%Kreissparkasse Mayen}
 \setkomavar{frombank}{\mybank}
 %---------------------------------------------------------------------------
 %\setkomavar{yourref}{}
@@ -161,18 +160,12 @@ SASCHA MANNS}
 \setkomavar{date}{den \today}
 \setkomavar{place}{Mayen}
 %---------------------------------------------------------------------------
-
-
-%---------------------------------------------------------------------------
 % Hier beginnt der Brief, mit der Anschrift des Empfängers
-
 \begin{letter}{\addressstring}
-
 %---------------------------------------------------------------------------
 % Der Betreff des Briefes
-\setkomavar{subject}{\bf{\subject}}
+\setkomavar{subject}{\subject}
 %---------------------------------------------------------------------------
-%\opening{Sehr geehrter \Ansprechpartner,}
 \opening{\introduction}
 \intro{}
 Zuletzt war ich bei der XCOM AG in Andernach als Autor für Geschäftsprozess- und Anwendungsdokumentation tätig. Hier zählten sämtliche Arbeiten rund um die Dokumentaton zu meinem Aufgabengebiet.\\\\

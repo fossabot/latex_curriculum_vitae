@@ -3,12 +3,13 @@
 # @author Sascha Manns
 # @abstract module for preparing a email and send it out
 #
-# Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
+# Copyright (C) 2015-2017  Sascha Manns <Sascha.Manns@mailbox.org>
 # License: MIT
 
 # Dependencies
 require 'rainbow/ext/string'
 require 'pony'
+require 'resolv-replace.rb'
 require File.expand_path(File.join(File.dirname(__FILE__), 'get-config'))
 
 # rubocop:disable Metrics/LineLength
@@ -22,8 +23,10 @@ module LatexCurriculumVitae
     # @param [String] jobtitle Title of the target job
     # @param [String] contact_sex Can be male, female or unknown
     # @param [String] proactive Can be yes or no
+    # @param [String] letter For preparing the letter
+    # @param [String] name_of_pdf Name of the output pdf
     def self.create_email(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf)
-      own_email_address, own_smtp, own_username, own_password = LatexCurriculumVitae::GetConfig.get_smtp
+      own_email_address, own_smtp, own_username, own_password, own_port, own_tls = LatexCurriculumVitae::GetConfig.get_smtp
       introduction = LatexCurriculumVitae::Email.introduction(contact, contact_sex)
       subject = LatexCurriculumVitae::Email.subject(proactive, jobtitle)
       body = LatexCurriculumVitae::Email.get_body(introduction, letter)
@@ -40,7 +43,8 @@ module LatexCurriculumVitae
                     :via => :smtp,
                     :via_options => {
                         :address => own_smtp,
-                        :port => '25',
+                        :port => own_port,
+                        :enable_starttls_auto => true,
                         :user_name => own_username,
                         :password => own_password,
                         :authentication => :plain, # :plain, :login, :cram_md5, no auth by default
@@ -52,6 +56,7 @@ module LatexCurriculumVitae
     # Method for building the introduction
     # @param [String] contact Name of the contact
     # @param [String] contact_sex Can be male, female or unknown
+    # @return [String] Returns introductiion
     def self.introduction(contact, contact_sex)
       if contact == ''
         introduction = 'Sehr geehrte Damen und Herren,'
@@ -68,6 +73,7 @@ module LatexCurriculumVitae
     # Method for building the subject
     # @param [String] proactive Can be yes or no
     # @param [String] jobtitle Title of the target job
+    # @return [String] subject Set the subject
     def self.subject(proactive, jobtitle)
       if proactive == 'yes'
         subject = "Initiativbewerbung um einen Arbeitsplatz als #{jobtitle}"
@@ -80,6 +86,7 @@ module LatexCurriculumVitae
     # Method for building the email body
     # @param [String] introduction EMail introduction
     # @param [String] letter With motivational letter? Can be yes or no
+    # @return [String] body Returns the messagebody for the email
     def self.get_body(introduction, letter)
       # rubocop:disable Style/MultilineOperationIndentation
       if letter == 'no'
@@ -99,41 +106,42 @@ Persönlich runde ich das Profil mit den Eigenschaften: Teamfähigkeit, Kommunik
 stärke und Leistungsbereitschaft ab.
 Ich bin mir sicher, die von Ihnen gewünschten Kenntnisse und Fähigkeiten mitzubringen,
 und würde mich sehr über ein Vorstellungsgespräch freuen.
-
 --
-Yours sincerly
+Sincerly yours
 
 Sascha Manns
 Maifeldstraße 10
 56727 Mayen
-Phone: +49-2651-4014045 (home)
 Phone: +49-1573-9242730 (mobile)
-Email: Sascha.Manns@directbox.com
-Web: http://saigkill.github.io
+Phone: +49-2651-4014045 (home)
+Email: Sascha.Manns@mailbox.org
 Jabber: saigkill@jabber.org
-GPG: FA19BD01 @ hkp://keyserver.ubuntu.com
-S/MIME: 084E5A5C @ cacert.org
+Web: http://saigkill.github.io
+Linkedin/Twitter: saigkill
+Facebook: sascha.manns / Xing: Sascha_Manns2
+GPG: 645A18FC6B573A7BE6E95150752763E8BFA83A2C @ hkp://keys.gnupg.net
+S/MIME: C57921ED8F7535B08DC6D14BF11CD19BF9E8ED5C @ cacert.org
 EOF
       else
         body =<<EOF
 #{introduction}
 gerne möchte ich mich bei Ihnen für die obige Stelle bewerben.
 Meine Bewerbungsunterlagen samt des offiziellen Anschreibens sind der Mail als Anhang beigefügt.
-
 --
-Yours sincerly
+Sincerly yours
 
 Sascha Manns
 Maifeldstraße 10
 56727 Mayen
-Phone: +49-2651-4014045 (home)
 Phone: +49-1573-9242730 (mobile)
-Email: Sascha.Manns@directbox.com
-Web: http://saigkill.github.io
+Phone: +49-2651-4014045 (home)
+Email: Sascha.Manns@mailbox.org
 Jabber: saigkill@jabber.org
-GPG: FA19BD01 @ hkp://keyserver.ubuntu.com
-S/MIME: 084E5A5C @ cacert.org
-
+Web: http://saigkill.github.io
+Linkedin/Twitter: saigkill
+Facebook: sascha.manns / Xing: Sascha_Manns2
+GPG: 645A18FC6B573A7BE6E95150752763E8BFA83A2C @ hkp://keys.gnupg.net
+S/MIME: C57921ED8F7535B08DC6D14BF11CD19BF9E8ED5C @ cacert.org
 EOF
       end
       return body

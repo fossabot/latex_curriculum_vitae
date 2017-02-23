@@ -3,12 +3,13 @@
 # @author Sascha Manns
 # @abstract module for creating the entity file for latex
 #
-# Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
+# Copyright (C) 2015-2017  Sascha Manns <Sascha.Manns@mailbox.org>
 # License: MIT
 
 # Dependencies
 require 'fileutils'
 require 'rainbow/ext/string'
+require 'url_shortener'
 
 # main module
 module LatexCurriculumVitae
@@ -17,7 +18,7 @@ module LatexCurriculumVitae
     # rubocop:disable Metrics/LineLength
     # Method for getting information
     # @param [String] entitytex Path to the entity.tex
-    # @return [Array] contact, emailaddress, jobtitle, contact_sex, company, proactive
+    # @return [Array] contact, emailaddress, jobtitle, contact_sex, company, proactive, job_url
     def self.get_information(entitytex)
       resume = `yad --title="Create application" --center --on-top --form --item-separator=, --separator="|" \
 --field="What is the jobtitle of your application? Escape amp with backslash:TEXT" \
@@ -30,14 +31,32 @@ module LatexCurriculumVitae
 --field="If you have a contact so give me the name of him/her. Leave blank if unknown contact:TEXT" \
 --field="Tell me the email address for sending the application:TEXT" \
 --field="What kind of target:CBE" \
+--field="Tell me the URL of the job offer:TEXT" \
 --button="Go!" "" "no,yes" "yes,no" "" "" "" "male,female,unknown" "" "" "doku,support,kaufm"`
-      jobtitle, proactive, letter, company, street, city, contact_sex, contact, emailaddress, target = resume.chomp.split('|')
-      [jobtitle, proactive, letter, company, street, city, contact_sex, contact, emailaddress, target].each do |s|
+      jobtitle, proactive, letter, company, street, city, contact_sex, contact, emailaddress, target, job_url = resume.chomp.split('|')
+      [jobtitle, proactive, letter, company, street, city, contact_sex, contact, emailaddress, target, job_url].each do |s|
         puts s
       end
 
       create_file(jobtitle, company, street, city, contact, entitytex, contact_sex, proactive, target)
-      [contact, emailaddress, jobtitle, contact_sex, company, letter, proactive, target]
+      [contact, emailaddress, jobtitle, contact_sex, company, letter, proactive, job_url]
+    end
+
+    # Method for shorten the URL
+    # @param [String] job_url The Url to the job offer
+    # @param [String] bitly_user The Username in Bit.ly
+    # @param [String] bitly_apikey The Apikey from your Bit.ly User
+    # @return [String] joburl Returns the shortened Bit.ly URL
+    def self.shorten_url(job_url, bitly_user, bitly_apikey)
+      authorize = UrlShortener::Authorize.new "#{bitly_user}", "#{bitly_apikey}"
+      client = UrlShortener::Client.new authorize
+
+      shorten = client.shorten("#{job_url}") # => UrlShortener::Response::Shorten object
+      shorten.result # => returns a hash of all data returned from bitly
+      shorten.urls # => Only returns the short urls look for more convenience methods in the UrlShortener::Response::Shorten class
+      puts shorten.urls
+      joburl = shorten.urls
+      return joburl
     end
 
     # # Method for getting information through a real gui
@@ -136,6 +155,8 @@ EOF
     end
 
     # Method for getting the target code block
+    # @param [String] target The choosed target
+    # @returns [String] targetblock Returns a Block with the choosed Information
     def self.get_target_block(target)
       if target == 'doku'
         targetblock = 'Neben der Beschreibungssprache DocBook samt XSL-FO lernte ich die Satzsprache \\LaTeX. \\\\ Selbstständig erarbeitete ich mir Kenntnisse in der Programmiersprache Ruby, sowie der Web-App-Entwicklung (Technische Hochschule Mittelrhein).\\\\'
