@@ -3,7 +3,7 @@
 # @author Sascha Manns
 # @abstract Main Module for latex_curriculum_vitae
 #
-# Copyright (C) 2015-2016  Sascha Manns <samannsml@directbox.com>
+# Copyright (C) 2015-2017  Sascha Manns <Sascha.Manns@mailbox.org>
 # License: MIT
 
 # rubocop:disable Metrics/LineLength
@@ -23,7 +23,7 @@ require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vit
 # Main Class LatexCurriculumVitae
 module LatexCurriculumVitae
   # The version information
-  VERSION = '1.3.0'
+  VERSION = '1.3.1'
 
   # Variables
   home = Dir.home
@@ -38,14 +38,15 @@ module LatexCurriculumVitae
   contact, emailaddress, jobtitle, contact_sex, company, letter, proactive, job_url =
       LatexCurriculumVitae::Entityfile.get_information(entitytex)
 
-  # Disable VPN
-  LatexCurriculumVitae::Entityfile.vpn_warning
-
   # Shorten shorten_url
-  if shorten_url == 'yes'
-    joburl = LatexCurriculumVitae::Entityfile.shorten_url(job_url, bitly_user, bitly_apikey)
+  if proactive == 'yes'
+   joburl = 'No URL available (Proactive)'
   else
-    joburl = job_url
+    if shorten_url == 'yes'
+      joburl = LatexCurriculumVitae::Entityfile.shorten_url(job_url, bitly_user, bitly_apikey)
+    else
+      joburl = job_url
+    end
   end
 
   # Create Motivational Letter

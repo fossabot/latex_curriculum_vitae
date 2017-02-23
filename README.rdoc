@@ -48,6 +48,8 @@ i'm happy about Pull requests.
 * setup
 * notifier
 * pony
+* combine_pdf
+* url_shortener
 
 == REQUIREMENTS (hard dependencies):
 
@@ -60,7 +62,7 @@ i'm happy about Pull requests.
 The installation is very easy.
 
     gem install latex_curriculum_vitae
-    cd /path/to/gem (In case of using RVM ~/.rvm/gems/ruby-2.2.1/gems/latex_curriculum_vitae)
+    cd /path/to/gem (In case of using RVM ~/.rvm/gems/ruby-2.2.3/gems/latex_curriculum_vitae)
     rake setup
 
 Read the documentation at: https://saigkill.github.io/docs/latex_curriculum_vitae/index
@@ -84,7 +86,7 @@ Read https://github.com/saigkill/latex_curriculum_vitae/blob/master/CONTRIBUTING
 
 (The MIT License)
 
-Copyright (c) 2015-2016 Sascha Manns <samannsml@directbox.com>
+Copyright (c) 2015-2016 Sascha Manns <Sascha.Manns@mailbox.org>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

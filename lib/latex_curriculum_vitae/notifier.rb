@@ -4,7 +4,7 @@
 # @abstract module for notify the user about finishing the email send
 # process
 #
-# Copyright (C) 2015-2016  Sascha Manns <Sascha.Manns@directbox.com>
+# Copyright (C) 2015-2017  Sascha Manns <Sascha.Manns@mailbox.org>
 # License: MIT
 
 # Dependencies
@@ -16,6 +16,7 @@ require 'notifier'
 module LatexCurriculumVitae
   # Method for notifying the user
   module Notify
+    # @param [String] jobtitle The Title of your job application
     def self.run(jobtitle)
       home = Dir.home
       prefix = "#{home}/.rvm/rubies/default"

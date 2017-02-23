@@ -2,7 +2,7 @@
 # @author Sascha Manns
 # @abstract CV Module for creating the curriculum vitae
 #
-# Copyright (C) 2015-2016  Sascha Manns <Sascha.Manns@directbox.com>
+# Copyright (C) 2015-2017  Sascha Manns <Sascha.Manns@mailbox.org>
 # License: MIT
 
 # Dependencies

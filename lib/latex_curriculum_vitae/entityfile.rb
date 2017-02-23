@@ -3,7 +3,7 @@
 # @author Sascha Manns
 # @abstract module for creating the entity file for latex
 #
-# Copyright (C) 2015-2016  Sascha Manns <Sascha.Manns@directbox.com>
+# Copyright (C) 2015-2017  Sascha Manns <Sascha.Manns@mailbox.org>
 # License: MIT
 
 # Dependencies
@@ -18,7 +18,7 @@ module LatexCurriculumVitae
     # rubocop:disable Metrics/LineLength
     # Method for getting information
     # @param [String] entitytex Path to the entity.tex
-    # @return [Array] contact, emailaddress, jobtitle, contact_sex, company, proactive
+    # @return [Array] contact, emailaddress, jobtitle, contact_sex, company, proactive, job_url
     def self.get_information(entitytex)
       resume = `yad --title="Create application" --center --on-top --form --item-separator=, --separator="|" \
 --field="What is the jobtitle of your application? Escape amp with backslash:TEXT" \
@@ -42,11 +42,11 @@ module LatexCurriculumVitae
       [contact, emailaddress, jobtitle, contact_sex, company, letter, proactive, job_url]
     end
 
-    # Method for warning about disabling VPN because Pony returns errors by sending the email
-    def self.vpn_warning
-      `yad --title="Warning" --center --on-top --text="Please disable your VPN"`
-    end
-
+    # Method for shorten the URL
+    # @param [String] job_url The Url to the job offer
+    # @param [String] bitly_user The Username in Bit.ly
+    # @param [String] bitly_apikey The Apikey from your Bit.ly User
+    # @return [String] joburl Returns the shortened Bit.ly URL
     def self.shorten_url(job_url, bitly_user, bitly_apikey)
       authorize = UrlShortener::Authorize.new "#{bitly_user}", "#{bitly_apikey}"
       client = UrlShortener::Client.new authorize
@@ -155,6 +155,8 @@ EOF
     end
 
     # Method for getting the target code block
+    # @param [String] target The choosed target
+    # @returns [String] targetblock Returns a Block with the choosed Information
     def self.get_target_block(target)
       if target == 'doku'
         targetblock = 'Neben der Beschreibungssprache DocBook samt XSL-FO lernte ich die Satzsprache \\LaTeX. \\\\ Selbstständig erarbeitete ich mir Kenntnisse in der Programmiersprache Ruby, sowie der Web-App-Entwicklung (Technische Hochschule Mittelrhein).\\\\'
