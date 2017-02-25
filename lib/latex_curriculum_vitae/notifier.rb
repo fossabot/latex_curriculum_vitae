@@ -17,11 +17,8 @@ module LatexCurriculumVitae
   # Method for notifying the user
   module Notify
     # @param [String] jobtitle The Title of your job application
-    def self.run(jobtitle)
-      home = Dir.home
-      prefix = "#{home}/.rvm/rubies/default"
-      datadir = "#{prefix}/share"
-      img = "#{datadir}/latex_curriculum_vitae/Pictures/arbeitsagentur.png"
+    def self.run(jobtitle, datadir)
+      img = "#{datadir}/share/icons/arbeitsagentur.png"
       Notifier.notify(
           :image => "#{img}",
           :title => "Your Job Application",

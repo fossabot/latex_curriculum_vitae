@@ -1,3 +1,11 @@
+=== 2.0.0 / 2017-02-25
+
+* 1 major enhancement
+
+  * Bug-9: Using of XDG directories instead of .latex_curriculum_vitae
+  * Using regular tempdir instead using the datadir directly
+  * Fixed shorten url: Check if no url is given
+
 === 1.3.1 / 2017-02-23
 
 * 1 minor enhancement

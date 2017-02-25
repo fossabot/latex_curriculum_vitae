@@ -3,13 +3,15 @@
 # @author Sascha Manns
 # @abstract Main Module for latex_curriculum_vitae
 #
-# Copyright (C) 2015-2017  Sascha Manns <Sascha.Manns@mailbox.org>
+# Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
 # License: MIT
 
 # rubocop:disable Metrics/LineLength
 
 # Dependencies
 require 'fileutils'
+require 'xdg'
+require 'tmpdir'
 
 require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/entityfile'))
 require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/cv'))
@@ -23,16 +25,20 @@ require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vit
 # Main Class LatexCurriculumVitae
 module LatexCurriculumVitae
   # The version information
-  VERSION = '1.3.1'
+  VERSION = '2.0.0'
 
   # Variables
-  home = Dir.home
-  prefix = "#{home}/.rvm/rubies/default"
-  datadir = "#{prefix}/share"
-  entitytex = "#{home}/.latex_curriculum_vitae/entity.tex"
-  csvout = "#{home}/.latex_curriculum_vitae/job-applications.csv"
-  tmpdir = "#{datadir}/latex_curriculum_vitae/tmp"
-  name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader, shorten_url, bitly_user, bitly_apikey = LatexCurriculumVitae::GetConfig.get
+  sysxdg = XDG['CONFIG_HOME']
+  dataxdg = XDG['DATA_HOME']
+  sysconfdir = "#{sysxdg}/latex_curriculum_vitae"
+  datadir = "#{dataxdg}/latex_curriculum_vitae"
+  entitytex = "#{sysconfdir}/entity.tex"
+  csvout = "#{sysconfdir}/job-applications.csv"
+  tempdir = '/tmp/latex_curriculum_vitae'
+  tmpdir = "#{tempdir}/build"
+
+  name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader, shorten_url, bitly_user, bitly_apikey =
+      LatexCurriculumVitae::GetConfig.get(sysconfdir)
 
   # Get the needed Information for creating the application
   contact, emailaddress, jobtitle, contact_sex, company, letter, proactive, job_url =
@@ -43,44 +49,59 @@ module LatexCurriculumVitae
    joburl = 'No URL available (Proactive)'
   else
     if shorten_url == 'yes'
-      joburl = LatexCurriculumVitae::Entityfile.shorten_url(job_url, bitly_user, bitly_apikey)
+      if shorten_url != ''
+        joburl = LatexCurriculumVitae::Entityfile.shorten_url(job_url, bitly_user, bitly_apikey)
+      else
+        puts 'No url given'
+      end
     else
       joburl = job_url
     end
   end
 
+  # Copy data to tempdir
+  if Dir.exist?(tempdir) == 'true'
+    FileUtils.rm_rf(tempdir)
+  end
+  FileUtils.mkdir(tempdir)
+  FileUtils.cp_r("#{datadir}/.", "#{tempdir}")
+  FileUtils.mkdir(tmpdir)
+
   # Create Motivational Letter
   if letter == 'yes'
-    FileUtils.cd("#{datadir}/latex_curriculum_vitae/Motivational_Letter") do
+    FileUtils.cd("#{tempdir}/Motivational_Letter") do
       LatexCurriculumVitae::Letter.create_letter(tmpdir, name_of_letter)
     end
   end
 
   # Create the cover
-  FileUtils.cd("#{datadir}/latex_curriculum_vitae/Cover") do
+  FileUtils.cd("#{tempdir}/Cover") do
     LatexCurriculumVitae::Cover.create_cover(name_of_cover, tmpdir)
   end
 
   # Create the Curriculum Vitae
-  FileUtils.cd("#{datadir}/latex_curriculum_vitae/Resume") do
+  FileUtils.cd("#{tempdir}/Resume") do
     LatexCurriculumVitae::CV.create_cv(name_of_resume, tmpdir)
   end
 
   # Final create and shrinking
   FileUtils.cd(tmpdir) do
     LatexCurriculumVitae::CV.create_final_cv(letter, name_of_letter, name_of_resume, name_of_pdf, name_of_cover)
-    LatexCurriculumVitae::CV.copy_home(name_of_pdf)
+    LatexCurriculumVitae::CV.copy_home(name_of_pdf, datadir)
   end
 
   # Add entry to Outfile
   CVOutfile.add_to_outfile(jobtitle, company, contact, emailaddress, csvout, joburl)
 
   # Start evince to check the output file
-  system("#{pdf_reader} #{home}/.latex_curriculum_vitae/#{name_of_pdf}.pdf")
+  system("#{pdf_reader} #{datadir}/#{name_of_pdf}.pdf")
 
   # Ask if result is ok
-  LatexCurriculumVitae::Email.resultok(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf)
+  LatexCurriculumVitae::Email.resultok(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf, sysconfdir, datadir)
 
   # Inform about creation is done
-  LatexCurriculumVitae::Notify.run(jobtitle)
+  LatexCurriculumVitae::Notify.run(jobtitle, datadir)
+
+  # Remove tempdir
+  FileUtils.rm_rf(tempdir)
 end

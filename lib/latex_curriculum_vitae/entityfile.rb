@@ -59,21 +59,6 @@ module LatexCurriculumVitae
       return joburl
     end
 
-    # # Method for getting information through a real gui
-    # def self.get_information_gui(entitytex)
-    #   # TODO: Extend code for using the gtk GUI
-    #   require 'gtk2'
-    #   require 'libglade2'
-    #   @threads = []
-    #
-    #   Gtk.init
-    #
-    #   @glade = GladeXML.new('glade/latexcv.glade')
-    #   @glade.widget_names.each do |name|
-    #     instance_variable_set("@#{name}".intern, @glade[name])
-    #   end
-    # end
-
     # Method for creating the entity.tex
     # @param [String] jobtitle Title of the target job
     # @param [String] company Comanys name

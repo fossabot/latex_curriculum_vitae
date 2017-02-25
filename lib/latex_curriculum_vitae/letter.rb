@@ -3,7 +3,7 @@
 # @author Sascha Manns
 # @abstract module for creating a motivational letter
 #
-# Copyright (C) 2015-2017  Sascha Manns <Sascha.Manns@mailbox.org>
+# Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
 # License: MIT
 
 # Dependencies

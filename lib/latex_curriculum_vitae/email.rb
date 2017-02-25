@@ -3,7 +3,7 @@
 # @author Sascha Manns
 # @abstract module for preparing a email and send it out
 #
-# Copyright (C) 2015-2017  Sascha Manns <Sascha.Manns@mailbox.org>
+# Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
 # License: MIT
 
 # Dependencies
@@ -25,13 +25,13 @@ module LatexCurriculumVitae
     # @param [String] proactive Can be yes or no
     # @param [String] letter For preparing the letter
     # @param [String] name_of_pdf Name of the output pdf
-    def self.create_email(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf)
-      own_email_address, own_smtp, own_username, own_password, own_port, own_tls = LatexCurriculumVitae::GetConfig.get_smtp
+    def self.create_email(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf, sysconfdir, datadir)
+      own_email_address, own_smtp, own_username, own_password, own_port, own_tls = LatexCurriculumVitae::GetConfig.get_smtp(sysconfdir)
       introduction = LatexCurriculumVitae::Email.introduction(contact, contact_sex)
       subject = LatexCurriculumVitae::Email.subject(proactive, jobtitle)
       body = LatexCurriculumVitae::Email.get_body(introduction, letter)
       home = Dir.home
-      filename = "#{home}/.latex_curriculum_vitae/#{name_of_pdf}.pdf"
+      filename = "#{datadir}/#{name_of_pdf}.pdf"
 
       Pony.mail({
                     :to => emailaddress,
@@ -155,14 +155,14 @@ EOF
     # @param [String] proactive Can be yes or no
     # @param [String] letter With motivational letter? Can be yes or no
     # @param [String] name_of_pdf Name of the resulting PDF file
-    def self.resultok(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf)
+    def self.resultok(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf, sysconfdir, datadir)
       resultfileok = `yad --title="Resulting file" --center --on-top --form \
 --item-separator=, --separator="|" \
 --field="Resulting file ok?:CBE" \
 "yes,no"`
       ok = resultfileok.chomp.split('|')
       if ok.include? 'yes'
-        LatexCurriculumVitae::Email.create_email(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf)
+        LatexCurriculumVitae::Email.create_email(contact, emailaddress, jobtitle, contact_sex, proactive, letter, name_of_pdf, sysconfdir, datadir)
       else
         abort('Aborted')
       end

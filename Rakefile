@@ -14,25 +14,17 @@ require 'hoe'
 # rubocop:disable Metrics/LineLength
 ############################################# DEVELOPING ZONE #########################################################
 Hoe.plugin :bundler
-# Hoe.plugin :deveiate
 Hoe.plugin :doofus
 Hoe.plugin :email
-# Hoe.plugin :gem_prelude_sucks
 #Hoe.plugins.delete :git
 Hoe.plugin :git
 Hoe.plugin :history
 Hoe.plugin :highline
-#Hoe.plugin :inline
 Hoe.plugin :manns
-# Hoe.plugin :mercurial
-# Hoe.plugin :perforce
-# Hoe.plugin :racc
-# Hoe.plugin :rcov
 #Hoe.plugin :reek
 Hoe.plugin :rdoc
 Hoe.plugin :rubocop
 Hoe.plugin :rubygems
-# Hoe.plugin :seattlerb
 Hoe.plugin :version
 Hoe.plugin :website
 
@@ -54,6 +46,7 @@ Hoe.spec 'latex_curriculum_vitae' do
   dependency 'pony', '~> 1.11'
   dependency 'combine_pdf', '~> 0.2'
   dependency 'url_shortener', '~> 0.0.9'
+  dependency 'xdg', '~> 2.2.3'
 
   extra_dev_deps << ['hoe-bundler', '~> 1.3']
   extra_dev_deps << ['hoe-doofus', '~> 1.0']
@@ -78,23 +71,21 @@ end
 ###################################### SETUP ZONE #####################################################################
 
 require 'fileutils'
+require 'xdg'
 desc 'Setup'
 task :setup do
-  datadir = "#{Dir.home}/.rvm/rubies/default/share"
-  FileUtils.cp("#{Dir.home}/.latex_curriculum_vitae/latex_curriculum_vitae.cfg",
-               "#{Dir.home}/.latex_curriculum_vitae/latex_curriculum_vitae.cfg.my")
-  FileUtils.cp("#{Dir.home}/.latex_curriculum_vitae/personal_data.tex", "#{Dir.home}/.latex_curriculum_vitae/personal_data.tex.my")
-  FileUtils.mkdir("#{datadir}/latex_curriculum_vitae-backup") if !File.exist?("#{datadir}/latex_curriculum_vitae-backup")
-  FileUtils.cp_r "#{datadir}/latex_curriculum_vitae/.", "#{datadir}/latex_curriculum_vitae-backup/." if
-                File.exist?("#{datadir}/latex_curriculum_vitae/")
-  system('setup.rb uninstall --force')
-  system('setup.rb config --sysconfdir=$HOME/.latex_curriculum_vitae')
-  system('setup.rb install')
-  FileUtils.cp("#{Dir.home}/.latex_curriculum_vitae/latex_curriculum_vitae.cfg.my",
-               "#{Dir.home}/.latex_curriculum_vitae/latex_curriculum_vitae.cfg")
-  FileUtils.cp("#{Dir.home}/.latex_curriculum_vitae/personal_data.tex.my", "#{Dir.home}/.latex_curriculum_vitae/personal_data.tex")
+  sysxdg = XDG['CONFIG_HOME']
+  dataxdg = XDG['DATA_HOME']
+  sysconfdir = "#{sysxdg}/latex_curriculum_vitae"
+  datadir = "#{dataxdg}/latex_curriculum_vitae"
+  FileUtils.mkdir(sysconfdir) if !File.exist?(sysconfdir)
+  FileUtils.mkdir(datadir) if !File.exist?(datadir)
+  FileUtils.cp('etc/latex_curriculum_vitae.cfg', "#{sysconfdir}") if !File.exist?("#{sysconfdir}/latex_curriculum_vitae.cfg")
+  FileUtils.cp('etc/personal_data.tex', "#{sysconfdir}") if !File.exist?("#{sysconfdir}/personal_data.tex")
+  FileUtils.cp_r('data/latex_curriculum_vitae/.', "#{datadir}") if !File.exist?("#{datadir}/Appendix")
+  FileUtils.cp('data/latex_curriculum_vitae/Pictures/arbeitsagentur.png', "#{dataxdg}/icons")
   puts 'Creating Launcher...'.color(:yellow)
-  desktopfile = "#{Dir.home}/.local/share/applications/latex_curriculum_vitae.desktop"
+  desktopfile = "#{dataxdg}/applications/latex_curriculum_vitae.desktop"
   FileUtils.touch(desktopfile)
   File.write "#{desktopfile}", <<EOF
 [Desktop Entry]
@@ -104,7 +95,7 @@ Name=latex_curriculum_vitae
 GenericName=latex_curriculum_vitae
 Comment=Job-Application Creator
 Exec=latexcv.rb
-Icon="#{Dir.home}/.local/share/icons/arbeitsagentur.png"
+Icon="#{dataxdg}/icons/arbeitsagentur.png"
 Categories=Utility;Application;
 EOF
   puts 'Setup is now finished. See the documentation to find out more about this gem.'

@@ -22,4 +22,4 @@ based on `master` will likely be cherry picked.
 
 Need to report an issue? Use that issue tracker:
 
-* https://saigkill.myjetbrains.com/youtrack/issues
+* https://github.com/saigkill/latex_curriculum_vitae/issues
