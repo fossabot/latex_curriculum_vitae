@@ -4,7 +4,6 @@
 
 source "https://rubygems.org/"
 
-gem "setup", "~>5.2"
 gem "notifier", "~>0.5"
 gem "pony", "~>1.11"
 gem "combine_pdf", "~>0.2"
@@ -13,7 +12,6 @@ gem "xdg", "~>2.2.3"
 
 gem "hoe-highline", "~>0.2", :group => [:development, :test]
 gem "hoe-bundler", "~>1.3", :group => [:development, :test]
-gem "hoe-doofus", "~>1.0", :group => [:development, :test]
 gem "hoe-git", "~>1.6", :group => [:development, :test]
 gem "hoe-rubygems", "~>1.0", :group => [:development, :test]
 gem "hoe-manns", "~>1.5", :group => [:development, :test]

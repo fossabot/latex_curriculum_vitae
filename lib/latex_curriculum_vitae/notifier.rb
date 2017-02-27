@@ -4,7 +4,7 @@
 # @abstract module for notify the user about finishing the email send
 # process
 #
-# Copyright (C) 2015-2017  Sascha Manns <Sascha.Manns@mailbox.org>
+# Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
 # License: MIT
 
 # Dependencies

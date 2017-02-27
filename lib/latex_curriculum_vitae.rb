@@ -59,13 +59,11 @@ module LatexCurriculumVitae
     end
   end
 
-  # Copy data to tempdir
-  if Dir.exist?(tempdir) == 'true'
-    FileUtils.rm_rf(tempdir)
-  end
+  # Remove old tempdir and copy data to tempdir
+  FileUtils.rm_rf(tempdir) if File.exist?("#{tempdir}/Resume/cv_10.tex")
   FileUtils.mkdir(tempdir)
-  FileUtils.cp_r("#{datadir}/.", "#{tempdir}")
   FileUtils.mkdir(tmpdir)
+  FileUtils.cp_r("#{datadir}/.", "#{tempdir}")
 
   # Create Motivational Letter
   if letter == 'yes'
@@ -102,6 +100,4 @@ module LatexCurriculumVitae
   # Inform about creation is done
   LatexCurriculumVitae::Notify.run(jobtitle, datadir)
 
-  # Remove tempdir
-  FileUtils.rm_rf(tempdir)
 end

@@ -16,7 +16,6 @@ module LatexCurriculumVitae
     # This method gets the configs from the config file
     # @return [Array] name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader, shorten_url, bitly_user, bitly_apikey
     def self.get(sysconfdir)
-      home = Dir.home
       config = ParseConfig.new("#{sysconfdir}/latex_curriculum_vitae.cfg")
       name_of_pdf = config['name_of_pdf']
       name_of_cover = config['name_of_cover']
@@ -33,7 +32,6 @@ module LatexCurriculumVitae
     # Method for getting smtp configuration
     # @return [Array] own_name, own_email_address, own_smtp, own_username, own_password, own_port, own_domain, own_tls
     def self.get_smtp(sysconfdir)
-      home = Dir.home
       config = ParseConfig.new("#{sysconfdir}/latex_curriculum_vitae.cfg")
       # own_name = config['own_name']
       own_email_address = config['own_email_address']

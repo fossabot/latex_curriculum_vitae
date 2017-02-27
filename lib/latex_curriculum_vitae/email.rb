@@ -30,9 +30,9 @@ module LatexCurriculumVitae
       introduction = LatexCurriculumVitae::Email.introduction(contact, contact_sex)
       subject = LatexCurriculumVitae::Email.subject(proactive, jobtitle)
       body = LatexCurriculumVitae::Email.get_body(introduction, letter)
-      home = Dir.home
       filename = "#{datadir}/#{name_of_pdf}.pdf"
 
+      # More information about Pony Mailer: https://github.com/benprew/pony
       Pony.mail({
                     :to => emailaddress,
                     :bcc => own_email_address,

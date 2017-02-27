@@ -41,7 +41,6 @@ Hoe.spec 'latex_curriculum_vitae' do
   self.extra_rdoc_files = FileList['*.rdoc'].to_a
   self.post_install_message = '*** Run rake setup to finish the installation *** Please file bugreports and feature requests on: https://github.com/saigkill/latex_curriculum_vitae/issues'
 
-  dependency 'setup', '~> 5.2'
   dependency 'notifier', '~> 0.5'
   dependency 'pony', '~> 1.11'
   dependency 'combine_pdf', '~> 0.2'
@@ -49,7 +48,6 @@ Hoe.spec 'latex_curriculum_vitae' do
   dependency 'xdg', '~> 2.2.3'
 
   extra_dev_deps << ['hoe-bundler', '~> 1.3']
-  extra_dev_deps << ['hoe-doofus', '~> 1.0']
   extra_dev_deps << ['hoe-git', '~> 1.6']
   extra_dev_deps << ['hoe-rubygems', '~> 1.0']
   extra_dev_deps << ['hoe-manns', '~> 1.5']
@@ -84,6 +82,9 @@ task :setup do
   FileUtils.cp('etc/personal_data.tex', "#{sysconfdir}") if !File.exist?("#{sysconfdir}/personal_data.tex")
   FileUtils.cp_r('data/latex_curriculum_vitae/.', "#{datadir}") if !File.exist?("#{datadir}/Appendix")
   FileUtils.cp('data/latex_curriculum_vitae/Pictures/arbeitsagentur.png', "#{dataxdg}/icons")
+  home = Dir.home
+  FileUtils.rm_rf("#{home}/.rvm/rubies/default/lib/ruby/site_ruby/2.2.0/latex_curriculum_vitae") if File.exist?("#{home}/.rvm/rubies/default/lib/ruby/site_ruby/2.2.0/latex_curriculum_vitae/Resume/cv_10.tex")
+  FileUtils.rm_rf("#{home}/.rvm/rubies/default/lib/ruby/site_ruby/2.2.0/latex_curriculum_vitae.rb") if File.exist?("#{home}/.rvm/rubies/default/lib/ruby/site_ruby/2.2.0/latex_curriculum_vitae.rb")
   puts 'Creating Launcher...'.color(:yellow)
   desktopfile = "#{dataxdg}/applications/latex_curriculum_vitae.desktop"
   FileUtils.touch(desktopfile)
