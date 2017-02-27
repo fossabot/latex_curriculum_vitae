@@ -57,13 +57,11 @@ Hoe.spec 'latex_curriculum_vitae' do
   extra_dev_deps << ['hoe-seattlerb', '~> 1.3']
   extra_dev_deps << ['hoe', '~> 3.16']
   extra_dev_deps << ['rake', '~> 12.0']
-  extra_dev_deps << ['simplecov', '~> 0.13']
   extra_dev_deps << ['coveralls', '~> 0.8']
   extra_dev_deps << ['rainbow', '~> 2.2']
   extra_dev_deps << ['bundler', '~> 1.14']
   extra_dev_deps << ['parseconfig', '~> 1.0']
   extra_dev_deps << ['rspec', '~> 3.5']
-  extra_dev_deps << ['simplecov', '~> 0.13']
 end
 
 ###################################### SETUP ZONE #####################################################################

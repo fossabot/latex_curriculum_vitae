@@ -27,6 +27,7 @@ data/latex_curriculum_vitae/Appendix/Employers_Reference/haysnew.pdf
 data/latex_curriculum_vitae/Appendix/Employers_Reference/openslx.pdf
 data/latex_curriculum_vitae/Appendix/Employers_Reference/openslx1.pdf
 data/latex_curriculum_vitae/Appendix/Employers_Reference/wtg.pdf
+data/latex_curriculum_vitae/Appendix/Employers_Reference/xcom.pdf
 data/latex_curriculum_vitae/Appendix/First_References/bsaz.pdf
 data/latex_curriculum_vitae/Appendix/First_References/hsaz.pdf
 data/latex_curriculum_vitae/Appendix/First_References/ihk.pdf

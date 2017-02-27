@@ -68,7 +68,7 @@ GEM
       mail (>= 2.0)
     powerpack (0.1.1)
     rainbow (2.2.1)
-    rake (11.3.0)
+    rake (12.0.0)
     rdoc (4.3.0)
     reek (4.5.6)
       codeclimate-engine-rb (~> 0.4.0)
@@ -120,14 +120,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.11)
+  bundler (~> 1.14)
   combine_pdf (~> 0.2)
   coveralls (~> 0.8)
-  hoe (~> 3.15)
+  hoe (~> 3.16)
   hoe-bundler (~> 1.3)
   hoe-git (~> 1.6)
   hoe-highline (~> 0.2)
-  hoe-manns (~> 1.5)
+  hoe-manns (~> 1.6)
   hoe-reek (~> 1.1)
   hoe-rubocop (~> 1.0)
   hoe-rubygems (~> 1.0)
@@ -136,13 +136,12 @@ DEPENDENCIES
   notifier (~> 0.5)
   parseconfig (~> 1.0)
   pony (~> 1.11)
-  rainbow (~> 2.0)
-  rake (~> 11.2)
+  rainbow (~> 2.2)
+  rake (~> 12.0)
   rdoc (~> 4.0)
   rspec (~> 3.5)
-  simplecov (~> 0.12)
   url_shortener (~> 0.0.9)
-  xdg (~> 2.2.3)
+  xdg (~> 2.2)
 
 BUNDLED WITH
    1.14.5
