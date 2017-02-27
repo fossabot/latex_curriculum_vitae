@@ -2,7 +2,7 @@
 # @author Sascha Manns
 # @abstract Binary for latex_curriculum_vitae
 #
-# Copyright (C) 2015-2017  Sascha Manns <Sascha.Manns@mailbox.org>
+# Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
 # License: MIT
 
 # Dependencies

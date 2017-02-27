@@ -3,7 +3,7 @@
 # @author Sascha Manns
 # @abstract module for getting information from a config file
 #
-# Copyright (C) 2015-2017  Sascha Manns <Sascha.Manns@mailbox.org>
+# Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
 # License: MIT
 
 # Dependencies
@@ -15,9 +15,8 @@ module LatexCurriculumVitae
   module GetConfig
     # This method gets the configs from the config file
     # @return [Array] name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader, shorten_url, bitly_user, bitly_apikey
-    def self.get
-      home = Dir.home
-      config = ParseConfig.new("#{home}/.latex_curriculum_vitae/latex_curriculum_vitae.cfg")
+    def self.get(sysconfdir)
+      config = ParseConfig.new("#{sysconfdir}/latex_curriculum_vitae.cfg")
       name_of_pdf = config['name_of_pdf']
       name_of_cover = config['name_of_cover']
       name_of_resume = config['name_of_resume']
@@ -32,9 +31,8 @@ module LatexCurriculumVitae
 
     # Method for getting smtp configuration
     # @return [Array] own_name, own_email_address, own_smtp, own_username, own_password, own_port, own_domain, own_tls
-    def self.get_smtp
-      home = Dir.home
-      config = ParseConfig.new("#{home}/.latex_curriculum_vitae/latex_curriculum_vitae.cfg")
+    def self.get_smtp(sysconfdir)
+      config = ParseConfig.new("#{sysconfdir}/latex_curriculum_vitae.cfg")
       # own_name = config['own_name']
       own_email_address = config['own_email_address']
       own_smtp = config['own_smtp']

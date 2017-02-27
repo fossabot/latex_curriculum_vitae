@@ -2,7 +2,8 @@
 
 home  :: http://saigkill.tuxfamily.org
 code  :: https://github.com/saigkill/latex_curriculum_vitae
-docs  :: https://saigkill.tuxfamily.org/dotclear/docs/latex_curriculum_vitae/en-US/html/index.html
+docs (en) :: https://saigkill.tuxfamily.org/docs/latex_curriculum_vitae/en-US/html/
+docs (de) :: https://saigkill.tuxfamily.org/docs/latex_curriculum_vitae/de-DE/html/
 bugs  :: https://github.com/saigkill/latex_curriculum_vitae/issues
 openhub statistics :: https://www.openhub.net/p/latex_curriculum_vitae
 min. rubyver :: 2.2.0
@@ -38,7 +39,7 @@ in your home directory. Also it generates an email with a standard content, whic
 
 The resulting PDF and the CSV file are placed in /home/You/.latex_curriculum_vitae.
 
-Read the documentation at: https://saigkill.tuxfamily.org/dotclear/docs/latex_curriculum_vitae/en-US/html/index.html
+Read the documentation at: https://saigkill.tuxfamily.org/docs/latex_curriculum_vitae/en-US/html/
 
 This Gem was programmed and tested for Linux systems. If anyone would like to make the methods also fit for other OS,
 i'm happy about Pull requests.
@@ -65,7 +66,7 @@ The installation is very easy.
     cd /path/to/gem (In case of using RVM ~/.rvm/gems/ruby-2.2.3/gems/latex_curriculum_vitae)
     rake setup
 
-Read the documentation at: https://saigkill.tuxfamily.org/dotclear/docs/latex_curriculum_vitae/en-US/html/index.html
+Read the documentation at: https://saigkill.tuxfamily.org/docs/latex_curriculum_vitae/en-US/html/
 
 You have to run the setup after each gem update.
 

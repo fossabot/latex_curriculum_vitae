@@ -2,7 +2,7 @@
 # @author Sascha Manns
 # @abstract CV Module for creating the curriculum vitae
 #
-# Copyright (C) 2015-2017  Sascha Manns <Sascha.Manns@mailbox.org>
+# Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
 # License: MIT
 
 # Dependencies
@@ -65,6 +65,7 @@ module LatexCurriculumVitae
       puts 'Adding additional stuff'.colour(:yellow)
       pdf = CombinePDF.new
       pdf << CombinePDF.load('result.pdf')
+      # Put there your own stuff
       pdf << CombinePDF.load('../Appendix/Employers_Reference/xcom.pdf')
       pdf << CombinePDF.load('../Appendix/Employers_Reference/hays.pdf')
       pdf << CombinePDF.load('../Appendix/Certificates/thm-webeng1.pdf')
@@ -79,9 +80,9 @@ module LatexCurriculumVitae
 
     # Copy result to .latex_curriculum_vitae
     # @param [String] name_of_pdf Name of the resulting PDF file
-    def self.copy_home(name_of_pdf)
+    def self.copy_home(name_of_pdf, datadir)
       puts "Copying #{name_of_pdf}.pdf to tmpdir".colour(:yellow)
-      system("cp #{name_of_pdf}.pdf #{Dir.home}/.latex_curriculum_vitae")
+      system("cp #{name_of_pdf}.pdf #{datadir}")
       puts 'Copied to tmpdir'.colour(:green)
     end
   end
