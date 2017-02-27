@@ -45,25 +45,25 @@ Hoe.spec 'latex_curriculum_vitae' do
   dependency 'pony', '~> 1.11'
   dependency 'combine_pdf', '~> 0.2'
   dependency 'url_shortener', '~> 0.0.9'
-  dependency 'xdg', '~> 2.2.3'
+  dependency 'xdg', '~> 2.2'
 
   extra_dev_deps << ['hoe-bundler', '~> 1.3']
   extra_dev_deps << ['hoe-git', '~> 1.6']
   extra_dev_deps << ['hoe-rubygems', '~> 1.0']
-  extra_dev_deps << ['hoe-manns', '~> 1.5']
+  extra_dev_deps << ['hoe-manns', '~> 1.6']
   extra_dev_deps << ['hoe-reek', '~> 1.1']
   extra_dev_deps << ['hoe-rubocop', '~> 1.0']
   extra_dev_deps << ['hoe-version', '~> 1.2']
   extra_dev_deps << ['hoe-seattlerb', '~> 1.3']
-  extra_dev_deps << ['hoe', '~> 3.15']
-  extra_dev_deps << ['rake', '~> 11.2']
-  extra_dev_deps << ['simplecov', '~> 0.12']
+  extra_dev_deps << ['hoe', '~> 3.16']
+  extra_dev_deps << ['rake', '~> 12.0']
+  extra_dev_deps << ['simplecov', '~> 0.13']
   extra_dev_deps << ['coveralls', '~> 0.8']
-  extra_dev_deps << ['rainbow', '~> 2.0']
-  extra_dev_deps << ['bundler', '~> 1.11']
+  extra_dev_deps << ['rainbow', '~> 2.2']
+  extra_dev_deps << ['bundler', '~> 1.14']
   extra_dev_deps << ['parseconfig', '~> 1.0']
   extra_dev_deps << ['rspec', '~> 3.5']
-  extra_dev_deps << ['simplecov', '~> 0.10']
+  extra_dev_deps << ['simplecov', '~> 0.13']
 end
 
 ###################################### SETUP ZONE #####################################################################
@@ -76,13 +76,13 @@ task :setup do
   dataxdg = XDG['DATA_HOME']
   sysconfdir = "#{sysxdg}/latex_curriculum_vitae"
   datadir = "#{dataxdg}/latex_curriculum_vitae"
+  home = Dir.home
   FileUtils.mkdir(sysconfdir) if !File.exist?(sysconfdir)
   FileUtils.mkdir(datadir) if !File.exist?(datadir)
   FileUtils.cp('etc/latex_curriculum_vitae.cfg', "#{sysconfdir}") if !File.exist?("#{sysconfdir}/latex_curriculum_vitae.cfg")
   FileUtils.cp('etc/personal_data.tex', "#{sysconfdir}") if !File.exist?("#{sysconfdir}/personal_data.tex")
   FileUtils.cp_r('data/latex_curriculum_vitae/.', "#{datadir}") if !File.exist?("#{datadir}/Appendix")
   FileUtils.cp('data/latex_curriculum_vitae/Pictures/arbeitsagentur.png', "#{dataxdg}/icons")
-  home = Dir.home
   FileUtils.rm_rf("#{home}/.rvm/rubies/default/lib/ruby/site_ruby/2.2.0/latex_curriculum_vitae") if File.exist?("#{home}/.rvm/rubies/default/lib/ruby/site_ruby/2.2.0/latex_curriculum_vitae/Resume/cv_10.tex")
   FileUtils.rm_rf("#{home}/.rvm/rubies/default/lib/ruby/site_ruby/2.2.0/latex_curriculum_vitae.rb") if File.exist?("#{home}/.rvm/rubies/default/lib/ruby/site_ruby/2.2.0/latex_curriculum_vitae.rb")
   puts 'Creating Launcher...'.color(:yellow)
