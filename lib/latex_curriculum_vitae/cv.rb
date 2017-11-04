@@ -69,11 +69,13 @@ module LatexCurriculumVitae
       pdf << CombinePDF.load('../Appendix/Employers_Reference/xcom.pdf')
       pdf << CombinePDF.load('../Appendix/Employers_Reference/hays.pdf')
       pdf << CombinePDF.load('../Appendix/Certificates/thm-webeng1.pdf')
+      pdf << CombinePDF.load('../Appendix/Certificates/kompetenzpass12013.pdf')
       pdf << CombinePDF.load('../Appendix/Employers_Reference/openslx.pdf')
       pdf << CombinePDF.load('../Appendix/Employers_Reference/openslx1.pdf')
       pdf << CombinePDF.load('../Appendix/Certificates/Zertifikat_Sascha_Manns1.pdf')
-      pdf << CombinePDF.load('../Appendix/Employers_Reference/wtg.pdf')
+      #pdf << CombinePDF.load('../Appendix/Employers_Reference/wtg.pdf')
       pdf << CombinePDF.load('../Appendix/First_References/ihk.pdf')
+      pdf << CombinePDF.load('../Appendix/Certificates/IVPA_Ergebnis.pdf')
       pdf.save "#{name_of_pdf}.pdf"
       puts 'Additional stuff done'.colour(:green)
     end

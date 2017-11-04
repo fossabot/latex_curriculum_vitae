@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Customizing | How to use latex_curriculum_vitae | latex_curriculum_vitae 2.0.1</title><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" /><link rel="stylesheet" type="text/css" href="static/css/style.css" /><link rel="stylesheet" type="text/css" href="static/css/highlight.css" /><meta name="generator" content="DAPS 2.4.0 using SUSE XSL Stylesheets @@#version@@ (based on DocBook XSL Stylesheets 1.79.1) - chunked" /><meta name="product-name" content="latex_curriculum_vitae" /><meta name="product-number" content="2.0.1" /><meta name="book-title" content="How to use latex_curriculum_vitae" /><meta name="chapter-title" content="Chapter 2. Customizing" /><link rel="home" href="index.html" title="How to use latex_curriculum_vitae" /><link rel="up" href="index.html" title="How to use latex_curriculum_vitae" /><link rel="prev" href="installation.html" title="Chapter 1. Installation" /><link rel="next" href="usage.html" title="Chapter 3. Usage" /><script type="text/javascript">
+
+var protocol = window.location.protocol.toLowerCase();
+if ( protocol != 'file:' ) {
+  var agent = navigator.userAgent.toLowerCase();
+  var wanted = ( protocol == 'https:') ? 'https' : 'http';
+  var file = 'fonts.css';
+  document.write('<link rel="stylesheet" type="text/css" href="' + wanted + '://static.opensuse.org/fonts/'+ file +'"></link>');
+}
+else {
+   document.write('<link rel="stylesheet" type="text/css" href="static/css/fonts-onlylocal.css"></link>');
+}
+
+</script><noscript><link rel="stylesheet" type="text/css" href="http://static.opensuse.org/fonts/fonts.css" /></noscript><script src="static/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="static/js/script.js" type="text/javascript"></script><script src="static/js/highlight.min.js" type="text/javascript"></script><script>
+
+$(document).ready(function() {
+  $('.verbatim-wrap.highlight').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+});
+hljs.configure({
+  useBR: false
+});
+
+</script></head><body class="offline js-off"><div id="_outer-wrap"><div id="_white-bg"><div id="_header"><div id="_logo"><img src="static/images/logo.png" alt="Logo" /></div><div class="crumbs"><a class="book-link" href="index.html" title="How to use latex_curriculum_vitae"><span class="book-icon">How to use latex_curriculum_vitae</span></a><span> › </span><a class="crumb" href="customizing.html">Customizing</a></div><div class="clearme"></div></div></div><div id="_toolbar-wrap"><div id="_toolbar"><div id="_toc-area" class="inactive"><a id="_toc-area-button" class="tool" title="Contents" accesskey="c" href="index.htmlindex.html"><span class="tool-spacer"><span class="toc-icon">Contents</span><span class="clearme"></span></span><span class="tool-label">Contents</span></a><div class="active-contents bubble-corner"></div><div class="active-contents bubble"><div class="bubble-container"><h6>How to use latex_curriculum_vitae</h6><div id="_bubble-toc"><ol><li class="inactive"><a href="preface.html"><span class="number"> </span><span class="name">Preface</span></a></li><li class="inactive"><a href="installation.html"><span class="number">1 </span><span class="name">Installation</span></a></li><li class="inactive"><a href="customizing.html"><span class="number">2 </span><span class="name">Customizing</span></a></li><li class="inactive"><a href="usage.html"><span class="number">3 </span><span class="name">Usage</span></a></li><li class="inactive"><a href="sec.gfdl.html"><span class="number">A </span><span class="name">GNU Free Documentation License</span></a></li><li class="inactive"><a href="revision_history.html"><span class="number">B </span><span class="name">Revision History</span></a></li></ol></div><div class="clearme"></div></div></div></div><div id="_nav-area" class="inactive"><div class="tool"><span class="nav-inner"><span class="tool-label">Navigation</span><a accesskey="p" class="tool-spacer" title="Chapter 1. Installation" href="installation.html"><span class="prev-icon">←</span></a><a accesskey="n" class="tool-spacer" title="Chapter 3. Usage" href="usage.html"><span class="next-icon">→</span></a></span></div></div></div></div><div id="_fixed-header-wrap" class="inactive"><div id="_fixed-header"><div class="crumbs"><a class="book-link" href="index.html" title="How to use latex_curriculum_vitae"><span class="book-icon">How to use latex_curriculum_vitae</span></a><span> › </span><a class="crumb" href="customizing.html">Customizing</a></div><div class="buttons"><a class="top-button button" href="#">Top</a><div class="button"><a accesskey="p" class="tool-spacer" title="Chapter 1. Installation" href="installation.html"><span class="prev-icon">←</span></a><a accesskey="n" class="tool-spacer" title="Chapter 3. Usage" href="usage.html"><span class="next-icon">→</span></a></div><div class="clearme"></div></div><div class="clearme"></div></div></div><div id="_content" class=""><div class="documentation"><div class="chapter " id="customizing"><div class="titlepage"><div><div class="version-info">Applies to  <span class="productname ">latex_curriculum_vitae</span> <span class="productnumber ">2.0.1</span></div><div><h1 class="title"><span class="number">2 </span><span class="name">Customizing</span> </h1></div></div></div><div class="line"><div class="toc"><dl><dt><span class="section"><a href="customizing.html#customizing-places"><span class="number">2.1 </span><span class="name">Important places</span></a></span></dt><dt><span class="section"><a href="customizing.html#customizing-latex"><span class="number">2.2 </span><span class="name">The LaTEX Tweaks</span></a></span></dt><dt><span class="section"><a href="customizing.html#customizing-code"><span class="number">2.3 </span><span class="name">Customize the code</span></a></span></dt></dl></div></div>
+	
+	<a id="idp278" class="indexterm"></a>
+
+	<div class="sect1" id="customizing-places"><div class="titlepage"><div><div><h2 class="title" id="customizing-places"><span class="number"> </span><span class="name">Important places</span> <a title="Permalink" class="permalink" href="customizing.html#customizing-places">#</a></h2></div></div></div>
+		
+		<p>The software uses that important places:</p>
+		<div class="itemizedlist "><ul class="itemizedlist"><li class="listitem ">
+				<p><span class="bold"><strong>$HOME/.config/latex_curriculum_vitae</strong></span>:
+					Contains a <code class="filename">personal_data.tex</code> where your personal
+					information is stored. Currently it is used by the Cover and the motivational
+					letter. Also there is a CSV in that directory what contains the records of all
+					finished job-applications. There you can modify all what you like to do.</p>
+			</li><li class="listitem ">
+				<p><span class="bold"><strong>$HOME/.local/share/latex_curriculum_vitae</strong></span>:
+					There are placed the LaTEX source files. They will be copied into the temp
+					directory each iteration. If you want to change the LaTEX sources, you can do it
+					on that place.</p>
+			</li></ul></div>
+	</div>
+
+	<div class="sect1" id="customizing-latex"><div class="titlepage"><div><div><h2 class="title" id="customizing-latex"><span class="number"> </span><span class="name">The LaTEX Tweaks</span> <a title="Permalink" class="permalink" href="customizing.html#customizing-latex">#</a></h2></div></div></div>
+		
+		<a id="idp297" class="indexterm"></a>
+		<p>The LaTEX source directory contains that subdirectory:</p>
+		<div class="orderedlist "><ol class="orderedlist" type="1"><li class="listitem ">
+				<p>Appendix</p>
+				<div class="orderedlist "><ol class="orderedlist" type="a"><li class="listitem ">
+						<p>Bibliography (a BibTEX file with your publications)</p>
+					</li><li class="listitem ">
+						<p>Certificates (for different honors)</p>
+					</li><li class="listitem ">
+						<p>Employers Reference (for the references from the last
+							employers)</p>
+					</li><li class="listitem ">
+						<p>First_Reference (for your job-training (in german Ausbildung))</p>
+					</li><li class="listitem ">
+						<p>Study (for study stuff)</p>
+					</li></ol></div>
+			</li><li class="listitem ">
+				<p>Cover (contains the <code class="filename">Cover.tex</code>). The
+						<code class="filename">Cover.tex</code> includes:</p>
+				<div class="verbatim-wrap"><pre class="screen">\input{$HOME/.config/latex_curriculum_vitae/personal_data.tex}
+\input{$HOME/.config/latex_curriculum_vitae/entity.tex} The entity.tex will be generated by running the program.</pre></div>
+				<p>Also it includes my picture from my Pictures directory.</p>
+				<div class="verbatim-wrap"><pre class="screen">\begin{textblock}{3}(3.0,18.5)
+   \fbox{\includegraphics[width=4cm]{../Pictures/Sascha1p.jpg}}
+\end{textblock}</pre></div>
+			</li><li class="listitem ">
+				<p>Motivational_Letter</p>
+			</li><li class="listitem ">
+				<p>Pictures</p>
+			</li><li class="listitem ">
+				<p>Resume (the Curriculum Vitae itself). The resume includes the
+					following:</p>
+				<div class="verbatim-wrap"><pre class="screen">\addbibresource{../Appendix/Bibliography/bibliography1.bib}
+\includepdf{../Cover/Cover}
+\includegraphics[scale=0.7]{../Pictures/signatur.png}
+\begin{figure}
+   \includegraphics[page=1,scale=0.7,angle=180]{../Appendix/Employers_Reference/hays.pdf}
+\end{figure}</pre></div>
+			</li></ol></div>
+	</div>
+
+	<div class="sect1" id="customizing-code"><div class="titlepage"><div><div><h2 class="title" id="customizing-code"><span class="number"> </span><span class="name">Customize the code</span> <a title="Permalink" class="permalink" href="customizing.html#customizing-code">#</a></h2></div></div></div>
+		
+		<a id="idp333" class="indexterm"></a>
+		<div id="idp336" class="admonition important normal"><img class="symbol" alt="Important" title="Important" src="static/images/icon-important.png" /><h6>Important</h6>
+			<p>The following section shows you code, where german strings are placed. You can
+				change all, that it fits your needs.</p>
+			<p>Keep in mind: If you update the application, you have to do the same settings again inside
+				the new gem directory.</p>
+		</div>
+
+		<div class="sect2" id="customizing-cv"><div class="titlepage"><div><div><h3 class="title" id="customizing-cv"><span class="number"> </span><span class="name">Curriculum Vitae</span> <a title="Permalink" class="permalink" href="customizing.html#customizing-cv">#</a></h3></div></div></div>
+			
+			<a id="idp343" class="indexterm"></a>
+			<p>The default cv which will be used is mine. It is placed in:
+					<code class="filename">$HOME/.local/share/latex_curriculum_vitae/Resume/cv_10.tex</code>.
+				But you can define another name in the
+					<code class="filename">latex_curriculum_vitae.cfg</code>. Just place the name in the cfg
+				and place your cv in the mentioned path. It will compiled with xelatex. Also it runs
+				biber for integrating the bibliography.</p>
+			<p>In the file
+					<code class="filename">$HOME/.rvm/gems/ruby-2.2.3/gems/latex_curriculum_vitae-$VERSION/lib/latex_curriculum_vitae/cv.rb</code>
+				you can find the method <code class="methodname">self.appendix()</code>. There are codes
+				like: <code class="code">CombinePDF.load('../Appendix/Employers_Reference/xcom.pdf')</code>.
+				There you can modify the code, that reflects your attachments.</p>
+		</div>
+
+		<div class="sect2" id="customizing-email"><div class="titlepage"><div><div><h3 class="title" id="customizing-email"><span class="number"> </span><span class="name">Email</span> <a title="Permalink" class="permalink" href="customizing.html#customizing-email">#</a></h3></div></div></div>
+			
+			<a id="idp358" class="indexterm"></a>
+			<p>The email class is placed there:
+					<code class="filename">$HOME/.rvm/gems/ruby-2.2.3/gems/latex_curriculum_vitae-$VERSION/lib/latex_curriculum_vitae/email.rb</code></p>
+			<p>The method <code class="methodname">Pony.mail</code> uses the variables which was defined
+				in the cfg file. The <code class="option">enable_starttls_auto</code> is set to "true" by
+				default.</p>
+			<p>The method <code class="methodname">self.introduction</code> defines the introduction. If
+				no contact sex is given, it uses the phrase "Sehr geehrte Damen und Herren". If
+				"male" is defined, it uses "Sehr geehrter Herr" and otherwise "Sehr geehrte
+				Frau".</p>
+			<p>If proactive is defined (used in method <code class="methodname">self.subject()</code>)
+				in the user interface it uses the word "Initiativbewerbung", otherwise just
+				"Bewerbung".</p>
+			<p>The method <code class="methodname">self.get_body</code> provides two possible bodies,
+				depending if you use a motivational letter or not.</p>
+			<div id="idp373" class="admonition note normal"><img class="symbol" alt="Note" title="Note" src="static/images/icon-note.png" /><h6>Note</h6>
+				<p>The application also provides to create a email by using Evolution PIM.</p>
+			</div>
+		</div>
+
+		<div class="sect2" id="customizing-entityfile"><div class="titlepage"><div><div><h3 class="title" id="customizing-entityfile"><span class="number"> </span><span class="name">Entityfile</span> <a title="Permalink" class="permalink" href="customizing.html#customizing-entityfile">#</a></h3></div></div></div>
+			
+			<a id="idp379" class="indexterm"></a>
+			<p>The method <code class="methodname">self.get_introduction()</code> defines a introduction
+				(like <code class="methodname">self.introduction()</code>.</p>
+			<p>The method <code class="methodname">self.get_subject_intro()</code> prepares the subject
+				and the intro for the motivational letter.</p>
+			<p>The method <code class="methodname">self.get_addressstring()</code> prepares the address
+				field in the motivational letter.</p>
+			<p>The method <code class="methodname">self.get_target_block()</code> changes the first
+				sentence of the motivational letter. It depends on the target, which is defined in
+				the graphical user interface.</p>
+		</div>
+	</div>
+</div></div><div class="page-bottom"><div id="_bottom-navigation"><a class="nav-link" href="usage.html"><span class="next-icon">→</span><span class="nav-label"><span class="number">Chapter 3 </span>Usage</span></a><a class="nav-link" href="installation.html"><span class="prev-icon">←</span><span class="nav-label"><span class="number">Chapter 1 </span>Installation</span></a></div><div id="_share-print"><div class="online-contents share"><strong>Share this page: </strong><span class="share-buttons"><span id="_share-fb" class="bottom-button">Facebook</span><span class="spacer"> • </span><span id="_share-gp" class="bottom-button">Google+</span><span class="spacer"> • </span><span id="_share-tw" class="bottom-button">Twitter</span><span class="spacer"> • </span><span id="_share-mail" class="bottom-button">E-Mail</span></span></div><div class="print"><span id="_print-button" class="bottom-button">Print this page</span></div><div class="clearme"></div></div></div></div><div id="_inward"></div></div><div id="_footer-wrap"><div id="_footer"><p>©
+        2017 
+        Sascha Manns</p><ul><li><a href="http://saigkill.tuxfamily.org" target="_top"></a></li><li><a href="https://saigkill.tuxfamily.org/dotclear/?contact" target="_top"></a></li></ul></div></div></body></html>

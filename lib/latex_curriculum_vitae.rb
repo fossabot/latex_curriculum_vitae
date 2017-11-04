@@ -25,7 +25,7 @@ require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vit
 # Main Class LatexCurriculumVitae
 module LatexCurriculumVitae
   # The version information
-  VERSION = '2.0.0'
+  VERSION = '2.0.1'
 
   # Variables
   sysxdg = XDG['CONFIG_HOME']
