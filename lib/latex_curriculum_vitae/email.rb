@@ -33,24 +33,26 @@ module LatexCurriculumVitae
       filename = "#{datadir}/#{name_of_pdf}.pdf"
 
       # More information about Pony Mailer: https://github.com/benprew/pony
-      Pony.mail({
-                    :to => emailaddress,
-                    :bcc => own_email_address,
-                    :from => own_email_address,
-                    :subject => subject,
-                    :body => body,
-                    :attachments => {'Bewerbungsunterlagen_Manns.pdf' => File.read(filename)},
-                    :via => :smtp,
-                    :via_options => {
-                        :address => own_smtp,
-                        :port => own_port,
-                        :enable_starttls_auto => true,
-                        :user_name => own_username,
-                        :password => own_password,
-                        :authentication => :plain, # :plain, :login, :cram_md5, no auth by default
-                        :domain => 'localhost.localdomain', # the HELO domain provided by the client to the server
-                    }
-                })
+      #Pony.mail({
+      #              :to => emailaddress,
+      #              :bcc => own_email_address,
+      #              :from => own_email_address,
+      #              :subject => subject,
+      #              :body => body,
+      #              :attachments => {'Bewerbungsunterlagen_Manns.pdf' => File.read(filename)},
+      #              :via => :smtp,
+      #              :via_options => {
+      #                  :address => own_smtp,
+      #                  :port => own_port,
+      #                  :enable_starttls_auto => true,
+      #                  :user_name => own_username,
+      #                  :password => own_password,
+      #                  :authentication => :plain, # :plain, :login, :cram_md5, no auth by default
+      #                  :domain => 'localhost.localdomain', # the HELO domain provided by the client to the server
+      #              }
+      #          })
+      #`thunderbird -compose "from=#{own_email_address},to=#{emailaddress},subject='#{subject}',body='#{body}',attachement=#{filename},format=text"`
+      `evolution mailto:"#{emailaddress}?subject=#{subject}\&body=#{body}\&attach=#{filename}"`
     end
 
     # Method for building the introduction
@@ -115,18 +117,13 @@ Maifeldstraße 10
 Phone: +49-1573-9242730 (mobile)
 Phone: +49-2651-4014045 (home)
 Email: Sascha.Manns@mailbox.org
-Jabber: saigkill@jabber.org
-Web: http://saigkill.github.io
-Linkedin/Twitter: saigkill
-Facebook: sascha.manns / Xing: Sascha_Manns2
-GPG: 645A18FC6B573A7BE6E95150752763E8BFA83A2C @ hkp://keys.gnupg.net
-S/MIME: C57921ED8F7535B08DC6D14BF11CD19BF9E8ED5C @ cacert.org
+Web: http://saigkill.tuxfamily.org
 EOF
       else
         body =<<EOF
 #{introduction}
 gerne möchte ich mich bei Ihnen für die obige Stelle bewerben.
-Meine Bewerbungsunterlagen samt des offiziellen Anschreibens sind der Mail als Anhang beigefügt.
+Meine digitale Bewerbungsmappe, samt des offiziellen Anschreibens, sind der Mail als Anhang beigefügt.
 --
 Sincerly yours
 
@@ -136,12 +133,7 @@ Maifeldstraße 10
 Phone: +49-1573-9242730 (mobile)
 Phone: +49-2651-4014045 (home)
 Email: Sascha.Manns@mailbox.org
-Jabber: saigkill@jabber.org
-Web: http://saigkill.github.io
-Linkedin/Twitter: saigkill
-Facebook: sascha.manns / Xing: Sascha_Manns2
-GPG: 645A18FC6B573A7BE6E95150752763E8BFA83A2C @ hkp://keys.gnupg.net
-S/MIME: C57921ED8F7535B08DC6D14BF11CD19BF9E8ED5C @ cacert.org
+Web: http://saigkill.tuxfamily.org
 EOF
       end
       return body

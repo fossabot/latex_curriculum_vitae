@@ -70,8 +70,10 @@ module LatexCurriculumVitae
     def self.create_file(jobtitle, company, street, city, contact, entitytex, contact_sex, proactive, target)
       introduction = LatexCurriculumVitae::Entityfile.get_introduction(contact, contact_sex)
       subject, intro = LatexCurriculumVitae::Entityfile.get_subject_intro(proactive, jobtitle)
-      addressstring = LatexCurriculumVitae::Entityfile.get_addressstring(company, contact, street, city)
+      addressstring = LatexCurriculumVitae::Entityfile.get_addressstring(company, contact, contact_sex, street, city)
       targetblock = LatexCurriculumVitae::Entityfile.get_target_block(target)
+
+
 
       FileUtils.rm(entitytex) if File.exist?(entitytex)
       FileUtils.touch(entitytex)
@@ -127,12 +129,16 @@ EOF
     # @param [String] city City of the company
     # @param [String] contact Name of the contact
     # @return [String] addressstring
-    def self.get_addressstring(company, contact, street, city)
+    def self.get_addressstring(company, contact, contact_sex, street, city)
       addressstring = "#{company} \\\\"
       if contact == ''
         addressstring << 'z.Hd. Personalabteilung \\\\'
       else
-        addressstring << "z.Hd. #{contact} \\\\"
+        if contact_sex == 'male'
+          addressstring << "z.Hd. Herrn #{contact} \\\\"
+        else
+          addressstring << "z.Hd. Frau #{contact} \\\\"
+        end
       end
       addressstring << "#{street} \\\\" if street != ''
       addressstring << "#{city}" if city != ''
@@ -146,7 +152,7 @@ EOF
       if target == 'doku'
         targetblock = 'Neben der Beschreibungssprache DocBook samt XSL-FO lernte ich die Satzsprache \\LaTeX. \\\\ Selbstständig erarbeitete ich mir Kenntnisse in der Programmiersprache Ruby, sowie der Web-App-Entwicklung (Technische Hochschule Mittelrhein).\\\\'
       elsif target == 'support'
-        targetblock = 'Im IT-Support hatte ich bereits erste Führungserfahrung als Dispatcher \\&Controller. Selbstständig erarbeitete ich mir Kenntnisse in der Programmiersprache Ruby, sowie der Web-App-Entwicklung (Technische Hochschule Mittelrhein).\\\\'
+        targetblock = 'Im IT-Support hatte ich bereits erste Führungserfahrung als Dispatcher \\&Controller. Selbstständig erarbeitete ich mir Kenntnisse in den Programmiersprachen Bash, Ruby und Python, sowie der Web-App-Entwicklung (Technische Hochschule Mittelrhein).\\\\'
       else
         targetblock = 'Im kaufmännischen Bereich habe ich bereits vielfältige Erfahrungen im Einkauf, Verkauf, Öffentlichkeitsarbeit und Vertrieb gemacht und bin stets bereit neues zu lernen.\\\\'
       end
