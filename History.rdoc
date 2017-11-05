@@ -1,3 +1,10 @@
+=== 2.0.2 / 2017-11-05
+
+* X major enhancements
+
+  * LCV#1: Add option to choose between mail backends
+  * LCV#2: Change license to GPL3
+
 === 2.0.1 / 2017-05-16
 
 * Added thunderbird support

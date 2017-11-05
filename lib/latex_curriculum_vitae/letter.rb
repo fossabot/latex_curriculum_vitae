@@ -1,10 +1,17 @@
-#!/usr/bin/env ruby
 # encoding: utf-8
-# @author Sascha Manns
-# @abstract module for creating a motivational letter
-#
 # Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
-# License: MIT
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # Dependencies
 require 'fileutils'
@@ -17,12 +24,12 @@ module LatexCurriculumVitae
     # Method for creating a pdf from tex
     # @param [String] tmpdir Name of the Tempdir
     # @param [String] name_of_letter Filename of the Letter
-    def self.create_letter(tmpdir, name_of_letter)
-      puts 'Compiling motivational letter'.colour(:yellow)
+    def self.create_letter(tmp_dir, name_of_letter)
+      puts 'Compiling motivational letter'.color(:yellow)
       system("pdflatex #{name_of_letter}.tex")
-      puts 'Done compiling motivational letter'.colour(:green)
-      system("cp #{name_of_letter}.pdf #{tmpdir}")
-      puts 'Copied motivational letter to tmpdir'.colour(:green)
+      puts 'Done compiling motivational letter'.color(:green)
+      system("cp #{name_of_letter}.pdf #{tmp_dir}")
+      puts 'Copied motivational letter to tmpdir'.color(:green)
     end
   end
 end

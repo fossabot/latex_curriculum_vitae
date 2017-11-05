@@ -1,8 +1,5 @@
-#Save as .codeclimate.yml (note leading .) in project root directory
-languages:
-  Ruby: true
-  #avaScript: true
-  #HP: true
-  #ython: true
-# exclude_paths:
-# - "foo/bar.rb"
+version: "2"
+exclude_patterns:
+  - "**/docs/"
+  - "**/pkg"
+

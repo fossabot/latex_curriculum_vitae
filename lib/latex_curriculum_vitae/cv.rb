@@ -1,9 +1,17 @@
 # encoding: utf-8
-# @author Sascha Manns
-# @abstract CV Module for creating the curriculum vitae
-#
 # Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
-# License: MIT
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # Dependencies
 require 'rainbow/ext/string'
@@ -18,18 +26,18 @@ module LatexCurriculumVitae
     # @param [String] name_of_pdf Name of the resulting PDF file
     # @param [String] name_of_resume Name of the resume file
     # @param [String] tmpdir contains the path to the
-    def self.create_cv(name_of_resume, tmpdir)
-      puts 'First run of xelatex'.colour(:yellow)
+    def self.create_cv(name_of_resume, tmp_dir)
+      puts 'First run of xelatex'.color(:yellow)
       system("xelatex #{name_of_resume}.tex")
-      puts 'First run of xelatex passed'.colour(:yellow)
-      puts 'Running biber'.colour(:yellow)
+      puts 'First run of xelatex passed'.color(:yellow)
+      puts 'Running biber'.color(:yellow)
       system("biber #{name_of_resume}.bcf")
-      puts 'Run of biber passed'.colour(:yellow)
-      puts 'Second run of xelatex'.colour(:yellow)
+      puts 'Run of biber passed'.color(:yellow)
+      puts 'Second run of xelatex'.color(:yellow)
       system("xelatex #{name_of_resume}.tex")
-      puts 'Second run of xelatex passed'.colour(:yellow)
-      puts 'All done'.colour(:green)
-      system("cp #{name_of_resume}.pdf #{tmpdir}/#{name_of_resume}.pdf")
+      puts 'Second run of xelatex passed'.color(:yellow)
+      puts 'All done'.color(:green)
+      system("cp #{name_of_resume}.pdf #{tmp_dir}/#{name_of_resume}.pdf")
     end
 
     # Create the final cv
@@ -40,21 +48,21 @@ module LatexCurriculumVitae
     # @param [String] name_of_cover Name of the Cover file
     def self.create_final_cv(letter, name_of_letter, name_of_resume, name_of_pdf, name_of_cover)
       if letter == 'yes'
-        puts 'Merging the motivational letter with the cv'.colour(:yellow)
+        puts 'Merging the motivational letter with the cv'.color(:yellow)
         pdf = CombinePDF.new
         pdf << CombinePDF.load("#{name_of_letter}.pdf") # one way to combine, very fast.
         pdf << CombinePDF.load("#{name_of_cover}.pdf")
         pdf << CombinePDF.load("#{name_of_resume}.pdf")
         pdf.save 'result.pdf'
-        puts 'Merging done'.colour(:green)
+        puts 'Merging done'.color(:green)
       else
-        puts "Copying #{name_of_resume}.pdf result.pdf".colour(:green)
+        puts "Copying #{name_of_resume}.pdf result.pdf".color(:green)
         pdf = CombinePDF.new
         pdf << CombinePDF.load("#{name_of_cover}.pdf")
         pdf << CombinePDF.load("#{name_of_resume}.pdf")
         pdf.save 'resumenew.pdf'
         system('cp resumenew.pdf result.pdf')
-        puts 'Done'.colour(:green)
+        puts 'Done'.color(:green)
       end
       appendix(name_of_pdf)
     end
@@ -62,7 +70,7 @@ module LatexCurriculumVitae
     # Add additional stuff
     # @param [String] name_of_pdf Name of the finished pdf
     def self.appendix(name_of_pdf)
-      puts 'Adding additional stuff'.colour(:yellow)
+      puts 'Adding additional stuff'.color(:yellow)
       pdf = CombinePDF.new
       pdf << CombinePDF.load('result.pdf')
       # Put there your own stuff
@@ -75,17 +83,17 @@ module LatexCurriculumVitae
       pdf << CombinePDF.load('../Appendix/Certificates/Zertifikat_Sascha_Manns1.pdf')
       #pdf << CombinePDF.load('../Appendix/Employers_Reference/wtg.pdf')
       pdf << CombinePDF.load('../Appendix/First_References/ihk.pdf')
-      pdf << CombinePDF.load('../Appendix/Certificates/IVPA_Ergebnis.pdf')
+      #pdf << CombinePDF.load('../Appendix/Certificates/IVPA_Ergebnis.pdf')
       pdf.save "#{name_of_pdf}.pdf"
-      puts 'Additional stuff done'.colour(:green)
+      puts 'Additional stuff done'.color(:green)
     end
 
     # Copy result to .latex_curriculum_vitae
     # @param [String] name_of_pdf Name of the resulting PDF file
-    def self.copy_home(name_of_pdf, datadir)
-      puts "Copying #{name_of_pdf}.pdf to tmpdir".colour(:yellow)
-      system("cp #{name_of_pdf}.pdf #{datadir}")
-      puts 'Copied to tmpdir'.colour(:green)
+    def self.copy_home(name_of_pdf, data_dir)
+      puts "Copying #{name_of_pdf}.pdf to tmpdir".color(:yellow)
+      system("cp #{name_of_pdf}.pdf #{data_dir}")
+      puts 'Copied to tmpdir'.color(:green)
     end
   end
 end

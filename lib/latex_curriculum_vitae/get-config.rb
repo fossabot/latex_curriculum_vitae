@@ -1,10 +1,17 @@
-#!/usr/bin/env ruby
 # encoding: utf-8
-# @author Sascha Manns
-# @abstract module for getting information from a config file
-#
 # Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
-# License: MIT
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # Dependencies
 require 'parseconfig'
@@ -14,7 +21,8 @@ module LatexCurriculumVitae
   # Module for creating the GetConfig
   module GetConfig
     # This method gets the configs from the config file
-    # @return [Array] name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader, shorten_url, bitly_user, bitly_apikey
+    # @return [Array] name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader, shorten_url,
+    # bit_ly_user, bit_ly_apikey
     def self.get(sysconfdir)
       config = ParseConfig.new("#{sysconfdir}/latex_curriculum_vitae.cfg")
       name_of_pdf = config['name_of_pdf']
@@ -23,10 +31,12 @@ module LatexCurriculumVitae
       name_of_letter = config['name_of_letter']
       pdf_reader = config['pdf_reader']
       shorten_url = config['shorten_url']
-      bitly_user = config['bitly_user']
-      bitly_apikey = config['bitly_apikey']
+      bit_ly_user = config['bitly_user']
+      bit_ly_apikey = config['bitly_apikey']
+      mail_backend = config['mail_backend']
 
-      [name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader, shorten_url, bitly_user, bitly_apikey]
+      [name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader, shorten_url, bit_ly_user, bit_ly_apikey,
+      mail_backend]
     end
 
     # Method for getting smtp configuration

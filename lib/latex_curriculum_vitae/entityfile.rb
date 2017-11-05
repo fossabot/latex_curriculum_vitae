@@ -1,10 +1,17 @@
-#!/usr/bin/env ruby
 # encoding: utf-8
-# @author Sascha Manns
-# @abstract module for creating the entity file for latex
-#
 # Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
-# License: MIT
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # Dependencies
 require 'fileutils'
@@ -15,11 +22,13 @@ require 'url_shortener'
 module LatexCurriculumVitae
   # Module for creating the entityfile
   module Entityfile
+    # TODO: Try to fix this in future
     # rubocop:disable Metrics/LineLength
+    # rubocop:disable Metrics/MethodLength
     # Method for getting information
     # @param [String] entitytex Path to the entity.tex
     # @return [Array] contact, emailaddress, jobtitle, contact_sex, company, proactive, job_url
-    def self.get_information(entitytex)
+    def self.get_information(entity_tex)
       resume = `yad --title="Create application" --center --on-top --form --item-separator=, --separator="|" \
 --field="What is the jobtitle of your application? Escape amp with backslash:TEXT" \
 --field="Is it a proactive application?:CBE" \
@@ -33,13 +42,15 @@ module LatexCurriculumVitae
 --field="What kind of target:CBE" \
 --field="Tell me the URL of the job offer:TEXT" \
 --button="Go!" "" "no,yes" "yes,no" "" "" "" "male,female,unknown" "" "" "doku,support,kaufm"`
-      jobtitle, proactive, letter, company, street, city, contact_sex, contact, emailaddress, target, job_url = resume.chomp.split('|')
-      [jobtitle, proactive, letter, company, street, city, contact_sex, contact, emailaddress, target, job_url].each do |s|
+      job_title, proactive, letter, company, street, city, contact_sex, contact, email_address, target, job_url =
+          resume.chomp.split('|')
+      [job_title, proactive, letter, company, street, city, contact_sex, contact, email_address, target,
+       job_url].each do |s|
         puts s
       end
 
-      create_file(jobtitle, company, street, city, contact, entitytex, contact_sex, proactive, target)
-      [contact, emailaddress, jobtitle, contact_sex, company, letter, proactive, job_url]
+      create_file(job_title, company, street, city, contact, entity_tex, contact_sex, proactive, target)
+      [contact, email_address, job_title, contact_sex, company, letter, proactive, job_url]
     end
 
     # Method for shorten the URL
@@ -47,8 +58,8 @@ module LatexCurriculumVitae
     # @param [String] bitly_user The Username in Bit.ly
     # @param [String] bitly_apikey The Apikey from your Bit.ly User
     # @return [String] joburl Returns the shortened Bit.ly URL
-    def self.shorten_url(job_url, bitly_user, bitly_apikey)
-      authorize = UrlShortener::Authorize.new "#{bitly_user}", "#{bitly_apikey}"
+    def self.shorten_url(job_url, bit_ly_user, bit_ly_apikey)
+      authorize = UrlShortener::Authorize.new "#{bit_ly_user}", "#{bit_ly_apikey}"
       client = UrlShortener::Client.new authorize
 
       shorten = client.shorten("#{job_url}") # => UrlShortener::Response::Shorten object
@@ -67,18 +78,16 @@ module LatexCurriculumVitae
     # @param [String] contact Name of the contact
     # @param [String] contact_sex Sex of the contact
     # @param [String] entitytex Path to the entity.tex
-    def self.create_file(jobtitle, company, street, city, contact, entitytex, contact_sex, proactive, target)
+    def self.create_file(job_title, company, street, city, contact, entity_tex, contact_sex, proactive, target)
       introduction = LatexCurriculumVitae::Entityfile.get_introduction(contact, contact_sex)
-      subject, intro = LatexCurriculumVitae::Entityfile.get_subject_intro(proactive, jobtitle)
-      addressstring = LatexCurriculumVitae::Entityfile.get_addressstring(company, contact, contact_sex, street, city)
+      subject, intro = LatexCurriculumVitae::Entityfile.get_subject_intro(proactive, job_title)
+      addressstring = LatexCurriculumVitae::Entityfile.get_address_string(company, contact, contact_sex, street, city)
       targetblock = LatexCurriculumVitae::Entityfile.get_target_block(target)
 
-
-
-      FileUtils.rm(entitytex) if File.exist?(entitytex)
-      FileUtils.touch(entitytex)
-      File.write "#{entitytex}", <<EOF
-\\def\\jobtitle{#{jobtitle}}
+      FileUtils.rm(entity_tex) if File.exist?(entity_tex)
+      FileUtils.touch(entity_tex)
+      File.write "#{entity_tex}", <<EOF
+\\def\\jobtitle{#{job_title}}
 \\def\\company{#{company}}
 \\def\\contact{#{contact}}
 \\def\\street{#{street}}
@@ -112,12 +121,12 @@ EOF
     # @param [String] proactive Can be yes or no
     # @param [String] jobtitle Title of the target job
     # @return [Array] subject intro
-    def self.get_subject_intro(proactive, jobtitle)
+    def self.get_subject_intro(proactive, job_title)
       if proactive == 'yes'
-        subject = "Initiativbewerbung um einen Arbeitsplatz als #{jobtitle}"
-        intro = "gerne möchte ich mich bei Ihnen um die Stelle als #{jobtitle} oder einer ähnlichen Position bewerben."
+        subject = "Initiativbewerbung um einen Arbeitsplatz als #{job_title}"
+        intro = "gerne möchte ich mich bei Ihnen um die Stelle als #{job_title} oder einer ähnlichen Position bewerben."
       else
-        subject = "Bewerbung um einen Arbeitsplatz als #{jobtitle}"
+        subject = "Bewerbung um einen Arbeitsplatz als #{job_title}"
         intro = "mit großem Interesse bin ich auf die ausgeschriebene Position aufmerksam geworden. Aus diesem Grund bewerbe ich mich bei Ihnen als #{jobtitle}."
       end
       [subject, intro]
@@ -129,7 +138,7 @@ EOF
     # @param [String] city City of the company
     # @param [String] contact Name of the contact
     # @return [String] addressstring
-    def self.get_addressstring(company, contact, contact_sex, street, city)
+    def self.get_address_string(company, contact, contact_sex, street, city)
       addressstring = "#{company} \\\\"
       if contact == ''
         addressstring << 'z.Hd. Personalabteilung \\\\'

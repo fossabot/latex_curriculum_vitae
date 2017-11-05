@@ -1,10 +1,17 @@
-#!/usr/bin/env ruby
 # encoding: utf-8
-# @author Sascha Manns
-# @abstract module for adding new applications on the csv table
-#
 # Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
-# License: MIT
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # Dependencies
 require 'csv'
@@ -20,23 +27,23 @@ module LatexCurriculumVitae
     # @param [String] emailaddress Emailaddress of the Contact
     # @param [String] csvout Name of the CSV-Outfile
     # @param [String] joburl The shortened URL
-    def self.add_to_outfile(jobtitle, company, contact, emailaddress, csvout, joburl)
+    def self.add_to_outfile(job_title, company, contact, email_address, csv_out, job_url_checked)
       time = Time.new
       date = time.strftime('%Y-%m-%d')
       contact.gsub!('%20', ' ')
-      jobtitle.gsub!('%20', ' ')
-      jobtitle.gsub!('%26', '&')
-      if File.exist?(csvout)
+      job_title.gsub!('%20', ' ')
+      job_title.gsub!('%26', '&')
+      if File.exist?(csv_out)
         puts 'do nothing'
       else
-        FileUtils.touch(csvout)
-        File.write "#{csvout}", <<EOF
+        FileUtils.touch(csv_out)
+        File.write "#{csv_out}", <<EOF
 date,company,job,contact,email,status, joburl
 EOF
       end
-      CSV.open("#{csvout}", 'a+') do |csv|
+      CSV.open("#{csv_out}", 'a+') do |csv|
         # datum,firma,stelle,kontakt,email,status,joburl
-        csv << ["#{date}", "#{company}", "#{jobtitle}", "#{contact}", "#{emailaddress}", 'Open', "#{joburl}"]
+        csv << ["#{date}", "#{company}", "#{job_title}", "#{contact}", "#{email_address}", 'Open', "#{job_url_checked}"]
       end
     end
   end
