@@ -1,0 +1,69 @@
+===============================================================================
+latex_curriculum_vitae 2.1.0 - 2017-11-06
+===============================================================================
+
+    latex_curriculum_vitae 2.1.1 is the culmination of one days'
+    work by 1 developer.
+
+    New Features:
+
+      * Nothing yet
+
+    Enhancements:
+
+      * Now you can choose between "Pony" and "Evolution" for mailing out.
+      See Documentation.
+
+    Notable Bugs Fixed:
+
+      * 4 minor enhancements
+
+        * LCV#3: Use more communicative variable names
+        * LCV#4: Use Codeclimates new V2 engine
+        * LCV#5: Fix Rubocop and Reek
+        * LCV#6: Cleanup Rakefile
+
+
+===============================================================================
+SOURCES / PACKAGES
+===============================================================================
+
+Sources
+-------
+
+    * latex_curriculum_vitae 2.1.0 Tarballs:
+      https://launchpad.net/hoe-manns/2.x/2.1.0/+download/
+      latex_curriculum_vitae-2.1.1.tar.xz
+
+Packages
+--------
+
+    Download and installation information is available here:
+
+    * https://saigkill.github.io/latex_curriculum_vitae/about/
+
+    Gems:
+
+    * https://rubygems.org/gems/latex_curriculum_vitae
+
+===============================================================================
+REPORT BUGS - HELP THE PROJECT - GROW THE COMMUNITY
+===============================================================================
+
+    If you encounter any bad behavior with this release, please do not
+    hesitate to file bugs!
+
+    * https://bugs.launchpad.net/latexcv
+
+
+===============================================================================
+VALUED LATEX_CURRICULUM_VITAE CONTRIBUTORS
+===============================================================================
+
+Contributors For This Release
+-----------------------------
+
+    The following people directly contributed to the release of this version
+    of hoe-manns. Without their help, there would be no release!
+
+     Sascha Manns

@@ -37,7 +37,7 @@ GEM
       bundler-audit (~> 0.5)
       parseconfig (~> 1.0)
       rainbow (~> 2.2)
-    hoe-reek (1.2.1)
+    hoe-reek (1.2.2)
       bundler (~> 1.16)
       reek (~> 4.7)
     hoe-rubocop (1.0.8)
