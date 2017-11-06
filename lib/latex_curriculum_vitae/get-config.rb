@@ -1,5 +1,5 @@
-# encoding: utf-8
 # Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
+#
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -21,10 +21,11 @@ module LatexCurriculumVitae
   # Module for creating the GetConfig
   module GetConfig
     # This method gets the configs from the config file
+    # @param [String] sysconf_dir
     # @return [Array] name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader, shorten_url,
     # bit_ly_user, bit_ly_apikey
-    def self.get(sysconfdir)
-      config = ParseConfig.new("#{sysconfdir}/latex_curriculum_vitae.cfg")
+    def self.get(sysconf_dir)
+      config = ParseConfig.new("#{sysconf_dir}/latex_curriculum_vitae.cfg")
       name_of_pdf = config['name_of_pdf']
       name_of_cover = config['name_of_cover']
       name_of_resume = config['name_of_resume']
@@ -36,23 +37,22 @@ module LatexCurriculumVitae
       mail_backend = config['mail_backend']
 
       [name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader, shorten_url, bit_ly_user, bit_ly_apikey,
-      mail_backend]
+       mail_backend]
     end
 
     # Method for getting smtp configuration
-    # @return [Array] own_name, own_email_address, own_smtp, own_username, own_password, own_port, own_domain, own_tls
-    def self.get_smtp(sysconfdir)
-      config = ParseConfig.new("#{sysconfdir}/latex_curriculum_vitae.cfg")
+    # @param [String] sysconf_dir
+    # @return [Array] own_name, own_email_address, own_smtp, own_username, own_password, own_port, own_domain
+    def self.get_smtp(sysconf_dir)
+      config = ParseConfig.new("#{sysconf_dir}/latex_curriculum_vitae.cfg")
       # own_name = config['own_name']
       own_email_address = config['own_email_address']
       own_smtp = config['own_smtp']
       own_username = config['own_username']
       own_password = config['own_password']
       own_port = config['own_port'].to_i
-      own_tls = config['own_tls']
 
-      [own_email_address, own_smtp, own_username, own_password, own_port, own_tls]
+      [own_email_address, own_smtp, own_username, own_password, own_port]
     end
-
   end
 end

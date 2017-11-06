@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 # Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
+#
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -13,11 +14,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
 # Dependencies
 require 'rubygems'
 require 'latex_curriculum_vitae'
-# require File.expand_path(File.join(File.dirname(__FILE__), '../lib/latex_curriculum_vitae'))
-#require 'setup/command'
-
-#IRB.start

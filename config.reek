@@ -30,7 +30,7 @@ IrresponsibleModule:
 LongParameterList:
   enabled: true
   exclude: []
-  max_params: 3
+  max_params: 5
   overrides:
     initialize:
       max_params: 5

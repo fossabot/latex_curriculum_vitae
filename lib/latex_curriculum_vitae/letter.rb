@@ -1,5 +1,5 @@
-# encoding: utf-8
 # Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
+#
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -22,7 +22,7 @@ module LatexCurriculumVitae
   # Module for creating the motivational letter
   module Letter
     # Method for creating a pdf from tex
-    # @param [String] tmpdir Name of the Tempdir
+    # @param [String] tmp_dir Name of the Tempdir
     # @param [String] name_of_letter Filename of the Letter
     def self.create_letter(tmp_dir, name_of_letter)
       puts 'Compiling motivational letter'.color(:yellow)

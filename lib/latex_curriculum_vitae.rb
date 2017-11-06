@@ -1,5 +1,5 @@
-# encoding: utf-8
 # Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
+#
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -18,19 +18,19 @@ require 'fileutils'
 require 'xdg'
 require 'tmpdir'
 
-require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/entityfile'))
-require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/cv'))
-require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/cover'))
-require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/email'))
-require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/outfile'))
-require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/notifier'))
-require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/letter'))
-require File.expand_path(File.join(File.dirname(__FILE__), 'latex_curriculum_vitae/get-config'))
+require_relative 'latex_curriculum_vitae/entityfile'
+require_relative 'latex_curriculum_vitae/cv'
+require_relative 'latex_curriculum_vitae/cover'
+require_relative 'latex_curriculum_vitae/email'
+require_relative 'latex_curriculum_vitae/outfile'
+require_relative 'latex_curriculum_vitae/notifier'
+require_relative 'latex_curriculum_vitae/letter'
+require_relative 'latex_curriculum_vitae/get-config'
 
 # Main Class LatexCurriculumVitae
 module LatexCurriculumVitae
   # The version information
-  VERSION = '2.0.1'.freeze
+  VERSION = '2.1.0'.freeze
 
   # Variables
   sys_xdg = XDG['CONFIG_HOME']
@@ -43,14 +43,15 @@ module LatexCurriculumVitae
   tmp_dir = "#{temp_dir}/build"
 
   name_of_pdf, name_of_cover, name_of_resume, name_of_letter, pdf_reader, shorten_url, bit_ly_user, bit_ly_apikey,
-  mail_backend =
-      LatexCurriculumVitae::GetConfig.get(sysconf_dir)
+  mail_backend = LatexCurriculumVitae::GetConfig.get(sysconf_dir)
 
   # Get the needed Information for creating the application
-  contact, email_address, job_title, contact_sex, company, letter, proactive, job_url =
-      LatexCurriculumVitae::Entityfile.get_information(entity_tex)
+  contact, email_address, job_title, contact_sex, company, letter,
+      proactive, job_url, target = LatexCurriculumVitae::Entityfile.get_information(entity_tex)
 
   # Shorten shorten_url
+  # TODO: Try to fix this in future
+  # rubocop:disable Style/IfInsideElse
   if proactive == 'yes'
     job_url_checked = 'No URL available (Proactive)'
   else
@@ -70,7 +71,7 @@ module LatexCurriculumVitae
   FileUtils.rm_rf(temp_dir) if File.exist?("#{temp_dir}/Resume/cv_10.tex")
   FileUtils.mkdir(temp_dir)
   FileUtils.mkdir(tmp_dir)
-  FileUtils.cp_r("#{data_dir}/.", "#{temp_dir}")
+  FileUtils.cp_r("#{data_dir}/.", temp_dir)
 
   # Create Motivational Letter
   if letter == 'yes'
@@ -104,9 +105,8 @@ module LatexCurriculumVitae
 
   # Ask if result is ok
   LatexCurriculumVitae::Email.result_ok(contact, email_address, job_title, contact_sex, proactive,
-                                        letter, name_of_pdf, sysconf_dir, data_dir, mail_backend)
+                                        letter, name_of_pdf, sysconf_dir, data_dir, mail_backend, target)
 
   # Inform about creation is done
   LatexCurriculumVitae::Notify.run(job_title, data_dir)
-
 end

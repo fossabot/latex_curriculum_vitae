@@ -1,5 +1,5 @@
-# encoding: utf-8
 # Copyright (C) 2015-2017 Sascha Manns <Sascha.Manns@mailbox.org>
+#
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -22,13 +22,14 @@ require 'notifier'
 module LatexCurriculumVitae
   # Method for notifying the user
   module Notify
-    # @param [String] jobtitle The Title of your job application
+    # @param [String] job_title The Title of your job application
+    # @param [String] data_dir Path to data dir
     def self.run(job_title, data_dir)
       img = "#{data_dir}/share/icons/arbeitsagentur.png"
       Notifier.notify(
-          :image => "#{img}",
-          :title => "Your Job Application",
-          :message => "Your Job Application #{job_title} was created now."
+        image: img.to_s,
+        title: 'Your Job Application',
+        message: "Your Job Application #{job_title} was created now."
       )
     end
   end

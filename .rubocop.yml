@@ -5,6 +5,8 @@ AllCops:
 
   Exclude:
     - 'Rakefile'
+    - 'Gemfile'
+    - 'docs/**'
 
   DisplayCopNames: true
 

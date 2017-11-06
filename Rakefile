@@ -5,7 +5,6 @@
 require 'rubygems'
 require 'hoe'
 
-# rubocop:disable Metrics/LineLength
 ############################################# DEVELOPING ZONE #########################################################
 Hoe.plugin :bundler
 Hoe.plugin :doofus
@@ -20,7 +19,7 @@ Hoe.plugin :version
 
 Hoe.spec 'latex_curriculum_vitae' do
   developer('Sascha Manns', 'Sascha.Manns@mailbox.org')
-  license 'GPL-3' # this should match the license in the README
+  license 'GPL-3.0' # this should match the license in the README
   require_ruby_version '>= 2.2.0'
 
   self.history_file = 'History.rdoc'
