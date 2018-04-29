@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.0/rng/docbookxi.rng"
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE sect1
+[
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+    %entities;
+]>
+<sect1 version="5.0" xml:lang="en" xml:id="common_intro_source_code"
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Source Code</title>
+    <para>The source code of <productname>latex_curriculum_vitae</productname> is publicly available on <link
+      xlink:href="https://github.com/saigkill/latex_curriculum_vitae"
+      >https://github.com/saigkill/latex_curriculum_vitae</link> for download links and more
+    information.</para>
+</sect1>
+

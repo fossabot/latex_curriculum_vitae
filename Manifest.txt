@@ -5,7 +5,9 @@ LICENSE.rdoc
 Manifest.txt
 README.rdoc
 Rakefile
-STATUS.rdoc
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+MAINTENANCE.md
 NEWS
 bin/latexcv.rb
 data/latex_curriculum_vitae/Appendix/Bibliography/bibliography1.bib

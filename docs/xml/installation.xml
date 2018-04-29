@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<?xml-model href="http://docbook.org/xml/5.0CR3/rng/docbookxi.rng"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<chapter version="5.0" xml:id="installation" xmlns="http://docbook.org/ns/docbook"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+	<info>
+		<title>Installation</title>
+	</info>
+	<indexterm>
+		<primary>Installation</primary>
+	</indexterm>
+	<para> The installation works in the console/terminal via:
+		<programlisting>gem install latex_curriculum_vitae
+cd /path/to/gem (In case of using RVM ~/.rvm/gems/ruby-2.2.3/gems/latex_curriculum_vitae)
+rake setup. </programlisting></para>
+	<para>You need a installed <application>pdflatex</application> and
+			<application>xelatex</application> for using this application.</para>
+
+	<section xml:id="installation-configfile">
+		<info>
+			<title>The config file</title>
+		</info>
+		<indexterm>
+			<primary>Config file</primary>
+		</indexterm>
+		<para>The config file is currently inside your
+				<filename>$HOME/.config/latex_curriculum_vitae</filename> and is named
+				<filename>latex_curriculum_vitae.cfg</filename>. It looks like:</para>
+		<screen>name_of_pdf = "Bewerbungsunterlagen_Manns"
+name_of_letter = "bwanschreiben"
+name_of_cover = "Cover"
+name_of_resume = "cv_10"
+mail_backed = "Evolution"
+own_name = "Sascha Manns"
+own_email_address = "Sascha.Manns@directbox.com"
+own_smtp = "smtp.my.com"
+own_username = "myusername"
+own_password = "mypassword"</screen>
+		<para><varname>name_of_pdf</varname> is the name of your resulting pdf which will used for sending
+			out. A "Application_Me" build a "Application_Me.pdf".</para>
+		<para><varname>name_of_letter</varname>, <varname>name_of_cover</varname> and
+				<varname>name_of_resume</varname> are the given names of your motivational letter
+			Tex file, cover Tex file and your resume Tex file.</para>
+		<para><varname>mail_backend</varname> defines which backed should be used. Possible Settings are
+			"Pony" or "Evolution". Pony is a implemented solution for mailing out, but sometimes it
+			has problems with large files. Evolution runs out of the box.</para>
+		<para>The <emphasis role="bold">own_*</emphasis> part will be used for the smtp mailer. It is just
+			needed by using "Pony" as <emphasis role="bold">mail_backed</emphasis>.</para>
+	</section>
+
+	<section xml:id="installation-personal-data">
+		<info>
+			<title>Personal Data</title>
+		</info>
+		<indexterm>
+			<primary>Personal Data</primary>
+		</indexterm>
+		<para>For inserting some personal data in the LaTEX files, i have prepared a simple file. It
+			is located there:
+				<filename>$HOME/.config/latex_curriculum_vitae/personal_data.tex</filename>. It
+			looks like:</para>
+		<screen>
+\def\firstname{Sascha}
+\def\familyname{Manns}
+\def\mystreet{Maifeldstraße 10}
+\def\mycity{56727 Mayen}
+\def\myphone{+00-0000-000~00~00}
+\def\myemail{Sascha.Manns@mailbox.org}
+\def\myblog{http://saigkill.tuxfamily.org}
+\def\mybank{Kto. DE88\ 0000\ 0000\ 0000\ 0000\ 00 \\
+BIC: MALADE00XXX \\
+KSK}</screen>
+		<para>The format is directly in TEX, so i can include it into the LaTEX source code. There
+			you can define your own setting which will be used currently for the cover and the
+			letter.</para>
+	</section>
+
+	<section xml:id="installation-upgrading">
+		<info>
+			<title>Upgrading</title>
+		</info>
+		<indexterm>
+			<primary>Upgrading</primary>
+		</indexterm>
+		<para>If you already have used a earlier 1.x version, you can upgrade it in the following
+			steps:</para>
+		<procedure>
+			<step>
+				<para>Copy the content of
+						<filename>$HOME/.rvm/rubies/default/share/latex_curriculum_vitae</filename>
+					to <filename>$HOME/.local/share/latex_curriculum_vitae</filename>.</para>
+			</step>
+			<step>
+				<para>Copy inside of <filename>$HOME/.latex_curriculum_vitae</filename> the files
+						<filename>job-applications.csv</filename>,
+						<filename>latex_curriculum_vitae.cfg</filename> and
+						<filename>personal_data.tex</filename> to the new place on:
+						<filename>$HOME/.config/latex_curriculum_vitae</filename>.</para>
+			</step>
+			<step>
+				<para>Do the following changes:</para>
+				<itemizedlist>
+					<listitem>
+						<para><filename>$HOME/.local/share/latex_curriculum_vitae/Cover/Cover.tex</filename>:
+							Change
+								<code>\input{$HOME/.latex_curriculum_vitae/personal_data.tex}</code>
+							to
+								<code>\input{$HOME/.config/latex_curriculum_vitae/personal_data.tex}</code>.</para>
+					</listitem>
+					<listitem>
+						<para><filename>$HOME/.local/share/latex_curriculum_vitae/Cover/Cover.tex</filename>:
+							Change <code>\input{$HOME/.latex_curriculum_vitae/entity.tex}</code> to
+								<code>\input{$HOME/.config/latex_curriculum_vitae/entity.tex}</code></para>
+					</listitem>
+					<listitem>
+						<para><filename>$HOME/.local/share/latex_curriculum_vitae/Motivational_letter/bwanschreiben.tex</filename>:
+							Change
+								<code>\input{$HOME/.latex_curriculum_vitae/personal_data.tex}</code>
+							to
+								<code>\input{$HOME/.config/latex_curriculum_vitae/personal_data.tex}</code>.</para>
+					</listitem>
+					<listitem>
+						<para><filename>$HOME/.local/share/latex_curriculum_vitae/Motivational_letter/Cover.tex</filename>:
+							Change <code>\input{$HOME/.latex_curriculum_vitae/entity.tex}</code> to
+								<code>\input{$HOME/.config/latex_curriculum_vitae/entity.tex}</code></para>
+					</listitem>
+				</itemizedlist>
+			</step>
+		</procedure>
+	</section>
+</chapter>

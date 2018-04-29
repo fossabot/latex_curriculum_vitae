@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<?xml-model href="http://docbook.org/xml/5.0CR3/rng/docbookxi.rng"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<chapter version="5.0" xml:id="usage" xmlns="http://docbook.org/ns/docbook"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+	<info>
+		<title>Usage</title>
+	</info>
+	<indexterm>
+		<primary>Usage</primary>
+	</indexterm>
+
+	<section xml:id="usage-configfile">
+		<info>
+			<title>How to use <productname>latex_curriculum_vitae</productname></title>
+		</info>
+		<para>If you have provided your information in the config files, you can launch the
+			graphical interface:</para>
+		<procedure xml:id="proc-GUI">
+			<step>
+				<para>Open your console/terminal and type: <command>latexcv.rb</command></para>
+			</step>
+			<step>
+				<para>Now opens the user interface:</para>
+				<mediaobject>
+					<imageobject role="fo">
+						<imagedata fileref="lcv-gui.png" width="25%" align="center"/>
+					</imageobject>
+					<imageobject role="html">
+						<imagedata fileref="lcv-gui.png" width="25%" align="center"/>
+					</imageobject>
+				</mediaobject>
+			</step>
+			<step>
+				<para>In the job title entry box, you have to place the title of your new
+					job.</para>
+			</step>
+			<step>
+				<para>The question about the proactive application reflects in your cover and
+					motivational letter. If set to "yes" it uses the Keyword "Proactive" in the
+					Subject.</para>
+			</step>
+			<step>
+				<para>If motivational letter is set to "yes" a letter will be included. Otherwise
+					not. If the application send via email, it is defined to use the motivational
+					letter text inside the email body.</para>
+			</step>
+			<step>
+				<para>In the next field you have to place the name of the company. If you would like
+					to write XYZ Gmbh &amp; Co. You have to escape the ampersand like so: XYZ GmbH
+					\&amp; Co.</para>
+				<para>Now you have to place the street, where the company sits.</para>
+			</step>
+			<step>
+				<para>Then comes the ZIP code (German PLZ) and the city. Like: 56727 Mayen.</para>
+			</step>
+			<step>
+				<para>Now choose the contacts sex. If you use "male" it uses "Herr" otherwise
+					"Frau".</para>
+			</step>
+			<step>
+				<para>There just place the surname. It uses the contacts sex to create the Name. If
+					you haven't a name, leave it blank. Then the program uses "Sehr geehrte Damen
+					und Herren".</para>
+			</step>
+			<step>
+				<para>Now place the email address. It will used for sending out the CV.</para>
+			</step>
+			<step>
+				<para>Currently I have defined 3 kinds of targets. sudoku, support and kfm, Then it
+					customize the motivational letter to it-documentation, it-support or jobs as
+					merchant.</para>
+			</step>
+			<step>
+				<para>The last field is for a URL. If you have a specific URL with the job-offer,
+					you can place it there, and can return later.</para>
+			</step>
+			<step>
+				<para>After clicking on <guibutton>Go!</guibutton> it builds the curriculum vitae
+					with LaTEX. If this build is succeeded, the PDF will be shown by your preferred
+					PDF-Viewer.</para>
+			</step>
+			<step>
+				<para>After clicking on <guibutton>yes</guibutton> it sends out the application and
+					adds the information to the CSV file.</para>
+			</step>
+		</procedure>
+	</section>
+</chapter>

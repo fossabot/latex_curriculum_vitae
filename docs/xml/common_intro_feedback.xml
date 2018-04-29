@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.0/rng/docbookxi.rng"
+            schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!DOCTYPE sect1
+[
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+    %entities;
+]>
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="common_intro_feedback" xml:lang="en-US">
+    <title>Feedback</title>
+    
+    <para>
+        Several feedback channels are available:
+    </para>
+    
+    <variablelist>
+        <varlistentry>
+            <term>Bug Reports &amp; Feature Requests</term>            
+            <listitem>
+                <para>You are welcome to file a Bug Report or a Feature Request.</para>
+                <para>File a bug or a Feature request: <link
+                    xlink:href="https://github.com/saigkill/latex_curriculum_vitae/issues"
+                    >https://github.com/saigkill/latex_curriculum_vitae/issues</link>.</para>
+            </listitem>            
+        </varlistentry>
+        <varlistentry>
+            <term>User Comments &amp; Ask a question</term>
+            <listitem>
+                <para>We want to hear your comments about and suggestions for this manual and the
+                    other documentation included with this product. Go to <link
+                        xlink:href="https://github.com/saigkill/latex_curriculum_vitae/issues"
+                        >https://github.com/saigkill/latex_curriculum_vitae/issues</link> and enter your
+                    comments there. </para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Mailing list</term>
+            <listitem>
+                <para>It is also possible to subscribe to projects mailing list on: <link
+                    xlink:href="https://groups.google.com/forum/#!forum/latex_curriculum_vitae"
+                    >https://groups.google.com/forum/#!forum/latex_curriculum_vitae</link></para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Mail</term>
+            <listitem>
+                <para>For feedback on the documentation or this product, you can also send a mail
+                    to <literal><link xlink:href="mailto:Sascha.Manns@mailbox.org"
+                            >Sascha.Manns@mailbox.org</link></literal>. Make sure to include the
+                    document title, the product version and the publication date of the
+                    documentation. To report errors or suggest enhancements, provide a concise
+                    description of the problem and refer to the respective section number and page
+                    (or URL).</para>
+            </listitem>
+        </varlistentry>
+    </variablelist>
+</sect1>

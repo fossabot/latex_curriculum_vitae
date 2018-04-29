@@ -1,16 +1,17 @@
+=== 2.1.1 / 2018-04-29
+
+* 1 misc enhancement
+
+  * updated documentation and projects url
+
 === 2.1.0 / 2017-11-06
 
-* 4 minor enhancements
+* 6 minor enhancements
 
   * LCV#3: Use more communicative variable names
   * LCV#4: Use Codeclimates new V2 engine
   * LCV#5: Fix Rubocop and Reek
   * LCV#6: Cleanup Rakefile
-
-=== 2.0.2 / 2017-11-05
-
-* X major enhancements
-
   * LCV#1: Add option to choose between mail backends
   * LCV#2: Change license to GPL3
 

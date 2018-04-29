@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ...................................................................... -->
+<!-- General Entities                                                       -->
+<!-- ...................................................................... -->
+
+
+<!-- Use exampleuser in text
+     Use exampleuser_plain in screen, command, option and prompt -->
+
+
+<!ENTITY exampleuser_plain    "tux">
+<!ENTITY exampleuser    "<systemitem xmlns='http://docbook.org/ns/docbook' class='username'>&exampleuser_plain;</systemitem>">
+
+<!ENTITY exampleuserII_plain    "wilber">
+<!ENTITY exampleuserII  "<systemitem xmlns='http://docbook.org/ns/docbook' class='username'>&exampleuserII_plain;</systemitem>">
+
+<!ENTITY exampleuserIII_plain    "geeko">
+<!ENTITY exampleuserIII "<systemitem xmlns='http://docbook.org/ns/docbook' class='username'>exampleuserIII_plain</systemitem>">
+
+<!ENTITY exampleuserfull    "Tux Linux">
+<!-- Do not use Gimp as the last name, what with negative connotations etc.
+     Instead use "fox," even though Wilber is not a fox: http://gimp-savvy.com/ABOUT/index.html -->
+<!ENTITY exampleuserIIfull  "Wilber Fox">
+<!ENTITY exampleuserIIIfull "Suzanne Geeko">
+
+<!ENTITY examplegroup_plain   "users">
+<!ENTITY examplegroup   "<systemitem xmlns='http://docbook.org/ns/docbook' class='groupname'>users</systemitem>">
+
+<!ENTITY rootuser       "<systemitem xmlns='http://docbook.org/ns/docbook' class='username'>root</systemitem>">
+<!ENTITY gnome         "GNOME">
+
+<!ENTITY obs            "openSUSE Build Server">
+<!ENTITY gnomecc        "&gnome; control center">
+<!ENTITY yelp           "Help">
+<!ENTITY libo           "LibreOffice">
+
+<!-- ============================================================= -->
+<!--                    Applications                               -->
+<!-- ============================================================= -->
+
+<!ENTITY hm             "hoe-manns">
+<!ENTITY hre            "hoe-reek">
+<!ENTITY hru            "hoe-rubocop">
+<!ENTITY hp             "hoe-packaging">
+<!ENTITY lcv            "latex_curriculum_vitae">
+<!ENTITY ydh            "youtube_dlhelper">
+<!ENTITY im             "ignore-me">
+<!ENTITY gp             "GNOME Publisher">
+
+<!ENTITY nautilus      "&gnome; Files">
+<!ENTITY sudo          "<command xmlns='http://docbook.org/ns/docbook'>sudo</command>">
+<!ENTITY gpg           "GPG"> <!-- or GnuGP -->
+
+<!-- ============================================================= -->
+<!--                    Prompts                              -->
+<!-- ============================================================= -->
+
+<!ENTITY prompt.root     "<prompt role='root' xmlns='http://docbook.org/ns/docbook'>root # </prompt>">
+<!ENTITY prompt.user     "<prompt xmlns='http://docbook.org/ns/docbook'>&exampleuser_plain; &gt; </prompt>">
+<!ENTITY prompt.user2    "<prompt xmlns='http://docbook.org/ns/docbook'>&exampleuserII_plain; &gt; </prompt>">
+
+<!-- Additional Entities                                           -->
+<!ENTITY euro            "&#x20AC;">
+
+<!ENTITY % sgml.features "IGNORE">
+<!ENTITY % xml.features "INCLUDE">
+<!ENTITY % dbcent PUBLIC "-//OASIS//ENTITIES DocBook Character Entities V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/dbcentx.mod">
+  %dbcent;
+
+<!--                             End of file                       -->
+<!-- ............................................................. -->
+

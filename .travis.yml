@@ -1,6 +1,5 @@
 language: ruby
 rvm:
-  - 2.2.0
   - 2.3.0
   - 2.4.0
   - 2.4.1
@@ -30,7 +29,7 @@ env:
     - LC_ALL=en_US.UTF-8
 
 before_install:
-    - gem install bundler
+    - gem install bundler rake
 
 after_success:
     - CI=true TRAVIS=true coveralls --verbose

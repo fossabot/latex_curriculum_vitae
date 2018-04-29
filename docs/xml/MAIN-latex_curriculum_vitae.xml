@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.0CR3/rng/docbookxi.rng"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!--
+<?xml-model href="http://docbook.org/xml/5.1CR3/rng/docbook.rng"
+            schematypens="http://purl.oclc.org/dsdl/schematron"?>
+-->
+<!DOCTYPE article
+[
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+  <!ENTITY % own_ent SYSTEM "lcv.ent">
+    %entities;
+    %own_ent;
+]>
+<book xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns="http://docbook.org/ns/docbook" xml:id="latex_curriculum_vitae" xml:lang="en" version="5.0">
+  <info>
+    <title>How to use latex_curriculum_vitae</title>
+    <productnumber>&VERSION;</productnumber>
+    <productname>latex_curriculum_vitae</productname>
+    <subtitle>A job-application creator with LaTEX</subtitle>
+    <releaseinfo>Version 1.0.2 - Revision: 0</releaseinfo>
+    <date>
+      <?dbtimestamp format="B d, Y"?>
+    </date>
+    <authorgroup>
+      <author>
+        <personname>
+          <firstname>Sascha</firstname>
+          <surname>Manns</surname>
+        </personname>
+        <affiliation>
+          <orgname/>
+          <orgdiv/>
+        </affiliation>
+        <email>Sascha.Manns@mailbox.org</email>
+      </author>
+    </authorgroup>
+    <mediaobject>
+      <imageobject role="fo">
+        <imagedata fileref="arbeitsagentur.png" width="5%" align="center"/>
+      </imageobject>
+      <imageobject role="html">
+        <imagedata fileref="arbeitsagentur.png" width="5%" align="center"/>
+      </imageobject>
+    </mediaobject>
+    <abstract>
+      <para>
+        <productname>latex_curriculum_vitae</productname> creates a job-application by using LaTEX.
+      </para>
+    </abstract>
+    <legalnotice>
+      <para>Copyright <trademark class="copyright"/> 2017 Sascha Manns </para>
+      <para>Permission is granted to copy, distribute and/or modify this document under the terms of
+        the GNU Free Documentation License, Version 1.3 or any later version published by the Free
+        Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover
+        Texts. A copy of the license is included in the section entitled "GNU Free Documentation
+        License". The latest version is also presently available at <link
+          xlink:href="http://www.gnu.org/licenses/fdl.txt"
+          >http://www.gnu.org/licenses/fdl.txt</link>. </para>
+      <para>All programs, presentation and information contained in this document has been to best
+        of our knowledge. However, errors can not be completely ruled out. For this reason, the
+        material contained in this document implies no obligation or warranty connected ANY KIND.
+        The authors and publishers assume no responsibility as a result and any resulting liability
+        will assume that the in some way from Using this material, or parts thereof, or
+        infringements of third parties arises. </para>
+      <para>The use of general descriptive names, trade names, trademarks, etc. in this book even if
+        not explicitly, does not justify the assumption that such names are Sense of the trademark
+        and trade protection laws would have to be regarded as free and therefore may be used by
+        anyone. All trade names are no guarantee freedom Used use and are possibly registered trade
+        marks. The author and Publisher is aimed essentially follows the notations of the
+        manufacturers. others here products mentioned may be trademarks of their respective owners. </para>
+      <para>This document has been set in the Arezzo Pro Light and Stafford Pro Light font family by
+        daps (<link xlink:href="https://github.com/openSUSE/daps"
+          xmlns:xlink="http://www.w3.org/1999/xlink">https://github.com/openSUSE/daps</link>).
+      </para>
+    </legalnotice>
+  </info>
+  <chapter xml:id="cha.about">
+    <info>
+      <title>Round about</title>
+    </info>
+    <xi:include href="common_intro_typografie.xml"/>
+    <xi:include href="common_intro_feedback.xml"/>
+    <xi:include href="common_intro_making.xml"/>
+    <xi:include href="common_intro_source_code.xml"/>
+  </chapter>
+  <xi:include href="installation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="customizing.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="usage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="app.revision_update.xml"/>
+  <xi:include href="app.gfdl.xml"/>
+</book>

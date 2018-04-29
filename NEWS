@@ -1,4 +1,63 @@
 ===============================================================================
+latex_curriculum_vitae 2.1.1 - 2018-04-29
+===============================================================================
+
+    latex_curriculum_vitae 2.1.1 is the culmination of one days'
+    work by 1 developer.
+
+    New Features:
+
+      * Nothing yet
+
+    Enhancements:
+
+      * Nothing yet
+
+    Notable Bugs Fixed:
+
+      * 1 minor enhancements
+
+        * Updated documentation and projects url
+
+
+===============================================================================
+SOURCES / PACKAGES
+===============================================================================
+
+Packages
+--------
+
+    Download and installation information is available here:
+
+    * https://saigkill.tuxfamily.org/documentation/latex_curriculum_vitae/
+
+    Gems:
+
+    * https://rubygems.org/gems/latex_curriculum_vitae
+
+===============================================================================
+REPORT BUGS - HELP THE PROJECT - GROW THE COMMUNITY
+===============================================================================
+
+    If you encounter any bad behavior with this release, please do not
+    hesitate to file bugs!
+
+    * https://github.com/saigkill/latex_curriculum_vitae/issues
+
+
+===============================================================================
+VALUED LATEX_CURRICULUM_VITAE CONTRIBUTORS
+===============================================================================
+
+Contributors For This Release
+-----------------------------
+
+    The following people directly contributed to the release of this version
+    of hoe-manns. Without their help, there would be no release!
+
+     Sascha Manns
+
+===============================================================================
 latex_curriculum_vitae 2.1.0 - 2017-11-06
 ===============================================================================
 
