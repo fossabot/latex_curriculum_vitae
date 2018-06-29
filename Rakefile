@@ -1,5 +1,5 @@
 # -*- ruby -*-
-# Copyright (C) 2013-2018 Sascha Manns <Sascha.Manns@mailbox.org>
+# Copyright (C) 2013-2018 Sascha Manns <Sascha.Manns@outlook.de>
 # Release:
 # Pre-release:
 #* update docs
@@ -45,7 +45,7 @@ Hoe.plugin :travis
 Hoe.plugin :version
 
 Hoe.spec 'latex_curriculum_vitae' do
-  developer('Sascha Manns', 'Sascha.Manns@mailbox.org')
+  developer('Sascha Manns', 'Sascha.Manns@outlook.de')
   license 'GPL-3.0' # this should match the license in the README
   require_ruby_version '>= 2.3.0'
 
@@ -71,8 +71,8 @@ Hoe.spec 'latex_curriculum_vitae' do
   extra_dev_deps << ['hoe', '~> 3.17']
   extra_dev_deps << ['rake', '~> 12.3']
   extra_dev_deps << ['rdoc', '~> 6.0']
-  extra_dev_deps << ['reek', '~> 4.8']
-  extra_dev_deps << ['rubocop', '~> 0.55']
+  extra_dev_deps << ['reek', '~> 4.7']
+  extra_dev_deps << ['rubocop', '~> 0.57']
   extra_dev_deps << ['coveralls', '~> 0.8']
   extra_dev_deps << ['rainbow', '~> 3.0']
   extra_dev_deps << ['bundler', '~> 1.16']

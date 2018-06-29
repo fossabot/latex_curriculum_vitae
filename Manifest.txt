@@ -8,7 +8,6 @@ Rakefile
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
 MAINTENANCE.md
-NEWS
 bin/latexcv.rb
 data/latex_curriculum_vitae/Appendix/Bibliography/bibliography1.bib
 data/latex_curriculum_vitae/Appendix/Certificates/Zertifikat_Sascha_Manns1.pdf

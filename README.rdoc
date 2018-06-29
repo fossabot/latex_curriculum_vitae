@@ -1,12 +1,12 @@
 = latex_curriculum_vitae
 
 code  :: https://github.com/saigkill/latex_curriculum_vitae
-docs :: https://saigkill.tuxfamily.org/documentation/latex_curriculum_vitae/
+docs :: https://docs.saigkills-backtrace.de/latex_curriculum_vitae/
 apidoc :: http://www.rubydoc.info/gems/latex_curriculum_vitae
 bugs  :: https://github.com/saigkill/latex_curriculum_vitae/issues
 mailinglist :: https://groups.google.com/forum/#!forum/latex_curriculum_vitae
 openhub statistics :: https://www.openhub.net/p/latex_curriculum_vitae
-authors blog :: https://saigkill.tuxfamily.org
+authors blog :: https://saigkills-backtrace.de
 min. rubyver :: 2.3.0
 
 last public version  :: {<img src="https://badge.fury.io/rb/latex_curriculum_vitae.png" alt="Build Status" />}[http://rubygems.org/gems/latex_curriculum_vitae]
@@ -15,7 +15,6 @@ downloads all :: {<img src="https://img.shields.io/gem/dt/latex_curriculum_vitae
 code quality :: {<img src="https://scrutinizer-ci.com/g/saigkill/latex_curriculum_vitae/badges/quality-score.png?b=master" />}[https://scrutinizer-ci.com/g/saigkill/latex_curriculum_vitae/]
 code quality :: {<img src="https://api.codeclimate.com/v1/badges/58bdf05db541e741c5d3/maintainability" alt="Code Quality" />}[https://codeclimate.com/github/saigkill/latex_curriculum_vitae]
 security :: {<img src="https://hakiri.io/github/saigkill/latex_curriculum_vitae/master.svg" alt="security" />}[https://hakiri.io/github/saigkill/latex_curriculum_vitae/master]
-dependency check :: {<img src="https://gemnasium.com/saigkill/latex_curriculum_vitae.svg" alt="Dependency Status" />}[https://gemnasium.com/saigkill/latex_curriculum_vitae]
 documentation quality :: {<img src="http://inch-ci.org/github/saigkill/latex_curriculum_vitae.svg?branch=master" alt="Documentation Quality" />}[http://inch-ci.org/github/saigkill/latex_curriculum_vitae]
 
 == DESCRIPTION:

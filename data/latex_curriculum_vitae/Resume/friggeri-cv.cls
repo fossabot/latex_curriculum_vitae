@@ -9,7 +9,7 @@
 % Original author:
 % Adrien Friggeri (adrien@friggeri.net)
 % https://github.com/afriggeri/CV
-% Modfied by: Sascha Manns (Sascha.Manns@mailbox.org)
+% Modfied by: Sascha Manns (Sascha.Manns@outlook.de)
 % https://github.com/saigkill/latex_curriculum_vitae
 %
 % License:

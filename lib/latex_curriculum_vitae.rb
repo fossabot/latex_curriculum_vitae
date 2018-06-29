@@ -1,4 +1,4 @@
-# Copyright (C) 2015-2018 Sascha Manns <Sascha.Manns@mailbox.org>
+# Copyright (C) 2015-2018 Sascha Manns <Sascha.Manns@outlook.de>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -30,7 +30,7 @@ require_relative 'latex_curriculum_vitae/get-config'
 # Main Class LatexCurriculumVitae
 module LatexCurriculumVitae
   # The version information
-  VERSION = '2.1.1'.freeze
+  VERSION = '2.1.2'.freeze
 
   # Variables
   sys_xdg = XDG['CONFIG_HOME']

@@ -24,16 +24,6 @@
             </listitem>            
         </varlistentry>
         <varlistentry>
-            <term>User Comments &amp; Ask a question</term>
-            <listitem>
-                <para>We want to hear your comments about and suggestions for this manual and the
-                    other documentation included with this product. Go to <link
-                        xlink:href="https://github.com/saigkill/latex_curriculum_vitae/issues"
-                        >https://github.com/saigkill/latex_curriculum_vitae/issues</link> and enter your
-                    comments there. </para>
-            </listitem>
-        </varlistentry>
-        <varlistentry>
             <term>Mailing list</term>
             <listitem>
                 <para>It is also possible to subscribe to projects mailing list on: <link
@@ -45,8 +35,8 @@
             <term>Mail</term>
             <listitem>
                 <para>For feedback on the documentation or this product, you can also send a mail
-                    to <literal><link xlink:href="mailto:Sascha.Manns@mailbox.org"
-                            >Sascha.Manns@mailbox.org</link></literal>. Make sure to include the
+                    to <literal><link xlink:href="mailto:Sascha.Manns@outlook.de"
+                            >Sascha.Manns@outlook.de</link></literal>. Make sure to include the
                     document title, the product version and the publication date of the
                     documentation. To report errors or suggest enhancements, provide a concise
                     description of the problem and refer to the respective section number and page

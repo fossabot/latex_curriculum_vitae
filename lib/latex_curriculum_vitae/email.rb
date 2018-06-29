@@ -1,4 +1,4 @@
-# Copyright (C) 2015-2018 Sascha Manns <Sascha.Manns@mailbox.org>
+# Copyright (C) 2015-2018 Sascha Manns <Sascha.Manns@outlook.de>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -190,10 +190,10 @@ Sincerly yours
 Sascha Manns
 Maifeldstraße 10
 56727 Mayen
-Phone: +49-1573-9242730 (mobile)
+Phone: +49-172-3142738 (mobile)
 Phone: +49-2651-4014045 (home)
-Email: Sascha.Manns@mailbox.org
-Web: http://saigkill.tuxfamily.org
+Email: Sascha.Manns@outlook.de
+Web: https://saigkills-backtrace.de
 BODY
              else
                <<BODY
@@ -208,10 +208,10 @@ Sincerly yours
 Sascha Manns
 Maifeldstraße 10
 56727 Mayen
-Phone: +49-1573-9242730 (mobile)
+Phone: +49-172-3142738 (mobile)
 Phone: +49-2651-4014045 (home)
-Email: Sascha.Manns@mailbox.org
-Web: http://saigkill.tuxfamily.org
+Email: Sascha.Manns@outlook.de
+Web: https://saigkills-backtrace.de
 BODY
              end
       return body

@@ -32,7 +32,7 @@ name_of_cover = "Cover"
 name_of_resume = "cv_10"
 mail_backed = "Evolution"
 own_name = "Sascha Manns"
-own_email_address = "Sascha.Manns@directbox.com"
+own_email_address = "Sascha.Manns@outlook.de"
 own_smtp = "smtp.my.com"
 own_username = "myusername"
 own_password = "mypassword"</screen>
@@ -65,8 +65,8 @@ own_password = "mypassword"</screen>
 \def\mystreet{Maifeldstraße 10}
 \def\mycity{56727 Mayen}
 \def\myphone{+00-0000-000~00~00}
-\def\myemail{Sascha.Manns@mailbox.org}
-\def\myblog{http://saigkill.tuxfamily.org}
+\def\myemail{Sascha.Manns@outlook.de}
+\def\myblog{https://saigkills-backtrace.de}
 \def\mybank{Kto. DE88\ 0000\ 0000\ 0000\ 0000\ 00 \\
 BIC: MALADE00XXX \\
 KSK}</screen>
