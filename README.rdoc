@@ -1,7 +1,7 @@
 = latex_curriculum_vitae
 
 code  :: https://github.com/saigkill/latex_curriculum_vitae
-docs :: https://docs.saigkills-backtrace.de/latex_curriculum_vitae/
+docs :: http://docs.saigkills-backtrace.de/latex_curriculum_vitae/
 apidoc :: http://www.rubydoc.info/gems/latex_curriculum_vitae
 bugs  :: https://github.com/saigkill/latex_curriculum_vitae/issues
 mailinglist :: https://groups.google.com/forum/#!forum/latex_curriculum_vitae
