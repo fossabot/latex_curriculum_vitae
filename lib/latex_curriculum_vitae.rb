@@ -29,8 +29,6 @@ require_relative 'latex_curriculum_vitae/get-config'
 
 # Main Class LatexCurriculumVitae
 module LatexCurriculumVitae
-  # The version information
-  VERSION = '2.1.2'.freeze
 
   # Variables
   sys_xdg = XDG['CONFIG_HOME']

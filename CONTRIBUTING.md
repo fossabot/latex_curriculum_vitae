@@ -1,10 +1,10 @@
 # IDEAS:
 
-* Add ideas on: https://github.com/saigkill/latex_curriculum_vitae/issues
+* Add ideas on: https://dev.azure.com/saigkill/latex_curriculum_vitae/_workitems
 
 ## COOL HACKS:
 
-* Open a bugreport on https://github.com/saigkill/latex_curriculum_vitae/issues.
+* Open a bugreport on https://dev.azure.com/saigkill/latex_curriculum_vitae/_workitems.
 * Please use the -u flag when generating the patch as it makes the patch
   more readable.
 * Write a good explanation of what the patch does.

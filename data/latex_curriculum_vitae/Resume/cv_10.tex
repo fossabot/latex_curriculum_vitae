@@ -10,7 +10,7 @@
 % Adrien Friggeri (adrien@friggeri.net)
 % https://github.com/afriggeri/CV
 % Modfied by: Sascha Manns (Sascha.Manns@outlook.de)
-% https://github.com/saigkill/latex_curriculum_vitae
+% https://dev.azure.com/saigkill/latex_curriculum_vitae
 %
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
