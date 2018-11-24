@@ -1,0 +1,31 @@
+# Ruby
+# Package your Ruby application.
+# Add steps that install rails, analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/ruby
+
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+steps:
+- task: UseRubyVersion@0
+  inputs:
+    versionSpec: '>= 2.5'
+
+- script: |
+    gem install bundler
+    bundle install --retry=3 --jobs=4
+  displayName: 'bundle install'
+
+- script: bundle exec rake
+  displayName: 'bundle exec rake'
+
+- script: rake setup
+  displayName: 'rake setup'
+
+- task: PublishTestResults@2
+
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'

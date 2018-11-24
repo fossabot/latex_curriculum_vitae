@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
 
   s.metadata = {
       'homepage_uri' => 'https://dev.azure.com/saigkill/latex_curriculum_vitae',
-      'changelog_uri' => 'https://github.com/rubocop-hq/rubocop/blob/master/CHANGELOG.md',
+      'changelog_uri' => 'https://dev.azure.com/saigkill/_git/latex_curriculum_vitae?path=%2FCHANGELOG.md&version=GBmaster',
       'source_code_uri' => 'https://dev.azure.com/saigkill/latex_curriculum_vitae',
       'documentation_uri' => 'https://saschamanns.de/doc-lcv',
       'bug_tracker_uri' => 'https://dev.azure.com/saigkill/latex_curriculum_vitae/_workitems'
