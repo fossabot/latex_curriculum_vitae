@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsaigkill%2Flatex_curriculum_vitae.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsaigkill%2Flatex_curriculum_vitae?ref=badge_shield)
+
 = latex_curriculum_vitae
 
 == DESCRIPTION:
@@ -86,3 +88,6 @@ After checking out the source, run:
 
 This task will install any missing dependencies, run the tests/specs,
 and generate the RDoc.
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsaigkill%2Flatex_curriculum_vitae.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsaigkill%2Flatex_curriculum_vitae?ref=badge_large)
